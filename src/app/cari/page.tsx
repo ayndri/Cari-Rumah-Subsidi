@@ -9,6 +9,8 @@ import HasilRekomendasi, { TabelUrutan } from "@/components/HasilRekomendasi";
 import { KECAMATAN, KRITERIA, MODA, semuaBaris } from "@/lib/data";
 import { bobotDariAHP, bobotDariKepentingan, hitungPeringkat } from "@/lib/perangkingan";
 import { barisKePerumahan, gabungBaris, kriteriaBerlaku, PERUBAHAN_KOSONG, type Perubahan } from "@/lib/perubahan";
+import { KUNCI_SIMPAN, SEMUA_KECAMATAN, TINGKAT_AWAL, type Simpanan } from "@/lib/pilihan";
+import BilahUji from "@/components/BilahUji";
 import type {
   KunciKriteria,
   Moda,
@@ -32,32 +34,7 @@ const PetaLeaflet = dynamic(() => import("@/components/PetaLeaflet"), {
   ),
 });
 
-const SEMUA_KECAMATAN = KECAMATAN[0];
 const BATAS_KRITERIA = 7;
-
-/**
- * Kelima kriteria dari proposal menyala sejak awal supaya pengguna langsung
- * melihat hasil tanpa mengisi apa pun. Kriteria katalog dimulai dari mati.
- */
-const TINGKAT_AWAL: Record<string, TingkatPenting> = Object.fromEntries(
-  KRITERIA.map((k) => [k.kunci, k.inti ? "penting" : "abaikan"]),
-);
-
-/**
- * Pilihan pengguna disimpan per tab di sessionStorage, supaya kembali dari
- * halaman rincian (lewat tautan maupun tombol back) tidak mengulang dari awal.
- * Waktu tempuh ke tempat kerja ikut disimpan agar tidak menghitung ulang ke API.
- */
-const KUNCI_SIMPAN = "cari-rumah:pilihan:v1";
-
-type Simpanan = {
-  tingkat: Record<string, TingkatPenting>;
-  moda: Moda;
-  kecamatan: string;
-  idTerpilih: string | null;
-  tempatKerja: TempatKerja | null;
-  waktuKerja: WaktuKerja | null;
-};
 
 /**
  * Pilihan dari kotak pencarian halaman depan (?kec=&utama=&moda=). Kalau ada,
@@ -314,6 +291,7 @@ export default function CariRumah() {
   return (
     <div className="flex min-h-screen flex-col">
       <Header jejak="Cari rumah" />
+      <BilahUji />
 
       <main className="mx-auto w-full max-w-[1500px] flex-1 px-4 py-5 sm:px-6">
         <div className="flex flex-wrap items-end justify-between gap-x-8 gap-y-1">

@@ -8,6 +8,7 @@ const MENU = [
   { href: "/admin/perumahan", label: "Data Perumahan" },
   { href: "/admin/fasilitas", label: "Data Fasilitas" },
   { href: "/admin/kriteria", label: "Kriteria & Bobot" },
+  { href: "/admin/uji", label: "Uji Penerimaan" },
 ];
 
 export default function SidebarAdmin() {

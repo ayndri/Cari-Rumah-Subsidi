@@ -16,6 +16,7 @@
  *   bobot_tambahan   bobot kriteria tambahan yang diubah admin
  *   riwayat          catatan perubahan admin, tampil di dashboard
  *   percobaan_login  penahanan login setelah gagal berturut-turut
+ *   uji_penerimaan   jawaban uji penerimaan dari halaman /uji (tidak ikut dihapus --ulang)
  *
  * Pakai:  node skrip/isi-database.mjs   (DATABASE_URL dibaca dari .env.local)
  */
@@ -89,6 +90,13 @@ await sql`
     ip             text PRIMARY KEY,
     gagal          integer NOT NULL DEFAULT 0,
     ditahan_sampai timestamptz
+  )`;
+await sql`
+  CREATE TABLE IF NOT EXISTS uji_penerimaan (
+    id    bigserial PRIMARY KEY,
+    waktu timestamptz NOT NULL DEFAULT now(),
+    nama  text NOT NULL,
+    isi   jsonb NOT NULL
   )`;
 
 // ---------------------------------------------------------------- perumahan penelitian

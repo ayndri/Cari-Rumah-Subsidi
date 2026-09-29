@@ -8,6 +8,7 @@ import {
   type WaktuModa,
 } from "./perubahan";
 import type { KunciKriteria, Moda } from "./tipe";
+import type { JawabanUji } from "./uji";
 
 /**
  * Penyimpanan di Neon (PostgreSQL + PostGIS). Tabelnya dibuat oleh `skrip/isi-database.mjs`.
@@ -251,4 +252,27 @@ export async function catatGagalLogin(ip: string, batas: number, tahanDetik: num
 
 export async function hapusCatatanLogin(ip: string) {
   await sql()`DELETE FROM percobaan_login WHERE ip = ${ip}`;
+}
+
+// ------------------------------------------------------------------ uji penerimaan
+/**
+ * Jawaban uji penerimaan (halaman /uji). Satu baris per responden; isinya jsonb karena
+ * bentuknya mengikuti instrumen, dan hanya dibaca utuh untuk diekspor ke olah_uat.py.
+ * Tabelnya dibuat oleh `skrip/isi-database.mjs`.
+ */
+export async function simpanJawabanUji(isi: Omit<JawabanUji, "id" | "waktu">): Promise<number> {
+  const r = await sql()`
+    INSERT INTO uji_penerimaan (nama, isi) VALUES (${isi.identitas.nama}, ${JSON.stringify(isi)}::jsonb)
+    RETURNING id`;
+  return Number(r[0].id);
+}
+
+export async function daftarJawabanUji(): Promise<JawabanUji[]> {
+  const r = await sql()`SELECT id, waktu, isi FROM uji_penerimaan ORDER BY waktu, id`;
+  return r.map((b) => ({ ...(b.isi as JawabanUji), id: Number(b.id), waktu: new Date(b.waktu).toISOString() }));
+}
+
+export async function hapusJawabanUji(id: number): Promise<boolean> {
+  const r = await sql()`DELETE FROM uji_penerimaan WHERE id = ${id} RETURNING id`;
+  return r.length > 0;
 }
