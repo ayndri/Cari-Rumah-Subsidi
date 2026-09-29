@@ -14,6 +14,14 @@ import type { BarisPeringkat, Moda, TingkatPenting } from "./tipe";
 export const KANDIDAT = kandidatMentah as { kode: string; id: string }[];
 export const KODE = KANDIDAT.map((k) => k.kode);
 
+/**
+ * Harga pada kartu Bagian A disamakan untuk seluruh kandidat. Harga bukan kriteria sistem, dan
+ * responden uji coba awal mengurutkan menurut harga, sehingga urutannya tidak bisa dicocokkan dengan
+ * pembobotan sistem. Nilainya harga tertinggi di antara kesepuluh kandidat, dan kartu menyebut
+ * terang-terangan bahwa harga disetarakan. Data harga di website dan dataset tidak diubah.
+ */
+export const HARGA_SETARA = 166_000_000;
+
 /** Kriteria yang boleh diatur responden. Tempat kerja sengaja tidak ikut: kartu tidak memuatnya. */
 export const KRITERIA_UJI = KRITERIA.filter((k) => !k.butuhTitikAcuan);
 

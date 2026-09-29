@@ -8,6 +8,7 @@ import { gabungBaris, PERUBAHAN_KOSONG, type Perubahan } from "@/lib/perubahan";
 import { KUNCI_SIMPAN, KUNCI_UJI, SEMUA_KECAMATAN, SIMPANAN_AWAL, type Simpanan } from "@/lib/pilihan";
 import type { Moda, TingkatPenting } from "@/lib/tipe";
 import {
+  HARGA_SETARA,
   KANDIDAT,
   KRITERIA_UJI,
   PERCAYA,
@@ -391,7 +392,10 @@ function Kartu({ b, nomor, onKetuk }: { b: Baris; nomor: number | null; onKetuk:
       <span className="mt-3 grid grid-cols-2 gap-x-4 gap-y-1.5 text-sm">
         <span><span className="block text-xs text-teks-redup">Luas rumah</span><b>{p.luasBangunan} m²</b></span>
         <span><span className="block text-xs text-teks-redup">Luas tanah</span><b>{p.luasLahan} m²</b></span>
-        <span><span className="block text-xs text-teks-redup">Harga</span><b>Rp {juta.format(p.harga / 1e6)} juta</b></span>
+        <span>
+          <span className="block text-xs text-teks-redup">Harga (disetarakan)</span>
+          <b>Rp {juta.format(HARGA_SETARA / 1e6)} juta</b>
+        </span>
         <span>
           <span className="block text-xs text-teks-redup">Ke pusat kabupaten</span>
           <b>{p.jarakPusatKm === null ? "–" : `${km.format(p.jarakPusatKm)} km`}</b>
@@ -439,7 +443,8 @@ function Urutkan({
           Bayangkan kamu sedang memilih rumah untuk ditinggali. <b className="text-teks">Ketuk perumahan
           yang paling ingin kamu pilih lebih dulu</b>, lalu yang berikutnya, sampai kesepuluhnya bernomor.
           Ketuk lagi untuk membatalkan. Waktu tempuh adalah perkiraan hari Senin pukul 07.00 ke fasilitas
-          terdekat. Website belum dibuka pada bagian ini.
+          terdekat. <b className="text-teks">Harga sengaja disamakan untuk semua perumahan</b>, jadi
+          bandingkan luas dan waktu tempuhnya saja. Website belum dibuka pada bagian ini.
         </p>
       </div>
 
