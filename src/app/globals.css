@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+/* Palet hijau hangat, satu mode saja. Alasan tiap warna ada di DESIGN.md.
+   Seluruh pasangan teks dan latar di sini sudah diuji memenuhi WCAG AA. */
+:root {
+  color-scheme: light;
+
+  --latar: #f5f4ec;
+  --permukaan: #fffef9;
+  --permukaan-2: #ecebdd;
+  --garis: #dbd9c7;
+  --garis-kuat: #bcb9a3;
+  --teks: #22301f;
+  --teks-redup: #57604f;
+  --hutan: #2e4a35;
+  --di-atas-hutan: #fffef9;
+  --daun: #46683b;
+  --amber: #8a5a12;
+  --di-atas-amber: #fffef9;
+  --amber-latar: #f9f0dd;
+  --pilih: #2e4a35;
+  --di-atas-pilih: #fffef9;
+}
+
+@theme inline {
+  --color-latar: var(--latar);
+  --color-permukaan: var(--permukaan);
+  --color-permukaan-2: var(--permukaan-2);
+  --color-garis: var(--garis);
+  --color-garis-kuat: var(--garis-kuat);
+  --color-teks: var(--teks);
+  --color-teks-redup: var(--teks-redup);
+  --color-hutan: var(--hutan);
+  --color-di-atas-hutan: var(--di-atas-hutan);
+  --color-daun: var(--daun);
+  --color-amber: var(--amber);
+  --color-di-atas-amber: var(--di-atas-amber);
+  --color-amber-latar: var(--amber-latar);
+  --color-pilih: var(--pilih);
+  --color-di-atas-pilih: var(--di-atas-pilih);
+
+  --font-judul: var(--font-fraunces);
+  --font-teks: var(--font-public-sans);
+
+  --radius-kecil: 6px;
+  --radius-kartu: 12px;
+}
+
+body {
+  background: var(--latar);
+  color: var(--teks);
+  font-family: var(--font-public-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Fraunces punya sumbu SOFT dan WONK; keduanya dinaikkan supaya judul terasa
+   cetakan hangat, bukan serif korporat. */
+.judul {
+  font-family: var(--font-fraunces), Georgia, serif;
+  font-variation-settings: "SOFT" 40, "WONK" 1;
+  letter-spacing: -0.01em;
+}
+
+:focus-visible {
+  outline: 2px solid var(--amber);
+  outline-offset: 2px;
+  border-radius: 3px;
+}
+
+/* Tombol perbesar bawaan Leaflet hanya 30px, terlalu kecil untuk jari.
+   Dinaikkan pada perangkat sentuh dan pada layar sempit, karena keduanya
+   hampir selalu dipakai dengan jari. */
+@media (pointer: coarse), (max-width: 640px) {
+  /* Kekhususannya sengaja dinaikkan karena berkas gaya Leaflet dimuat setelah
+     berkas ini, sehingga aturan yang sama kuat akan kalah. */
+  .leaflet-container .leaflet-control-zoom a.leaflet-control-zoom-in,
+  .leaflet-container .leaflet-control-zoom a.leaflet-control-zoom-out {
+    width: 44px;
+    height: 44px;
+    line-height: 44px;
+    font-size: 20px;
+  }
+}
+
+/* MOTION 1: hanya hover dan fokus. Pengguna yang meminta gerak minimum
+   tetap dihormati. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}

@@ -1,0 +1,2354 @@
+[
+ {
+  "id": "green-puri-residence",
+  "nama": "Green Puri Residence",
+  "developer": "PT Irfai Berkah Sejahtera",
+  "kecamatan": "Puri",
+  "desa": "Tambakagung",
+  "harga": 166000000,
+  "latitude": -7.51384,
+  "longitude": 112.46006,
+  "luasBangunan": 36.0,
+  "luasLahan": 60.0,
+  "jarakPusatKm": 11.72,
+  "rasioLahan": 1.67,
+  "waktu": {
+   "motor": {
+    "sekolah": 439,
+    "pasar": 573,
+    "faskes": 581,
+    "ibadah": 197
+   },
+   "mobil": {
+    "sekolah": 504,
+    "pasar": 649,
+    "faskes": 676,
+    "ibadah": 197
+   }
+  }
+ },
+ {
+  "id": "griya-sooko-asri-tahap-3b",
+  "nama": "Griya Sooko Asri Tahap 3B",
+  "developer": "PT Jokam Griya Barokah",
+  "kecamatan": "Sooko",
+  "desa": "Tempuran",
+  "harga": 166000000,
+  "latitude": -7.46975,
+  "longitude": 112.39754,
+  "luasBangunan": 30.0,
+  "luasLahan": 66.0,
+  "jarakPusatKm": 19.29,
+  "rasioLahan": 2.2,
+  "waktu": {
+   "motor": {
+    "sekolah": 304,
+    "pasar": 464,
+    "faskes": 175,
+    "ibadah": 261
+   },
+   "mobil": {
+    "sekolah": 342,
+    "pasar": 535,
+    "faskes": 187,
+    "ibadah": 261
+   }
+  }
+ },
+ {
+  "id": "harmoni-residence",
+  "nama": "Harmoni Residence",
+  "developer": "PT Agung Petera Jaya",
+  "kecamatan": "Puri",
+  "desa": "Sumbergirang",
+  "harga": 166000000,
+  "latitude": -7.51984,
+  "longitude": 112.46653,
+  "luasBangunan": 30.0,
+  "luasLahan": 60.0,
+  "jarakPusatKm": 11.02,
+  "rasioLahan": 2.0,
+  "waktu": {
+   "motor": {
+    "sekolah": 513,
+    "pasar": 709,
+    "faskes": 730,
+    "ibadah": 340
+   },
+   "mobil": {
+    "sekolah": 564,
+    "pasar": 788,
+    "faskes": 820,
+    "ibadah": 340
+   }
+  }
+ },
+ {
+  "id": "griya-dahayu-canggu",
+  "nama": "Griya Dahayu Canggu",
+  "developer": "PT Kemas Jaya Mulia",
+  "kecamatan": "Jetis",
+  "desa": "Canggu",
+  "harga": 166000000,
+  "latitude": -7.42907,
+  "longitude": 112.46872,
+  "luasBangunan": 30.0,
+  "luasLahan": 66.0,
+  "jarakPusatKm": 14.42,
+  "rasioLahan": 2.2,
+  "waktu": {
+   "motor": {
+    "sekolah": 191,
+    "pasar": 499,
+    "faskes": 239,
+    "ibadah": 72
+   },
+   "mobil": {
+    "sekolah": 206,
+    "pasar": 561,
+    "faskes": 295,
+    "ibadah": 72
+   }
+  }
+ },
+ {
+  "id": "mojo-indah-land",
+  "nama": "Mojo Indah Land",
+  "developer": "PT Diryan Putra Group",
+  "kecamatan": "Kemlagi",
+  "desa": "Mojowono",
+  "harga": 166000000,
+  "latitude": -7.39128,
+  "longitude": 112.36644,
+  "luasBangunan": 36.0,
+  "luasLahan": 66.0,
+  "jarakPusatKm": 26.0,
+  "rasioLahan": 1.83,
+  "waktu": {
+   "motor": {
+    "sekolah": 274,
+    "pasar": 680,
+    "faskes": 182,
+    "ibadah": 296
+   },
+   "mobil": {
+    "sekolah": 304,
+    "pasar": 719,
+    "faskes": 193,
+    "ibadah": 296
+   }
+  }
+ },
+ {
+  "id": "pesanggrahan-safa-marwah",
+  "nama": "Pesanggrahan Safa Marwah",
+  "developer": "PT Ken Citra Propertindo",
+  "kecamatan": "Kutorejo",
+  "desa": "Pesanggrahan",
+  "harga": 166000000,
+  "latitude": -7.55786,
+  "longitude": 112.53445,
+  "luasBangunan": 30.0,
+  "luasLahan": 60.0,
+  "jarakPusatKm": 5.9,
+  "rasioLahan": 2.0,
+  "waktu": {
+   "motor": {
+    "sekolah": 234,
+    "pasar": 590,
+    "faskes": 557,
+    "ibadah": 171
+   },
+   "mobil": {
+    "sekolah": 260,
+    "pasar": 697,
+    "faskes": 646,
+    "ibadah": 171
+   }
+  }
+ },
+ {
+  "id": "griya-modopuro-perkasa-2",
+  "nama": "Griya Modopuro Perkasa 2",
+  "developer": "PT Persada Bangun Perkasa",
+  "kecamatan": "Mojosari",
+  "desa": "Modopuro",
+  "harga": 166000000,
+  "latitude": -7.48989,
+  "longitude": 112.53698,
+  "luasBangunan": 30.0,
+  "luasLahan": 60.0,
+  "jarakPusatKm": 4.3,
+  "rasioLahan": 2.0,
+  "waktu": {
+   "motor": {
+    "sekolah": 438,
+    "pasar": 963,
+    "faskes": 676,
+    "ibadah": 117
+   },
+   "mobil": {
+    "sekolah": 478,
+    "pasar": 1074,
+    "faskes": 740,
+    "ibadah": 117
+   }
+  }
+ },
+ {
+  "id": "garden-mansion",
+  "nama": "Garden Mansion",
+  "developer": "PT Bumi Mentari Megah",
+  "kecamatan": "Sooko",
+  "desa": "Ngingasrembyong",
+  "harga": 164800000,
+  "latitude": -7.46823,
+  "longitude": 112.41072,
+  "luasBangunan": 36.0,
+  "luasLahan": 66.0,
+  "jarakPusatKm": 17.94,
+  "rasioLahan": 1.83,
+  "waktu": {
+   "motor": {
+    "sekolah": 176,
+    "pasar": 342,
+    "faskes": 282,
+    "ibadah": 137
+   },
+   "mobil": {
+    "sekolah": 192,
+    "pasar": 386,
+    "faskes": 297,
+    "ibadah": 137
+   }
+  }
+ },
+ {
+  "id": "new-rezan-na-garden",
+  "nama": "New REZAN'NA Garden",
+  "developer": "PT Rezanna Bangun Anugerah",
+  "kecamatan": "Jetis",
+  "desa": "Banjarsari",
+  "harga": 166000000,
+  "latitude": -7.42273,
+  "longitude": 112.41509,
+  "luasBangunan": 36.0,
+  "luasLahan": 60.0,
+  "jarakPusatKm": 19.6,
+  "rasioLahan": 1.67,
+  "waktu": {
+   "motor": {
+    "sekolah": 957,
+    "pasar": 735,
+    "faskes": 706,
+    "ibadah": 720
+   },
+   "mobil": {
+    "sekolah": 1352,
+    "pasar": 735,
+    "faskes": 744,
+    "ibadah": 720
+   }
+  }
+ },
+ {
+  "id": "castury-residence",
+  "nama": "Castury Residence",
+  "developer": "PT Castury Alta Terra",
+  "kecamatan": "Mojosari",
+  "desa": "Jotangan",
+  "harga": 166000000,
+  "latitude": -7.50442,
+  "longitude": 112.54595,
+  "luasBangunan": 30.0,
+  "luasLahan": 66.0,
+  "jarakPusatKm": 2.56,
+  "rasioLahan": 2.2,
+  "waktu": {
+   "motor": {
+    "sekolah": 88,
+    "pasar": 709,
+    "faskes": 379,
+    "ibadah": 216
+   },
+   "mobil": {
+    "sekolah": 97,
+    "pasar": 796,
+    "faskes": 421,
+    "ibadah": 216
+   }
+  }
+ },
+ {
+  "id": "sabda-alam-regency2",
+  "nama": "Sabda Alam REGENCY2",
+  "developer": "PT Condro Bimo Prakoso",
+  "kecamatan": "Gedeg",
+  "desa": "Sidoharjo",
+  "harga": 166000000,
+  "latitude": -7.44313,
+  "longitude": 112.43399,
+  "luasBangunan": 30.0,
+  "luasLahan": 60.0,
+  "jarakPusatKm": 16.66,
+  "rasioLahan": 2.0,
+  "waktu": {
+   "motor": {
+    "sekolah": 549,
+    "pasar": 345,
+    "faskes": 525,
+    "ibadah": 292
+   },
+   "mobil": {
+    "sekolah": 609,
+    "pasar": 413,
+    "faskes": 586,
+    "ibadah": 292
+   }
+  }
+ },
+ {
+  "id": "grand-zam-zam-regency-medali-tahap-2",
+  "nama": "Grand Zam Zam Regency Medali Tahap 2",
+  "developer": "PT Bakti Luhur Abadi",
+  "kecamatan": "Puri",
+  "desa": "Medali",
+  "harga": 166000000,
+  "latitude": -7.52588,
+  "longitude": 112.44372,
+  "luasBangunan": 36.0,
+  "luasLahan": 66.0,
+  "jarakPusatKm": 13.57,
+  "rasioLahan": 1.83,
+  "waktu": {
+   "motor": {
+    "sekolah": 270,
+    "pasar": 656,
+    "faskes": 595,
+    "ibadah": 264
+   },
+   "mobil": {
+    "sekolah": 289,
+    "pasar": 704,
+    "faskes": 654,
+    "ibadah": 264
+   }
+  }
+ },
+ {
+  "id": "green-star-2-residence",
+  "nama": "Green Star 2 Residence",
+  "developer": "PT Aksan Karya Guna Mandiri Jaya",
+  "kecamatan": "Puri",
+  "desa": "Kebonagung",
+  "harga": 166000000,
+  "latitude": -7.53914,
+  "longitude": 112.46841,
+  "luasBangunan": 30.0,
+  "luasLahan": 60.0,
+  "jarakPusatKm": 11.12,
+  "rasioLahan": 2.0,
+  "waktu": {
+   "motor": {
+    "sekolah": 273,
+    "pasar": 823,
+    "faskes": 929,
+    "ibadah": 317
+   },
+   "mobil": {
+    "sekolah": 279,
+    "pasar": 919,
+    "faskes": 964,
+    "ibadah": 317
+   }
+  }
+ },
+ {
+  "id": "militer-regency-tahap-2",
+  "nama": "Militer Regency Tahap 2",
+  "developer": "PT Putra Barokah Properti",
+  "kecamatan": "Jetis",
+  "desa": "Ngabar",
+  "harga": 166000000,
+  "latitude": -7.41667,
+  "longitude": 112.43333,
+  "luasBangunan": 36.0,
+  "luasLahan": 60.5,
+  "jarakPusatKm": 18.32,
+  "rasioLahan": 1.68,
+  "waktu": {
+   "motor": {
+    "sekolah": 453,
+    "pasar": 473,
+    "faskes": 752,
+    "ibadah": 435
+   },
+   "mobil": {
+    "sekolah": 486,
+    "pasar": 527,
+    "faskes": 841,
+    "ibadah": 435
+   }
+  }
+ },
+ {
+  "id": "perumahan-graha-mentari-ngabar-2",
+  "nama": "Perumahan Graha Mentari Ngabar 2",
+  "developer": "PT Karya Athar Mentari",
+  "kecamatan": "Jetis",
+  "desa": "Ngabar",
+  "harga": 166000000,
+  "latitude": -7.41978,
+  "longitude": 112.43656,
+  "luasBangunan": 30.0,
+  "luasLahan": 60.0,
+  "jarakPusatKm": 17.82,
+  "rasioLahan": 2.0,
+  "waktu": {
+   "motor": {
+    "sekolah": 416,
+    "pasar": 489,
+    "faskes": 701,
+    "ibadah": 477
+   },
+   "mobil": {
+    "sekolah": 450,
+    "pasar": 534,
+    "faskes": 767,
+    "ibadah": 477
+   }
+  }
+ },
+ {
+  "id": "grand-kencana-mojokerto-tahap-6",
+  "nama": "Grand Kencana Mojokerto Tahap 6",
+  "developer": "PT Bangun Griya Insani Sejahtera",
+  "kecamatan": "Sooko",
+  "desa": "Kedungmaling",
+  "harga": 166000000,
+  "latitude": -7.51441,
+  "longitude": 112.41235,
+  "luasBangunan": 30.0,
+  "luasLahan": 63.0,
+  "jarakPusatKm": 16.98,
+  "rasioLahan": 2.1,
+  "waktu": {
+   "motor": {
+    "sekolah": 407,
+    "pasar": 452,
+    "faskes": 444,
+    "ibadah": 220
+   },
+   "mobil": {
+    "sekolah": 444,
+    "pasar": 508,
+    "faskes": 471,
+    "ibadah": 220
+   }
+  }
+ },
+ {
+  "id": "anggrek-mas-regency-3",
+  "nama": "Anggrek Mas Regency 3",
+  "developer": "PT Mahardika Berkah Niaga",
+  "kecamatan": "Pungging",
+  "desa": "Tunggalpager",
+  "harga": 166000000,
+  "latitude": -7.52183,
+  "longitude": 112.57163,
+  "luasBangunan": 30.0,
+  "luasLahan": 60.0,
+  "jarakPusatKm": 0.93,
+  "rasioLahan": 2.0,
+  "waktu": {
+   "motor": {
+    "sekolah": 175,
+    "pasar": 391,
+    "faskes": 333,
+    "ibadah": 39
+   },
+   "mobil": {
+    "sekolah": 189,
+    "pasar": 485,
+    "faskes": 357,
+    "ibadah": 39
+   }
+  }
+ },
+ {
+  "id": "grand-zam-zam-regency-mojokerto",
+  "nama": "Grand Zam Zam Regency Mojokerto",
+  "developer": "PT Bakti Luhur Abadi",
+  "kecamatan": "Puri",
+  "desa": "Medali",
+  "harga": 162000000,
+  "latitude": -7.52691,
+  "longitude": 112.44507,
+  "luasBangunan": 30.0,
+  "luasLahan": 66.0,
+  "jarakPusatKm": 13.44,
+  "rasioLahan": 2.2,
+  "waktu": {
+   "motor": {
+    "sekolah": 295,
+    "pasar": 681,
+    "faskes": 620,
+    "ibadah": 203
+   },
+   "mobil": {
+    "sekolah": 314,
+    "pasar": 730,
+    "faskes": 680,
+    "ibadah": 203
+   }
+  }
+ },
+ {
+  "id": "grand-kencana-mojokerto-tahap-5",
+  "nama": "Grand Kencana Mojokerto Tahap 5",
+  "developer": "PT Bangun Griya Insani Sejahtera",
+  "kecamatan": "Sooko",
+  "desa": "Kedungmaling",
+  "harga": 166000000,
+  "latitude": -7.51401,
+  "longitude": 112.41225,
+  "luasBangunan": 30.0,
+  "luasLahan": 60.0,
+  "jarakPusatKm": 16.99,
+  "rasioLahan": 2.0,
+  "waktu": {
+   "motor": {
+    "sekolah": 435,
+    "pasar": 450,
+    "faskes": 458,
+    "ibadah": 230
+   },
+   "mobil": {
+    "sekolah": 459,
+    "pasar": 505,
+    "faskes": 486,
+    "ibadah": 230
+   }
+  }
+ },
+ {
+  "id": "griya-puri-permata",
+  "nama": "Griya Puri Permata",
+  "developer": "PT Putra Bumi Airlangga",
+  "kecamatan": "Puri",
+  "desa": "Kintelan",
+  "harga": 166000000,
+  "latitude": -7.53202,
+  "longitude": 112.4297,
+  "luasBangunan": 30.0,
+  "luasLahan": 60.0,
+  "jarakPusatKm": 15.18,
+  "rasioLahan": 2.0,
+  "waktu": {
+   "motor": {
+    "sekolah": 295,
+    "pasar": 475,
+    "faskes": 411,
+    "ibadah": 226
+   },
+   "mobil": {
+    "sekolah": 314,
+    "pasar": 498,
+    "faskes": 444,
+    "ibadah": 226
+   }
+  }
+ },
+ {
+  "id": "militer-regency",
+  "nama": "Militer Regency",
+  "developer": "PT Putra Barokah Properti",
+  "kecamatan": "Jetis",
+  "desa": "Ngabar",
+  "harga": 166000000,
+  "latitude": -7.41763,
+  "longitude": 112.43663,
+  "luasBangunan": 36.0,
+  "luasLahan": 60.0,
+  "jarakPusatKm": 17.96,
+  "rasioLahan": 1.67,
+  "waktu": {
+   "motor": {
+    "sekolah": 359,
+    "pasar": 445,
+    "faskes": 656,
+    "ibadah": 426
+   },
+   "mobil": {
+    "sekolah": 393,
+    "pasar": 494,
+    "faskes": 729,
+    "ibadah": 426
+   }
+  }
+ },
+ {
+  "id": "the-valley-residence",
+  "nama": "The Valley Residence",
+  "developer": "Kawan Langgeng Makmur",
+  "kecamatan": "Pungging",
+  "desa": "Jatilangkung",
+  "harga": 166000000,
+  "latitude": -7.54812,
+  "longitude": 112.54473,
+  "luasBangunan": 30.0,
+  "luasLahan": 60.0,
+  "jarakPusatKm": 4.36,
+  "rasioLahan": 2.0,
+  "waktu": {
+   "motor": {
+    "sekolah": 322,
+    "pasar": 510,
+    "faskes": 478,
+    "ibadah": 194
+   },
+   "mobil": {
+    "sekolah": 350,
+    "pasar": 573,
+    "faskes": 523,
+    "ibadah": 194
+   }
+  }
+ },
+ {
+  "id": "graha-millenia-indah",
+  "nama": "Graha Millenia Indah",
+  "developer": "Graha Berkah Utami",
+  "kecamatan": "Puri",
+  "desa": "Brayung",
+  "harga": 166000000,
+  "latitude": -7.53757,
+  "longitude": 112.43688,
+  "luasBangunan": 30.0,
+  "luasLahan": 60.5,
+  "jarakPusatKm": 14.49,
+  "rasioLahan": 2.02,
+  "waktu": {
+   "motor": {
+    "sekolah": 160,
+    "pasar": 540,
+    "faskes": 477,
+    "ibadah": 159
+   },
+   "mobil": {
+    "sekolah": 172,
+    "pasar": 573,
+    "faskes": 523,
+    "ibadah": 159
+   }
+  }
+ },
+ {
+  "id": "griya-tegal-arum",
+  "nama": "Griya Tegal Arum",
+  "developer": "PT Griya Mapan Sentosa Bersama",
+  "kecamatan": "Sooko",
+  "desa": "Ngingasrembyong",
+  "harga": 166000000,
+  "latitude": -7.46624,
+  "longitude": 112.40387,
+  "luasBangunan": 30.0,
+  "luasLahan": 60.0,
+  "jarakPusatKm": 18.73,
+  "rasioLahan": 2.0,
+  "waktu": {
+   "motor": {
+    "sekolah": 273,
+    "pasar": 455,
+    "faskes": 334,
+    "ibadah": 314
+   },
+   "mobil": {
+    "sekolah": 291,
+    "pasar": 535,
+    "faskes": 350,
+    "ibadah": 314
+   }
+  }
+ },
+ {
+  "id": "bhatara-village-tahap-2",
+  "nama": "Bhatara Village Tahap 2",
+  "developer": "Bhatara Bumi Berkah",
+  "kecamatan": "Gondang",
+  "desa": "Centong",
+  "harga": 166000000,
+  "latitude": -7.61072,
+  "longitude": 112.5224,
+  "luasBangunan": 30.0,
+  "luasLahan": 60.0,
+  "jarakPusatKm": 11.67,
+  "rasioLahan": 2.0,
+  "waktu": {
+   "motor": {
+    "sekolah": 607,
+    "pasar": 1092,
+    "faskes": 956,
+    "ibadah": 354
+   },
+   "mobil": {
+    "sekolah": 645,
+    "pasar": 1221,
+    "faskes": 1048,
+    "ibadah": 354
+   }
+  }
+ },
+ {
+  "id": "grand-elzaya-residence",
+  "nama": "Grand Elzaya Residence",
+  "developer": "PT Elzaya Permata Java",
+  "kecamatan": "Dlanggu",
+  "desa": "Ngembeh",
+  "harga": 166000000,
+  "latitude": -7.56833,
+  "longitude": 112.49877,
+  "luasBangunan": 30.0,
+  "luasLahan": 60.0,
+  "jarakPusatKm": 9.51,
+  "rasioLahan": 2.0,
+  "waktu": {
+   "motor": {
+    "sekolah": 158,
+    "pasar": 901,
+    "faskes": 866,
+    "ibadah": 176
+   },
+   "mobil": {
+    "sekolah": 182,
+    "pasar": 1002,
+    "faskes": 950,
+    "ibadah": 176
+   }
+  }
+ },
+ {
+  "id": "abadi-megah-regency-3-tahap-4",
+  "nama": "Abadi Megah Regency 3 Tahap 4",
+  "developer": "PT Abadi Megah Jaya",
+  "kecamatan": "Jetis",
+  "desa": "Mlirip",
+  "harga": 166000000,
+  "latitude": -7.44361,
+  "longitude": 112.45269,
+  "luasBangunan": 30.0,
+  "luasLahan": 60.0,
+  "jarakPusatKm": 14.85,
+  "rasioLahan": 2.0,
+  "waktu": {
+   "motor": {
+    "sekolah": 241,
+    "pasar": 193,
+    "faskes": 316,
+    "ibadah": 85
+   },
+   "mobil": {
+    "sekolah": 275,
+    "pasar": 228,
+    "faskes": 383,
+    "ibadah": 85
+   }
+  }
+ },
+ {
+  "id": "abadi-megah-regency-3-thp-4",
+  "nama": "Abadi Megah Regency 3 Thp 4",
+  "developer": "PT Abadi Megah Jaya",
+  "kecamatan": "Jetis",
+  "desa": "Mlirip",
+  "harga": 166000000,
+  "latitude": -7.44115,
+  "longitude": 112.45278,
+  "luasBangunan": 30.0,
+  "luasLahan": 60.0,
+  "jarakPusatKm": 14.99,
+  "rasioLahan": 2.0,
+  "waktu": {
+   "motor": {
+    "sekolah": 281,
+    "pasar": 273,
+    "faskes": 356,
+    "ibadah": 135
+   },
+   "mobil": {
+    "sekolah": 308,
+    "pasar": 320,
+    "faskes": 416,
+    "ibadah": 135
+   }
+  }
+ },
+ {
+  "id": "bumi-mentari-sooko-tahap-2",
+  "nama": "Bumi Mentari Sooko Tahap 2",
+  "developer": "PT Bumi Graha Agung",
+  "kecamatan": "Sooko",
+  "desa": "Brangkal",
+  "harga": 166000000,
+  "latitude": -7.52715,
+  "longitude": 112.43589,
+  "luasBangunan": 30.0,
+  "luasLahan": 61.0,
+  "jarakPusatKm": 14.45,
+  "rasioLahan": 2.03,
+  "waktu": {
+   "motor": {
+    "sekolah": 302,
+    "pasar": 595,
+    "faskes": 534,
+    "ibadah": 356
+   },
+   "mobil": {
+    "sekolah": 366,
+    "pasar": 627,
+    "faskes": 577,
+    "ibadah": 356
+   }
+  }
+ },
+ {
+  "id": "griya-tegal-madu-2",
+  "nama": "Griya Tegal Madu 2",
+  "developer": "PT Griya Mapan Sentosa Bersama",
+  "kecamatan": "Gedeg",
+  "desa": "Pagerluyung",
+  "harga": 166000000,
+  "latitude": -7.44131,
+  "longitude": 112.40026,
+  "luasBangunan": 30.0,
+  "luasLahan": 60.0,
+  "jarakPusatKm": 20.08,
+  "rasioLahan": 2.0,
+  "waktu": {
+   "motor": {
+    "sekolah": 567,
+    "pasar": 685,
+    "faskes": 683,
+    "ibadah": 515
+   },
+   "mobil": {
+    "sekolah": 1329,
+    "pasar": 722,
+    "faskes": 758,
+    "ibadah": 515
+   }
+  }
+ },
+ {
+  "id": "grand-kencana-mojokerto-tahap-4",
+  "nama": "Grand Kencana Mojokerto Tahap 4",
+  "developer": "PT Bangun Griya Insani Sejahtera",
+  "kecamatan": "Sooko",
+  "desa": "Kedungmaling",
+  "harga": 150500000,
+  "latitude": -7.52059,
+  "longitude": 112.40978,
+  "luasBangunan": 30.0,
+  "luasLahan": 61.1,
+  "jarakPusatKm": 17.27,
+  "rasioLahan": 2.04,
+  "waktu": {
+   "motor": {
+    "sekolah": 473,
+    "pasar": 508,
+    "faskes": 434,
+    "ibadah": 215
+   },
+   "mobil": {
+    "sekolah": 502,
+    "pasar": 493,
+    "faskes": 492,
+    "ibadah": 215
+   }
+  }
+ },
+ {
+  "id": "griya-dahayu",
+  "nama": "Griya Dahayu",
+  "developer": "PT Kemas Jaya Mulia",
+  "kecamatan": "Sooko",
+  "desa": "Sambiroto",
+  "harga": 150500000,
+  "latitude": -7.50187,
+  "longitude": 112.41319,
+  "luasBangunan": 30.0,
+  "luasLahan": 60.0,
+  "jarakPusatKm": 16.95,
+  "rasioLahan": 2.0,
+  "waktu": {
+   "motor": {
+    "sekolah": 223,
+    "pasar": 336,
+    "faskes": 557,
+    "ibadah": 133
+   },
+   "mobil": {
+    "sekolah": 242,
+    "pasar": 374,
+    "faskes": 713,
+    "ibadah": 133
+   }
+  }
+ },
+ {
+  "id": "star-residence-4-sambiroto",
+  "nama": "Star Residence 4 Sambiroto",
+  "developer": "PT Aksan Karya Guna Mandiri Jaya",
+  "kecamatan": "Sooko",
+  "desa": "Sambiroto",
+  "harga": 150500000,
+  "latitude": -7.5072,
+  "longitude": 112.41273,
+  "luasBangunan": 30.0,
+  "luasLahan": 60.0,
+  "jarakPusatKm": 16.96,
+  "rasioLahan": 2.0,
+  "waktu": {
+   "motor": {
+    "sekolah": 263,
+    "pasar": 375,
+    "faskes": 508,
+    "ibadah": 165
+   },
+   "mobil": {
+    "sekolah": 282,
+    "pasar": 444,
+    "faskes": 542,
+    "ibadah": 165
+   }
+  }
+ },
+ {
+  "id": "bumi-rejo-permai",
+  "nama": "Bumi Rejo Permai",
+  "developer": "PT Duta Malika Perkasa",
+  "kecamatan": "Ngoro",
+  "desa": "Porwojati",
+  "harga": 162000000,
+  "latitude": -7.55,
+  "longitude": 112.59334,
+  "luasBangunan": 30.0,
+  "luasLahan": 60.0,
+  "jarakPusatKm": 4.87,
+  "rasioLahan": 2.0,
+  "waktu": {
+   "motor": {
+    "sekolah": 239,
+    "pasar": 451,
+    "faskes": 304,
+    "ibadah": 42
+   },
+   "mobil": {
+    "sekolah": 258,
+    "pasar": 458,
+    "faskes": 305,
+    "ibadah": 42
+   }
+  }
+ },
+ {
+  "id": "bumi-mojopahit-asri-2",
+  "nama": "Bumi Mojopahit Asri 2",
+  "developer": "PT Tia Cahaya Griya",
+  "kecamatan": "Bangsal",
+  "desa": "Ngastemi",
+  "harga": 162000000,
+  "latitude": -7.53237,
+  "longitude": 112.49645,
+  "luasBangunan": 30.0,
+  "luasLahan": 60.0,
+  "jarakPusatKm": 7.94,
+  "rasioLahan": 2.0,
+  "waktu": {
+   "motor": {
+    "sekolah": 634,
+    "pasar": 1134,
+    "faskes": 1144,
+    "ibadah": 450
+   },
+   "mobil": {
+    "sekolah": 648,
+    "pasar": 1305,
+    "faskes": 1225,
+    "ibadah": 450
+   }
+  }
+ },
+ {
+  "id": "bale-bolo-nagari",
+  "nama": "Bale Bolo Nagari",
+  "developer": "PT Bale Bolo Nusantara",
+  "kecamatan": "Ngoro",
+  "desa": "Porwojati",
+  "harga": 150500000,
+  "latitude": -7.53921,
+  "longitude": 112.60394,
+  "luasBangunan": 30.0,
+  "luasLahan": 60.0,
+  "jarakPusatKm": 4.92,
+  "rasioLahan": 2.0,
+  "waktu": {
+   "motor": {
+    "sekolah": 253,
+    "pasar": 396,
+    "faskes": 263,
+    "ibadah": 233
+   },
+   "mobil": {
+    "sekolah": 288,
+    "pasar": 448,
+    "faskes": 299,
+    "ibadah": 233
+   }
+  }
+ },
+ {
+  "id": "mutiara-garden-2",
+  "nama": "Mutiara Garden 2",
+  "developer": "Rekadaya Prima Mandiri",
+  "kecamatan": "Pungging",
+  "desa": "Tunggalpager",
+  "harga": 130000000,
+  "latitude": -7.51543,
+  "longitude": 112.57705,
+  "luasBangunan": 30.0,
+  "luasLahan": 60.0,
+  "jarakPusatKm": 1.18,
+  "rasioLahan": 2.0,
+  "waktu": {
+   "motor": {
+    "sekolah": 155,
+    "pasar": 413,
+    "faskes": 314,
+    "ibadah": 124
+   },
+   "mobil": {
+    "sekolah": 176,
+    "pasar": 516,
+    "faskes": 345,
+    "ibadah": 124
+   }
+  }
+ },
+ {
+  "id": "permata-pesanggrahan-3",
+  "nama": "Permata Pesanggrahan 3",
+  "developer": "Graha Ruby Kastara",
+  "kecamatan": "Kutorejo",
+  "desa": "Pesanggrahan",
+  "harga": 162000000,
+  "latitude": -7.56756,
+  "longitude": 112.53037,
+  "luasBangunan": 32.0,
+  "luasLahan": 75.0,
+  "jarakPusatKm": 7.04,
+  "rasioLahan": 2.34,
+  "waktu": {
+   "motor": {
+    "sekolah": 443,
+    "pasar": 810,
+    "faskes": 776,
+    "ibadah": 83
+   },
+   "mobil": {
+    "sekolah": 549,
+    "pasar": 896,
+    "faskes": 844,
+    "ibadah": 83
+   }
+  }
+ },
+ {
+  "id": "abadi-megah-regency-3-thp-3",
+  "nama": "Abadi Megah Regency 3 Thp 3",
+  "developer": "PT Abadi Megah Jaya",
+  "kecamatan": "Jetis",
+  "desa": "Mlirip",
+  "harga": 162000000,
+  "latitude": -7.44059,
+  "longitude": 112.45244,
+  "luasBangunan": 30.0,
+  "luasLahan": 60.0,
+  "jarakPusatKm": 15.06,
+  "rasioLahan": 2.0,
+  "waktu": {
+   "motor": {
+    "sekolah": 296,
+    "pasar": 288,
+    "faskes": 371,
+    "ibadah": 143
+   },
+   "mobil": {
+    "sekolah": 322,
+    "pasar": 334,
+    "faskes": 431,
+    "ibadah": 143
+   }
+  }
+ },
+ {
+  "id": "graha-kutorejo",
+  "nama": "Graha Kutorejo",
+  "developer": "PT Grha Persada Makmur",
+  "kecamatan": "Kutorejo",
+  "desa": "Gedangan",
+  "harga": 162000000,
+  "latitude": -7.56852,
+  "longitude": 112.50437,
+  "luasBangunan": 30.0,
+  "luasLahan": 60.0,
+  "jarakPusatKm": 9.04,
+  "rasioLahan": 2.0,
+  "waktu": {
+   "motor": {
+    "sekolah": 117,
+    "pasar": 858,
+    "faskes": 824,
+    "ibadah": 120
+   },
+   "mobil": {
+    "sekolah": 140,
+    "pasar": 959,
+    "faskes": 907,
+    "ibadah": 120
+   }
+  }
+ },
+ {
+  "id": "bendung-regency-cluster-puri-kertajaya",
+  "nama": "Bendung Regency Cluster Puri Kertajaya",
+  "developer": "Sumber Mas Indonesia",
+  "kecamatan": "Jetis",
+  "desa": "Bendung",
+  "harga": 162000000,
+  "latitude": -7.39923,
+  "longitude": 112.44205,
+  "luasBangunan": 30.0,
+  "luasLahan": 60.0,
+  "jarakPusatKm": 18.83,
+  "rasioLahan": 2.0,
+  "waktu": {
+   "motor": {
+    "sekolah": 587,
+    "pasar": 749,
+    "faskes": 671,
+    "ibadah": 427
+   },
+   "mobil": {
+    "sekolah": 627,
+    "pasar": 813,
+    "faskes": 750,
+    "ibadah": 427
+   }
+  }
+ },
+ {
+  "id": "anggrek-mas-regency-2",
+  "nama": "Anggrek Mas Regency 2",
+  "developer": "PT Mahardika Berkah Niaga",
+  "kecamatan": "Pungging",
+  "desa": "Tunggalpager",
+  "harga": 150500000,
+  "latitude": -7.52893,
+  "longitude": 112.57343,
+  "luasBangunan": 36.0,
+  "luasLahan": 60.0,
+  "jarakPusatKm": 1.7,
+  "rasioLahan": 1.67,
+  "waktu": {
+   "motor": {
+    "sekolah": 149,
+    "pasar": 240,
+    "faskes": 307,
+    "ibadah": 73
+   },
+   "mobil": {
+    "sekolah": 164,
+    "pasar": 316,
+    "faskes": 333,
+    "ibadah": 73
+   }
+  }
+ },
+ {
+  "id": "tanjungan-indah-3",
+  "nama": "Tanjungan Indah 3",
+  "developer": "PT Diryan Putra Group",
+  "kecamatan": "Kemlagi",
+  "desa": "Tanjungan",
+  "harga": 162000000,
+  "latitude": -7.3897,
+  "longitude": 112.39235,
+  "luasBangunan": 30.0,
+  "luasLahan": 60.0,
+  "jarakPusatKm": 23.73,
+  "rasioLahan": 2.0,
+  "waktu": {
+   "motor": {
+    "sekolah": 594,
+    "pasar": 859,
+    "faskes": 366,
+    "ibadah": 425
+   },
+   "mobil": {
+    "sekolah": 641,
+    "pasar": 907,
+    "faskes": 384,
+    "ibadah": 425
+   }
+  }
+ },
+ {
+  "id": "puspamaya-residence",
+  "nama": "Puspamaya Residence",
+  "developer": "PT Seduluran Cipta Graha",
+  "kecamatan": "Sooko",
+  "desa": "Brangkal",
+  "harga": 162000000,
+  "latitude": -7.51868,
+  "longitude": 112.41969,
+  "luasBangunan": 32.0,
+  "luasLahan": 63.0,
+  "jarakPusatKm": 16.18,
+  "rasioLahan": 1.97,
+  "waktu": {
+   "motor": {
+    "sekolah": 387,
+    "pasar": 373,
+    "faskes": 309,
+    "ibadah": 138
+   },
+   "mobil": {
+    "sekolah": 413,
+    "pasar": 387,
+    "faskes": 333,
+    "ibadah": 138
+   }
+  }
+ },
+ {
+  "id": "grand-kencana-mojokerto-tahap-3",
+  "nama": "Grand Kencana Mojokerto Tahap 3",
+  "developer": "PT Bangun Griya Insani Sejahtera",
+  "kecamatan": "Sooko",
+  "desa": "Kedungmaling",
+  "harga": 150500000,
+  "latitude": -7.51455,
+  "longitude": 112.41243,
+  "luasBangunan": 30.0,
+  "luasLahan": 60.5,
+  "jarakPusatKm": 16.97,
+  "rasioLahan": 2.02,
+  "waktu": {
+   "motor": {
+    "sekolah": 403,
+    "pasar": 449,
+    "faskes": 440,
+    "ibadah": 217
+   },
+   "mobil": {
+    "sekolah": 440,
+    "pasar": 504,
+    "faskes": 468,
+    "ibadah": 217
+   }
+  }
+ },
+ {
+  "id": "bhatara-village",
+  "nama": "Bhatara Village",
+  "developer": "Bhatara Bumi Berkah",
+  "kecamatan": "Gondang",
+  "desa": "Centong",
+  "harga": 150500000,
+  "latitude": -7.61078,
+  "longitude": 112.52241,
+  "luasBangunan": 30.0,
+  "luasLahan": 60.0,
+  "jarakPusatKm": 11.67,
+  "rasioLahan": 2.0,
+  "waktu": {
+   "motor": {
+    "sekolah": 606,
+    "pasar": 1091,
+    "faskes": 955,
+    "ibadah": 353
+   },
+   "mobil": {
+    "sekolah": 644,
+    "pasar": 1220,
+    "faskes": 1047,
+    "ibadah": 353
+   }
+  }
+ },
+ {
+  "id": "bumi-mentari-sooko",
+  "nama": "Bumi Mentari Sooko",
+  "developer": "PT Bumi Graha Agung",
+  "kecamatan": "Sooko",
+  "desa": "Brangkal",
+  "harga": 150500000,
+  "latitude": -7.52718,
+  "longitude": 112.42477,
+  "luasBangunan": 30.0,
+  "luasLahan": 61.0,
+  "jarakPusatKm": 15.67,
+  "rasioLahan": 2.03,
+  "waktu": {
+   "motor": {
+    "sekolah": 396,
+    "pasar": 448,
+    "faskes": 384,
+    "ibadah": 247
+   },
+   "mobil": {
+    "sekolah": 421,
+    "pasar": 467,
+    "faskes": 412,
+    "ibadah": 247
+   }
+  }
+ },
+ {
+  "id": "grand-bangsal-residence",
+  "nama": "Grand Bangsal Residence",
+  "developer": "PT Wiss Bangun Persada",
+  "kecamatan": "Bangsal",
+  "desa": "Sumbertebu",
+  "harga": 150500000,
+  "latitude": -7.50446,
+  "longitude": 112.50414,
+  "luasBangunan": 30.0,
+  "luasLahan": 60.0,
+  "jarakPusatKm": 6.97,
+  "rasioLahan": 2.0,
+  "waktu": {
+   "motor": {
+    "sekolah": 647,
+    "pasar": 906,
+    "faskes": 729,
+    "ibadah": 232
+   },
+   "mobil": {
+    "sekolah": 682,
+    "pasar": 997,
+    "faskes": 790,
+    "ibadah": 232
+   }
+  }
+ },
+ {
+  "id": "sativa-green-hill",
+  "nama": "Sativa Green Hill",
+  "developer": "PT Graha Sativa Indonesia",
+  "kecamatan": "Kutorejo",
+  "desa": "Sampangagung",
+  "harga": 150500000,
+  "latitude": -7.58628,
+  "longitude": 112.53006,
+  "luasBangunan": 30.0,
+  "luasLahan": 60.0,
+  "jarakPusatKm": 8.85,
+  "rasioLahan": 2.0,
+  "waktu": {
+   "motor": {
+    "sekolah": 303,
+    "pasar": 843,
+    "faskes": 809,
+    "ibadah": 268
+   },
+   "mobil": {
+    "sekolah": 303,
+    "pasar": 966,
+    "faskes": 914,
+    "ibadah": 268
+   }
+  }
+ },
+ {
+  "id": "amares-residence",
+  "nama": "Amares Residence",
+  "developer": "Solusindo Pratama Indonesia",
+  "kecamatan": "Dlanggu",
+  "desa": "Ngembeh",
+  "harga": 150500000,
+  "latitude": -7.5677,
+  "longitude": 112.49027,
+  "luasBangunan": 33.0,
+  "luasLahan": 60.0,
+  "jarakPusatKm": 10.22,
+  "rasioLahan": 1.82,
+  "waktu": {
+   "motor": {
+    "sekolah": 376,
+    "pasar": 1014,
+    "faskes": 979,
+    "ibadah": 303
+   },
+   "mobil": {
+    "sekolah": 392,
+    "pasar": 1118,
+    "faskes": 1066,
+    "ibadah": 303
+   }
+  }
+ },
+ {
+  "id": "abadi-megah-regency-3-tahap-2",
+  "nama": "Abadi Megah Regency 3 Tahap 2",
+  "developer": "PT Abadi Megah Jaya",
+  "kecamatan": "Jetis",
+  "desa": "Mlirip",
+  "harga": 150500000,
+  "latitude": -7.44361,
+  "longitude": 112.45269,
+  "luasBangunan": 30.0,
+  "luasLahan": 60.0,
+  "jarakPusatKm": 14.85,
+  "rasioLahan": 2.0,
+  "waktu": {
+   "motor": {
+    "sekolah": 241,
+    "pasar": 193,
+    "faskes": 316,
+    "ibadah": 85
+   },
+   "mobil": {
+    "sekolah": 275,
+    "pasar": 228,
+    "faskes": 383,
+    "ibadah": 85
+   }
+  }
+ },
+ {
+  "id": "graha-bhinneka-fortuna-2",
+  "nama": "Graha Bhinneka Fortuna 2",
+  "developer": "Persada Bhinneka Timur",
+  "kecamatan": "Bangsal",
+  "desa": "Ngastemi",
+  "harga": 150500000,
+  "latitude": -7.51136,
+  "longitude": 112.49312,
+  "luasBangunan": 30.0,
+  "luasLahan": 60.0,
+  "jarakPusatKm": 8.09,
+  "rasioLahan": 2.0,
+  "waktu": {
+   "motor": {
+    "sekolah": 689,
+    "pasar": 948,
+    "faskes": 879,
+    "ibadah": 251
+   },
+   "mobil": {
+    "sekolah": 744,
+    "pasar": 1058,
+    "faskes": 974,
+    "ibadah": 251
+   }
+  }
+ },
+ {
+  "id": "tanjungan-indah",
+  "nama": "Tanjungan Indah",
+  "developer": "PT Diryan Putra Group",
+  "kecamatan": "Kemlagi",
+  "desa": "Tanjungan",
+  "harga": 150500000,
+  "latitude": -7.38828,
+  "longitude": 112.39217,
+  "luasBangunan": 30.0,
+  "luasLahan": 60.0,
+  "jarakPusatKm": 23.84,
+  "rasioLahan": 2.0,
+  "waktu": {
+   "motor": {
+    "sekolah": 538,
+    "pasar": 803,
+    "faskes": 310,
+    "ibadah": 391
+   },
+   "mobil": {
+    "sekolah": 583,
+    "pasar": 849,
+    "faskes": 326,
+    "ibadah": 391
+   }
+  }
+ },
+ {
+  "id": "tanjungan-indah-2",
+  "nama": "Tanjungan Indah 2",
+  "developer": "PT Diryan Putra Group",
+  "kecamatan": "Kemlagi",
+  "desa": "Tanjungan",
+  "harga": 150500000,
+  "latitude": -7.38918,
+  "longitude": 112.39205,
+  "luasBangunan": 30.0,
+  "luasLahan": 60.0,
+  "jarakPusatKm": 23.79,
+  "rasioLahan": 2.0,
+  "waktu": {
+   "motor": {
+    "sekolah": 560,
+    "pasar": 825,
+    "faskes": 332,
+    "ibadah": 421
+   },
+   "mobil": {
+    "sekolah": 605,
+    "pasar": 871,
+    "faskes": 348,
+    "ibadah": 421
+   }
+  }
+ },
+ {
+  "id": "japanan-indah-3",
+  "nama": "Japanan Indah 3",
+  "developer": "PT Diryan Putra Group",
+  "kecamatan": "Kemlagi",
+  "desa": "Japanan",
+  "harga": 150500000,
+  "latitude": -7.41354,
+  "longitude": 112.38792,
+  "luasBangunan": 30.0,
+  "luasLahan": 60.0,
+  "jarakPusatKm": 22.7,
+  "rasioLahan": 2.0,
+  "waktu": {
+   "motor": {
+    "sekolah": 591,
+    "pasar": 547,
+    "faskes": 439,
+    "ibadah": 509
+   },
+   "mobil": {
+    "sekolah": 609,
+    "pasar": 550,
+    "faskes": 477,
+    "ibadah": 509
+   }
+  }
+ },
+ {
+  "id": "graha-bhinneka-central",
+  "nama": "Graha Bhinneka Central",
+  "developer": "Persada Bhinneka Timur",
+  "kecamatan": "Sooko",
+  "desa": "Ngingasrembyong",
+  "harga": 130000000,
+  "latitude": -7.46068,
+  "longitude": 112.41462,
+  "luasBangunan": 30.0,
+  "luasLahan": 60.0,
+  "jarakPusatKm": 17.8,
+  "rasioLahan": 2.0,
+  "waktu": {
+   "motor": {
+    "sekolah": 165,
+    "pasar": 405,
+    "faskes": 216,
+    "ibadah": 101
+   },
+   "mobil": {
+    "sekolah": 171,
+    "pasar": 452,
+    "faskes": 220,
+    "ibadah": 101
+   }
+  }
+ },
+ {
+  "id": "grand-bhinneka-regency",
+  "nama": "Grand Bhinneka Regency",
+  "developer": "Persada Mulia Timur",
+  "kecamatan": "Jetis",
+  "desa": "Mlirip",
+  "harga": 150500000,
+  "latitude": -7.44486,
+  "longitude": 112.44454,
+  "luasBangunan": 30.0,
+  "luasLahan": 60.0,
+  "jarakPusatKm": 15.55,
+  "rasioLahan": 2.0,
+  "waktu": {
+   "motor": {
+    "sekolah": 408,
+    "pasar": 82,
+    "faskes": 382,
+    "ibadah": 281
+   },
+   "mobil": {
+    "sekolah": 454,
+    "pasar": 89,
+    "faskes": 428,
+    "ibadah": 281
+   }
+  }
+ },
+ {
+  "id": "mojokerto-regency",
+  "nama": "Mojokerto Regency",
+  "developer": "PT Griya Anugerah Mulia",
+  "kecamatan": "Gedeg",
+  "desa": "Gedeg",
+  "harga": 150500000,
+  "latitude": -7.45269,
+  "longitude": 112.39828,
+  "luasBangunan": 30.0,
+  "luasLahan": 66.0,
+  "jarakPusatKm": 19.8,
+  "rasioLahan": 2.2,
+  "waktu": {
+   "motor": {
+    "sekolah": 447,
+    "pasar": 557,
+    "faskes": 508,
+    "ibadah": 373
+   },
+   "mobil": {
+    "sekolah": 1213,
+    "pasar": 617,
+    "faskes": 1221,
+    "ibadah": 373
+   }
+  }
+ },
+ {
+  "id": "green-jayanegara-residence",
+  "nama": "Green Jayanegara Residence",
+  "developer": "Artha Mahesa Bumi Indah",
+  "kecamatan": "Mojoanyar",
+  "desa": "Gebangmalang",
+  "harga": 150500000,
+  "latitude": -7.48444,
+  "longitude": 112.46386,
+  "luasBangunan": 30.0,
+  "luasLahan": 60.0,
+  "jarakPusatKm": 11.81,
+  "rasioLahan": 2.0,
+  "waktu": {
+   "motor": {
+    "sekolah": 219,
+    "pasar": 487,
+    "faskes": 331,
+    "ibadah": 218
+   },
+   "mobil": {
+    "sekolah": 231,
+    "pasar": 555,
+    "faskes": 407,
+    "ibadah": 218
+   }
+  }
+ },
+ {
+  "id": "bumi-mojopahit-asri",
+  "nama": "Bumi Mojopahit Asri",
+  "developer": "PT Tia Cahaya Griya",
+  "kecamatan": "Bangsal",
+  "desa": "Ngastemi",
+  "harga": 150500000,
+  "latitude": -7.53167,
+  "longitude": 112.49389,
+  "luasBangunan": 30.0,
+  "luasLahan": 60.0,
+  "jarakPusatKm": 8.2,
+  "rasioLahan": 2.0,
+  "waktu": {
+   "motor": {
+    "sekolah": 551,
+    "pasar": 1051,
+    "faskes": 1065,
+    "ibadah": 358
+   },
+   "mobil": {
+    "sekolah": 565,
+    "pasar": 1146,
+    "faskes": 1168,
+    "ibadah": 358
+   }
+  }
+ },
+ {
+  "id": "grand-emerald-puri-tahap-2",
+  "nama": "Grand Emerald Puri Tahap 2",
+  "developer": "PT Sinar Surya Perkasa Jaya",
+  "kecamatan": "Puri",
+  "desa": "Puri",
+  "harga": 150500000,
+  "latitude": -7.54429,
+  "longitude": 112.45727,
+  "luasBangunan": 30.0,
+  "luasLahan": 60.0,
+  "jarakPusatKm": 12.45,
+  "rasioLahan": 2.0,
+  "waktu": {
+   "motor": {
+    "sekolah": 110,
+    "pasar": 772,
+    "faskes": 711,
+    "ibadah": 102
+   },
+   "mobil": {
+    "sekolah": 113,
+    "pasar": 823,
+    "faskes": 773,
+    "ibadah": 102
+   }
+  }
+ },
+ {
+  "id": "griya-permata-karang-kedawang",
+  "nama": "Griya Permata Karang Kedawang",
+  "developer": "PT Graha Sejahtera Anugrahland",
+  "kecamatan": "Sooko",
+  "desa": "Karangkedawang",
+  "harga": 150500000,
+  "latitude": -7.49012,
+  "longitude": 112.40162,
+  "luasBangunan": 30.0,
+  "luasLahan": 60.0,
+  "jarakPusatKm": 18.38,
+  "rasioLahan": 2.0,
+  "waktu": {
+   "motor": {
+    "sekolah": 213,
+    "pasar": 312,
+    "faskes": 519,
+    "ibadah": 233
+   },
+   "mobil": {
+    "sekolah": 229,
+    "pasar": 343,
+    "faskes": 575,
+    "ibadah": 233
+   }
+  }
+ },
+ {
+  "id": "harmony-alam-sooko",
+  "nama": "Harmony Alam Sooko",
+  "developer": "Harmony Alam Jaya",
+  "kecamatan": "Sooko",
+  "desa": "Tempuran",
+  "harga": 150500000,
+  "latitude": -7.47058,
+  "longitude": 112.39866,
+  "luasBangunan": 30.0,
+  "luasLahan": 60.0,
+  "jarakPusatKm": 19.15,
+  "rasioLahan": 2.0,
+  "waktu": {
+   "motor": {
+    "sekolah": 311,
+    "pasar": 471,
+    "faskes": 207,
+    "ibadah": 263
+   },
+   "mobil": {
+    "sekolah": 345,
+    "pasar": 538,
+    "faskes": 221,
+    "ibadah": 263
+   }
+  }
+ },
+ {
+  "id": "star-residence-3-sambiroto",
+  "nama": "Star Residence 3 Sambiroto",
+  "developer": "PT Aksan Karya Guna Mandiri Jaya",
+  "kecamatan": "Sooko",
+  "desa": "Sambiroto",
+  "harga": 150500000,
+  "latitude": -7.50776,
+  "longitude": 112.4125,
+  "luasBangunan": 30.0,
+  "luasLahan": 66.0,
+  "jarakPusatKm": 16.99,
+  "rasioLahan": 2.2,
+  "waktu": {
+   "motor": {
+    "sekolah": 285,
+    "pasar": 397,
+    "faskes": 516,
+    "ibadah": 174
+   },
+   "mobil": {
+    "sekolah": 375,
+    "pasar": 452,
+    "faskes": 549,
+    "ibadah": 174
+   }
+  }
+ },
+ {
+  "id": "perumahan-de-puri-kanigraha",
+  "nama": "Perumahan De Puri Kanigraha",
+  "developer": "PT Karya Athar Mentari",
+  "kecamatan": "Puri",
+  "desa": "Kebonagung",
+  "harga": 150500000,
+  "latitude": -7.5351,
+  "longitude": 112.46908,
+  "luasBangunan": 30.0,
+  "luasLahan": 60.0,
+  "jarakPusatKm": 10.95,
+  "rasioLahan": 2.0,
+  "waktu": {
+   "motor": {
+    "sekolah": 309,
+    "pasar": 867,
+    "faskes": 971,
+    "ibadah": 396
+   },
+   "mobil": {
+    "sekolah": 315,
+    "pasar": 958,
+    "faskes": 1087,
+    "ibadah": 396
+   }
+  }
+ },
+ {
+  "id": "mojo-hills",
+  "nama": "Mojo Hills",
+  "developer": "PT Maja Graha Mandiri",
+  "kecamatan": "Jetis",
+  "desa": "Banjarsari",
+  "harga": 150500000,
+  "latitude": -7.42381,
+  "longitude": 112.41891,
+  "luasBangunan": 30.0,
+  "luasLahan": 60.0,
+  "jarakPusatKm": 19.18,
+  "rasioLahan": 2.0,
+  "waktu": {
+   "motor": {
+    "sekolah": 841,
+    "pasar": 797,
+    "faskes": 797,
+    "ibadah": 607
+   },
+   "mobil": {
+    "sekolah": 1288,
+    "pasar": 797,
+    "faskes": 836,
+    "ibadah": 607
+   }
+  }
+ },
+ {
+  "id": "griya-tegal-asri",
+  "nama": "Griya Tegal Asri",
+  "developer": "PT Griya Mapan Sentosa Bersama",
+  "kecamatan": "Sooko",
+  "desa": "Ngingasrembyong",
+  "harga": 150500000,
+  "latitude": -7.46339,
+  "longitude": 112.40605,
+  "luasBangunan": 30.0,
+  "luasLahan": 60.0,
+  "jarakPusatKm": 18.59,
+  "rasioLahan": 2.0,
+  "waktu": {
+   "motor": {
+    "sekolah": 222,
+    "pasar": 431,
+    "faskes": 283,
+    "ibadah": 194
+   },
+   "mobil": {
+    "sekolah": 231,
+    "pasar": 495,
+    "faskes": 290,
+    "ibadah": 194
+   }
+  }
+ },
+ {
+  "id": "perumahan-sumberejo-asri",
+  "nama": "Perumahan Sumberejo Asri",
+  "developer": "Duta Wulyo",
+  "kecamatan": "Mojosari",
+  "desa": "Sumbertanggul",
+  "harga": 150500000,
+  "latitude": -7.52636,
+  "longitude": 112.52917,
+  "luasBangunan": 30.0,
+  "luasLahan": 60.0,
+  "jarakPusatKm": 4.28,
+  "rasioLahan": 2.0,
+  "waktu": {
+   "motor": {
+    "sekolah": 257,
+    "pasar": 443,
+    "faskes": 412,
+    "ibadah": 184
+   },
+   "mobil": {
+    "sekolah": 283,
+    "pasar": 506,
+    "faskes": 455,
+    "ibadah": 184
+   }
+  }
+ },
+ {
+  "id": "grand-kencana-mojokerto",
+  "nama": "Grand Kencana Mojokerto",
+  "developer": "PT Bangun Griya Insani Sejahtera",
+  "kecamatan": "Sooko",
+  "desa": "Kedungmaling",
+  "harga": 150500000,
+  "latitude": -7.51291,
+  "longitude": 112.41263,
+  "luasBangunan": 30.0,
+  "luasLahan": 66.0,
+  "jarakPusatKm": 16.95,
+  "rasioLahan": 2.2,
+  "waktu": {
+   "motor": {
+    "sekolah": 317,
+    "pasar": 426,
+    "faskes": 450,
+    "ibadah": 227
+   },
+   "mobil": {
+    "sekolah": 403,
+    "pasar": 480,
+    "faskes": 479,
+    "ibadah": 227
+   }
+  }
+ },
+ {
+  "id": "perum-japanan-indah-2",
+  "nama": "Perum Japanan Indah 2",
+  "developer": "PT Diryan Putra Group",
+  "kecamatan": "Kemlagi",
+  "desa": "Japanan",
+  "harga": 150500000,
+  "latitude": -7.41418,
+  "longitude": 112.38892,
+  "luasBangunan": 30.0,
+  "luasLahan": 60.0,
+  "jarakPusatKm": 22.57,
+  "rasioLahan": 2.0,
+  "waktu": {
+   "motor": {
+    "sekolah": 600,
+    "pasar": 556,
+    "faskes": 448,
+    "ibadah": 519
+   },
+   "mobil": {
+    "sekolah": 618,
+    "pasar": 560,
+    "faskes": 487,
+    "ibadah": 519
+   }
+  }
+ },
+ {
+  "id": "perum-japanan-indah-1",
+  "nama": "Perum Japanan Indah 1",
+  "developer": "PT Diryan Putra Group",
+  "kecamatan": "Kemlagi",
+  "desa": "Japanan",
+  "harga": 150500000,
+  "latitude": -7.41371,
+  "longitude": 112.38898,
+  "luasBangunan": 30.0,
+  "luasLahan": 60.0,
+  "jarakPusatKm": 22.59,
+  "rasioLahan": 2.0,
+  "waktu": {
+   "motor": {
+    "sekolah": 577,
+    "pasar": 532,
+    "faskes": 424,
+    "ibadah": 492
+   },
+   "mobil": {
+    "sekolah": 595,
+    "pasar": 536,
+    "faskes": 463,
+    "ibadah": 492
+   }
+  }
+ },
+ {
+  "id": "perum-mojogebang-indah",
+  "nama": "Perum Mojogebang Indah",
+  "developer": "PT Diryan Putra Group",
+  "kecamatan": "Kemlagi",
+  "desa": "Mojogebang",
+  "harga": 150500000,
+  "latitude": -7.41276,
+  "longitude": 112.36263,
+  "luasBangunan": 30.0,
+  "luasLahan": 72.0,
+  "jarakPusatKm": 25.19,
+  "rasioLahan": 2.4,
+  "waktu": {
+   "motor": {
+    "sekolah": 214,
+    "pasar": 497,
+    "faskes": 290,
+    "ibadah": 303
+   },
+   "mobil": {
+    "sekolah": 228,
+    "pasar": 497,
+    "faskes": 317,
+    "ibadah": 303
+   }
+  }
+ },
+ {
+  "id": "abadi-megah-regency-3",
+  "nama": "Abadi Megah Regency 3",
+  "developer": "PT Abadi Megah Jaya",
+  "kecamatan": "Jetis",
+  "desa": "Mlirip",
+  "harga": 150500000,
+  "latitude": -7.44363,
+  "longitude": 112.45276,
+  "luasBangunan": 30.0,
+  "luasLahan": 60.0,
+  "jarakPusatKm": 14.85,
+  "rasioLahan": 2.0,
+  "waktu": {
+   "motor": {
+    "sekolah": 235,
+    "pasar": 187,
+    "faskes": 311,
+    "ibadah": 85
+   },
+   "mobil": {
+    "sekolah": 269,
+    "pasar": 232,
+    "faskes": 377,
+    "ibadah": 85
+   }
+  }
+ },
+ {
+  "id": "djawakarya-residence",
+  "nama": "Djawakarya Residence",
+  "developer": "PT Djawa Karya Abadi",
+  "kecamatan": "Gedeg",
+  "desa": "Bandung",
+  "harga": 150500000,
+  "latitude": -7.43853,
+  "longitude": 112.39519,
+  "luasBangunan": 30.0,
+  "luasLahan": 60.0,
+  "jarakPusatKm": 20.71,
+  "rasioLahan": 2.0,
+  "waktu": {
+   "motor": {
+    "sekolah": 574,
+    "pasar": 570,
+    "faskes": 567,
+    "ibadah": 516
+   },
+   "mobil": {
+    "sekolah": 1319,
+    "pasar": 586,
+    "faskes": 620,
+    "ibadah": 516
+   }
+  }
+ },
+ {
+  "id": "griya-sooko-asri",
+  "nama": "Griya Sooko Asri",
+  "developer": "PT Jokam Griya Barokah",
+  "kecamatan": "Sooko",
+  "desa": "Tempuran",
+  "harga": 150500000,
+  "latitude": -7.46965,
+  "longitude": 112.39757,
+  "luasBangunan": 30.0,
+  "luasLahan": 66.0,
+  "jarakPusatKm": 19.29,
+  "rasioLahan": 2.2,
+  "waktu": {
+   "motor": {
+    "sekolah": 319,
+    "pasar": 479,
+    "faskes": 183,
+    "ibadah": 264
+   },
+   "mobil": {
+    "sekolah": 357,
+    "pasar": 550,
+    "faskes": 195,
+    "ibadah": 264
+   }
+  }
+ },
+ {
+  "id": "perum-pucuk-indah",
+  "nama": "Perum Pucuk Indah",
+  "developer": "PT Diryan Putra Group",
+  "kecamatan": "Dawarblandong",
+  "desa": "Pucuk",
+  "harga": 150500000,
+  "latitude": -7.33961,
+  "longitude": 112.44266,
+  "luasBangunan": 30.0,
+  "luasLahan": 60.0,
+  "jarakPusatKm": 23.83,
+  "rasioLahan": 2.0,
+  "waktu": {
+   "motor": {
+    "sekolah": 623,
+    "pasar": 849,
+    "faskes": 617,
+    "ibadah": 558
+   },
+   "mobil": {
+    "sekolah": 673,
+    "pasar": 920,
+    "faskes": 667,
+    "ibadah": 558
+   }
+  }
+ },
+ {
+  "id": "grand-emerald-puri",
+  "nama": "Grand Emerald Puri",
+  "developer": "PT Sinar Surya Perkasa Jaya",
+  "kecamatan": "Puri",
+  "desa": "Puri",
+  "harga": 150,
+  "latitude": -7.54167,
+  "longitude": 112.44588,
+  "luasBangunan": 30.0,
+  "luasLahan": 60.0,
+  "jarakPusatKm": 13.6,
+  "rasioLahan": 2.0,
+  "waktu": {
+   "motor": {
+    "sekolah": 51,
+    "pasar": 636,
+    "faskes": 575,
+    "ibadah": 26
+   },
+   "mobil": {
+    "sekolah": 55,
+    "pasar": 677,
+    "faskes": 627,
+    "ibadah": 26
+   }
+  }
+ },
+ {
+  "id": "green-star-residence-brangkal",
+  "nama": "Green Star Residence Brangkal",
+  "developer": "PT Aksan Karya Guna Mandiri Jaya",
+  "kecamatan": "Sooko",
+  "desa": "Brangkal",
+  "harga": 150500000,
+  "latitude": -7.51836,
+  "longitude": 112.41977,
+  "luasBangunan": 30.0,
+  "luasLahan": 66.0,
+  "jarakPusatKm": 16.17,
+  "rasioLahan": 2.2,
+  "waktu": {
+   "motor": {
+    "sekolah": 392,
+    "pasar": 378,
+    "faskes": 314,
+    "ibadah": 129
+   },
+   "mobil": {
+    "sekolah": 418,
+    "pasar": 393,
+    "faskes": 338,
+    "ibadah": 129
+   }
+  }
+ },
+ {
+  "id": "griya-tegal-indah",
+  "nama": "Griya Tegal Indah",
+  "developer": "PT Griya Mapan Sentosa Bersama",
+  "kecamatan": "Gedeg",
+  "desa": "Sidoharjo",
+  "harga": 150500000,
+  "latitude": -7.45338,
+  "longitude": 112.43113,
+  "luasBangunan": 30.0,
+  "luasLahan": 60.0,
+  "jarakPusatKm": 16.42,
+  "rasioLahan": 2.0,
+  "waktu": {
+   "motor": {
+    "sekolah": 379,
+    "pasar": 417,
+    "faskes": 424,
+    "ibadah": 174
+   },
+   "mobil": {
+    "sekolah": 498,
+    "pasar": 446,
+    "faskes": 472,
+    "ibadah": 174
+   }
+  }
+ },
+ {
+  "id": "griya-permata-insani-mojokerto",
+  "nama": "Griya Permata Insani Mojokerto",
+  "developer": "PT Cipta Griya Insani",
+  "kecamatan": "Sooko",
+  "desa": "Ngingasrembyong",
+  "harga": 150500000,
+  "latitude": -7.46583,
+  "longitude": 112.40583,
+  "luasBangunan": 30.0,
+  "luasLahan": 66.0,
+  "jarakPusatKm": 18.54,
+  "rasioLahan": 2.2,
+  "waktu": {
+   "motor": {
+    "sekolah": 244,
+    "pasar": 412,
+    "faskes": 304,
+    "ibadah": 260
+   },
+   "mobil": {
+    "sekolah": 255,
+    "pasar": 474,
+    "faskes": 314,
+    "ibadah": 260
+   }
+  }
+ },
+ {
+  "id": "banjarsari-indah",
+  "nama": "Banjarsari Indah",
+  "developer": "PT Diryan Putra Group",
+  "kecamatan": "Jetis",
+  "desa": "Banjarsari",
+  "harga": 150500000,
+  "latitude": -7.42545,
+  "longitude": 112.40872,
+  "luasBangunan": 30.0,
+  "luasLahan": 72.0,
+  "jarakPusatKm": 20.05,
+  "rasioLahan": 2.4,
+  "waktu": {
+   "motor": {
+    "sekolah": 882,
+    "pasar": 660,
+    "faskes": 630,
+    "ibadah": 570
+   },
+   "mobil": {
+    "sekolah": 1357,
+    "pasar": 660,
+    "faskes": 668,
+    "ibadah": 570
+   }
+  }
+ },
+ {
+  "id": "perumahan-mentari-ngabar",
+  "nama": "Perumahan Mentari Ngabar",
+  "developer": "PT Karya Athar Mentari",
+  "kecamatan": "Jetis",
+  "desa": "Ngabar",
+  "harga": 150500000,
+  "latitude": -7.41979,
+  "longitude": 112.43491,
+  "luasBangunan": 30.0,
+  "luasLahan": 60.0,
+  "jarakPusatKm": 17.97,
+  "rasioLahan": 2.0,
+  "waktu": {
+   "motor": {
+    "sekolah": 445,
+    "pasar": 526,
+    "faskes": 690,
+    "ibadah": 444
+   },
+   "mobil": {
+    "sekolah": 480,
+    "pasar": 522,
+    "faskes": 755,
+    "ibadah": 444
+   }
+  }
+ },
+ {
+  "id": "griya-madureso-asri",
+  "nama": "Griya Madureso Asri",
+  "developer": "PT Jokam Griya Barokah",
+  "kecamatan": "Dawarblandong",
+  "desa": "Madureso",
+  "harga": 150500000,
+  "latitude": -7.34371,
+  "longitude": 112.47632,
+  "luasBangunan": 30.0,
+  "luasLahan": 66.0,
+  "jarakPusatKm": 21.51,
+  "rasioLahan": 2.2,
+  "waktu": {
+   "motor": {
+    "sekolah": 454,
+    "pasar": 1111,
+    "faskes": 537,
+    "ibadah": 208
+   },
+   "mobil": {
+    "sekolah": 516,
+    "pasar": 1226,
+    "faskes": 607,
+    "ibadah": 208
+   }
+  }
+ },
+ {
+  "id": "sabda-alam-regency",
+  "nama": "Sabda Alam Regency",
+  "developer": "PT Condro Bimo Prakoso",
+  "kecamatan": "Gedeg",
+  "desa": "Sidoharjo",
+  "harga": 150500000,
+  "latitude": -7.44255,
+  "longitude": 112.434,
+  "luasBangunan": 30.0,
+  "luasLahan": 60.0,
+  "jarakPusatKm": 16.69,
+  "rasioLahan": 2.0,
+  "waktu": {
+   "motor": {
+    "sekolah": 562,
+    "pasar": 360,
+    "faskes": 539,
+    "ibadah": 300
+   },
+   "mobil": {
+    "sekolah": 624,
+    "pasar": 428,
+    "faskes": 601,
+    "ibadah": 300
+   }
+  }
+ }
+]

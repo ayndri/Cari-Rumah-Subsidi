@@ -1,0 +1,17 @@
+# Salin berkas ini menjadi .env.local (di folder webgis), isi nilainya, lalu jalankan ulang
+# `npm run dev`. Berkas .env.local tidak ikut ke git dan tidak pernah dikirim ke peramban.
+
+# Basis data Neon (PostgreSQL + PostGIS), connection string yang pooled.
+DATABASE_URL=
+
+# TomTom: menelusuri fasilitas terdekat untuk perumahan baru, pencarian lokasi tempat kerja,
+# dan waktu tempuh ke tempat kerja.
+TOMTOM_API_KEY=
+
+# Google Routes API: waktu tempuh sepeda motor dan mobil untuk perumahan yang ditambahkan admin.
+GOOGLE_MAPS_API_KEY=
+
+# Login panel admin. ADMIN_SECRET minimal 16 karakter acak.
+ADMIN_USERNAME=admin
+ADMIN_PASSWORD=
+ADMIN_SECRET=
