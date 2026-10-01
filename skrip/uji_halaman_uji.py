@@ -45,6 +45,7 @@ LABEL = {"abaikan": "Tidak penting", "penting": "Penting", "paling": "Paling pen
 RESPONDEN = [
     {"nama": "UJI-OTOMATIS-1", "moda": "Sepeda motor", "ubah": {}},
     {"nama": "UJI-OTOMATIS-2", "moda": "Mobil",
+     "agama": "kristen",
      "ubah": {"Dekat fasilitas kesehatan": "paling", "Dekat pasar": "abaikan", "Dekat tempat ibadah": "penting"}},
     {"nama": "UJI-OTOMATIS-3", "moda": "Sepeda motor",
      "ubah": {"Tanahnya luas": "paling", "Rumahnya luas": "paling", "Halamannya lega": "penting",
@@ -92,6 +93,9 @@ def atur_cari(pg, r):
     pg.click(f"button:has-text('{r['moda']}')")
     if any(k in r["ubah"] for k in ("Dekat pusat kabupaten", "Halamannya lega", "Dekat tempat ibadah")):
         pg.click("summary:has-text('Tambah hal lain')")
+    if r.get("agama"):
+        # Tempat ibadah terkunci sampai agama dipilih.
+        pg.locator("li", has=pg.locator("p:text-is('Dekat tempat ibadah')")).locator("select").select_option(r["agama"])
     for nama, t in r["ubah"].items():
         pg.locator("li", has=pg.locator(f"p:text-is('{nama}')")).locator(f"button:text-is('{LABEL[t]}')").click()
 
@@ -137,7 +141,7 @@ with sync_playwright() as pw:
         cek = pg.locator("ol.list-decimal li").all_inner_texts()
         catat(f"{r['nama']} lima teratas /cari = /uji", cek == dilihat, f"{dilihat}")
 
-        py = peringkat("motor" if r["moda"] == "Sepeda motor" else "mobil", tingkat_dari(r))
+        py = peringkat("motor" if r["moda"] == "Sepeda motor" else "mobil", tingkat_dari(r), agama=r.get("agama"))
         nama_py = [p["nama"] for p in py[:5]]
         catat(f"{r['nama']} lima teratas /cari = Python", [x.lower() for x in dilihat] == [x.lower() for x in nama_py],
               f"{nama_py}")
@@ -187,12 +191,17 @@ with sync_playwright() as pw:
     catat("Admin menampilkan semua jawaban uji", all(pg.locator(f"tbody td:first-child:text-is('{i}')").count() == 1 for i in id_uji))
     catat("Admin: layar = server", pg.locator("td:text-is('Periksa')").count() == 0)
     csv = pg.request.get(BASE + "/api/admin/uji?format=csv").text()
+    # Tabel juga memuat jawaban responden sungguhan; yang diolah di sini hanya baris uji otomatis,
+    # dan hasilnya ditulis ke .next supaya hasil_uat.json milik responden sungguhan tidak tertimpa.
+    baris_csv = csv.splitlines()
+    csv_uji = "\n".join([baris_csv[0]] + [b for b in baris_csv[1:] if "UJI-OTOMATIS" in b]) + "\n"
     jalur = Path(sys.argv[2]) if len(sys.argv) > 2 else AKAR / ".next" / "uji-ekspor.csv"
-    jalur.write_text(csv, encoding="utf-8")
-    keluar = subprocess.run([sys.executable, "olah_uat.py", str(jalur)], cwd=UAT, capture_output=True, text=True,
-                            encoding="utf-8")
-    ring = json.loads((UAT / "hasil_uat.json").read_text(encoding="utf-8"))["ringkasan"]
-    (UAT / "hasil_uat.json").unlink()  # hasil dari responden buatan tidak boleh tertinggal
+    jalur.write_text(csv_uji, encoding="utf-8")
+    hasil_uji = AKAR / ".next" / "hasil-uji-otomatis.json"
+    keluar = subprocess.run([sys.executable, "olah_uat.py", str(jalur), str(hasil_uji)], cwd=UAT,
+                            capture_output=True, text=True, encoding="utf-8")
+    ring = json.loads(hasil_uji.read_text(encoding="utf-8"))["ringkasan"]
+    hasil_uji.unlink()
     catat("olah_uat.py mengolah semua baris", ring["n"] == len(id_uji) and ring["dilewati"] == 0, f"n={ring['n']}")
     catat("Urutan sistem website = Python", ring["urutan_sistem_cocok_dengan_website"] == len(id_uji))
     catat("Peringkat 1 website = Python", ring["peringkat1_cocok_dengan_layar"] == len(id_uji))
@@ -204,7 +213,7 @@ with sync_playwright() as pw:
         pg.locator("tbody tr", has=pg.locator(f"td:first-child:text-is('{i}')")).locator("button:has-text('Hapus')").click()
         pg.wait_for_timeout(1200)
     pg.goto(BASE + "/admin/uji")
-    catat("Jawaban uji terhapus", pg.locator("text=Belum ada jawaban.").count() == 1)
+    catat("Jawaban uji terhapus", all(pg.locator(f"tbody td:first-child:text-is('{i}')").count() == 0 for i in id_uji))
     br.close()
 
 lolos = sum(1 for _, ok, _ in hasil if ok)

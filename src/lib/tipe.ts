@@ -20,6 +20,12 @@ export type KunciKriteria =
  */
 export type Moda = "motor" | "mobil";
 
+/**
+ * Agama untuk kriteria tempat ibadah. Kriteria itu dihitung ke tempat ibadah terdekat dari
+ * agama yang dipilih pengguna, bukan ke tempat ibadah agama apa pun.
+ */
+export type Agama = "islam" | "kristen" | "katolik" | "hindu" | "buddha" | "konghucu";
+
 export type Kriteria = {
   kunci: KunciKriteria;
   nama: string;
@@ -36,6 +42,8 @@ export type Kriteria = {
   inti: boolean;
   /** Butuh pengguna menunjuk titik acuan di peta lebih dulu. */
   butuhTitikAcuan?: boolean;
+  /** Butuh pengguna memilih agamanya lebih dulu. */
+  butuhAgama?: boolean;
   /** Datanya belum dihitung untuk seluruh perumahan. */
   butuhData?: boolean;
   keterangan: string;

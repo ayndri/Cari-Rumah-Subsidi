@@ -1,6 +1,7 @@
 "use client";
 
-import type { Kriteria, KunciKriteria, TingkatPenting } from "@/lib/tipe";
+import { AGAMA } from "@/lib/data";
+import type { Agama, Kriteria, KunciKriteria, TingkatPenting } from "@/lib/tipe";
 
 /**
  * Pengguna hanya menjawab satu pertanyaan per baris: seberapa penting hal ini
@@ -28,12 +29,16 @@ function Baris({
   terkunci,
   catatan,
   onUbah,
+  agama,
+  onUbahAgama,
 }: {
   k: Kriteria;
   nilai: TingkatPenting;
   terkunci: boolean;
   catatan?: string;
   onUbah: (kunci: KunciKriteria, nilai: TingkatPenting) => void;
+  agama?: Agama | null;
+  onUbahAgama?: (agama: Agama | null) => void;
 }) {
   return (
     <li className="py-3">
@@ -46,6 +51,23 @@ function Baris({
         {k.nama}
       </p>
       {catatan && <p className="text-xs text-teks-redup">{catatan}</p>}
+      {k.butuhAgama && onUbahAgama && (
+        <label className="mt-1.5 flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-teks-redup">
+          Agamamu
+          <select
+            value={agama ?? ""}
+            onChange={(e) => onUbahAgama((e.target.value || null) as Agama | null)}
+            className="min-h-11 flex-1 rounded-[var(--radius-kecil)] border border-garis bg-permukaan px-2 text-sm text-teks sm:min-h-9"
+          >
+            <option value="">Pilih dulu</option>
+            {AGAMA.map((a) => (
+              <option key={a.nilai} value={a.nilai}>
+                {a.label} ({a.tempat})
+              </option>
+            ))}
+          </select>
+        </label>
+      )}
       <fieldset className="mt-1.5 grid grid-cols-3 gap-1 rounded-[var(--radius-kecil)] bg-permukaan-2 p-1">
         <legend className="sr-only">Seberapa penting {k.nama}</legend>
         {PILIHAN.map((p) => {
@@ -83,6 +105,8 @@ export default function PilihKepentingan({
   adaPerubahan,
   titikAcuanSiap,
   catatanTitikAcuan,
+  agama,
+  onUbahAgama,
 }: {
   semuaKriteria: Kriteria[];
   tingkat: Record<string, TingkatPenting>;
@@ -93,6 +117,9 @@ export default function PilihKepentingan({
   titikAcuanSiap?: boolean;
   /** Keterangan singkat di bawah nama kriteria yang butuh titik acuan. */
   catatanTitikAcuan?: string;
+  /** Agama untuk kriteria tempat ibadah; kriteria itu terkunci sampai agama dipilih. */
+  agama?: Agama | null;
+  onUbahAgama?: (agama: Agama | null) => void;
 }) {
   // Yang datanya belum ada sama sekali tidak ditampilkan; menyalakannya akan
   // mengosongkan daftar tanpa penjelasan.
@@ -105,9 +132,11 @@ export default function PilihKepentingan({
       key={k.kunci}
       k={k}
       nilai={tingkat[k.kunci] ?? (k.inti ? "penting" : "abaikan")}
-      terkunci={Boolean(k.butuhTitikAcuan) && !titikAcuanSiap}
-      catatan={k.butuhTitikAcuan ? catatanTitikAcuan : undefined}
+      terkunci={(Boolean(k.butuhTitikAcuan) && !titikAcuanSiap) || (Boolean(k.butuhAgama) && !agama)}
+      catatan={k.butuhTitikAcuan ? catatanTitikAcuan : k.butuhAgama && !agama ? "Pilih agamamu dulu." : undefined}
       onUbah={onUbah}
+      agama={agama}
+      onUbahAgama={onUbahAgama}
     />
   );
 

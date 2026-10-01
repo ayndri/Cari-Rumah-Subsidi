@@ -33,7 +33,7 @@ import fotoTeras from "@/assets/image/Pintu-Rumah-Subsidi-2.webp";
 const ANGKA = [
   { nilai: "84", satuan: "perumahan subsidi", dari: "Terdaftar di SiKumbang Tapera" },
   { nilai: "14", satuan: "kecamatan", dari: "Tersebar di Kabupaten Mojokerto" },
-  { nilai: "2.092", satuan: "titik fasilitas", dari: "1.466 sekolah, 180 pasar, 446 faskes" },
+  { nilai: "2.084", satuan: "titik fasilitas", dari: "1.466 sekolah, 172 pasar, 446 faskes" },
   { nilai: "0", satuan: "rupiah, tanpa daftar", dari: "Tidak ada data pribadi yang diminta" },
 ];
 
@@ -337,9 +337,9 @@ export default async function Beranda() {
 
           <Muncul jeda={120}>
             <p className="mx-auto mt-8 max-w-3xl leading-relaxed text-teks-redup sm:text-center">
-              Sistem sengaja menyajikan lima besar, bukan satu pemenang tunggal. Pengujian
-              menunjukkan urutan teratas bisa bergeser kalau kemacetan makin parah, sedangkan
-              lima besarnya jauh lebih bertahan.
+              Sistem sengaja menyajikan lima besar, bukan satu pemenang tunggal. Nilai tiga
+              perumahan teratas hampir sama, dan pengujian menunjukkan urutan teratas bisa
+              bergeser kalau waktu tempuh diambil dari layanan peta lain.
             </p>
           </Muncul>
         </section>

@@ -1,6 +1,7 @@
 import mentah from "@/data/perumahan.json";
-import faskesMentah from "@/data/faskes-tujuan.json";
-import type { Kriteria, Moda, Perumahan } from "./tipe";
+import tujuanMentah from "@/data/fasilitas-tujuan.json";
+import type { Agama, Kriteria, Moda, Perumahan } from "./tipe";
+import type { WaktuIbadah } from "./perubahan";
 import { barisKePerumahan } from "./perubahan";
 
 /**
@@ -27,8 +28,11 @@ type BarisMentah = {
   luasLahan: number;
   jarakPusatKm: number | null;
   rasioLahan: number | null;
-  /** Detik. Google Routes API, pola lalu lintas Senin 07.00 WIB. Ibadah dari OpenRouteService. */
-  waktu: Record<Moda, Waktu & { ibadah: number | null }>;
+  /**
+   * Detik. Google Routes API, pola lalu lintas Senin 07.00 WIB. Ibadah per agama dari TomTom
+   * Routing sepeda motor, waktu berangkat yang sama; moda mobil memakai nilai yang sama.
+   */
+  waktu: Record<Moda, Waktu & { ibadah: WaktuIbadah }>;
 };
 
 const BARIS = mentah as BarisMentah[];
@@ -118,7 +122,8 @@ export const KRITERIA: Kriteria[] = [
     benefit: false,
     bobotDasar: 0.09,
     inti: false,
-    keterangan: "Waktu tempuh ke rumah ibadah terdekat, agama apa pun",
+    butuhAgama: true,
+    keterangan: "Ke tempat ibadah terdekat sesuai agama yang kamu pilih",
   },
   {
     kunci: "tempatKerja",
@@ -164,17 +169,39 @@ export function semuaBaris(): PerumahanLengkap[] {
   return BARIS;
 }
 
-export type FaskesTujuan = { nama: string; jenis: string };
+export type FasilitasTujuan = { nama: string; jenis: string };
+type JenisTujuan = "sekolah" | "pasar" | "faskes";
 
-const FASKES_TUJUAN = faskesMentah as Record<string, FaskesTujuan>;
+const TUJUAN = tujuanMentah as Record<
+  string,
+  Partial<Record<JenisTujuan, FasilitasTujuan>> & { ibadah?: Partial<Record<Agama, string>> }
+>;
+const TITIK_ASLI = new Map(BARIS.map((p) => [p.id, [p.latitude, p.longitude]]));
 
 /**
- * Fasilitas kesehatan yang dipakai sebagai tujuan rute: yang tercepat dicapai dari
- * delapan kandidat terdekat, apa pun jenisnya. Dihasilkan `skrip/buat-faskes-tujuan.py`.
- * Perumahan tambahan dari panel admin tidak punya catatan ini.
+ * Fasilitas yang dipakai sebagai tujuan rute: yang tercepat dicapai dari delapan
+ * kandidat terdekat, apa pun jenisnya. Dihasilkan `skrip/buat-fasilitas-tujuan.py`.
+ *
+ * Tidak ada untuk perumahan tambahan dari panel admin, dan tidak dipakai lagi kalau
+ * admin memindahkan titiknya, karena waktunya dihitung ulang dan tujuannya bisa lain.
  */
-export function faskesTujuan(id: string): FaskesTujuan | undefined {
-  return FASKES_TUJUAN[id];
+export function fasilitasTujuan(
+  p: { id: string; latitude: number; longitude: number },
+  jenis: JenisTujuan,
+): FasilitasTujuan | undefined {
+  const asli = TITIK_ASLI.get(p.id);
+  if (!asli || asli[0] !== p.latitude || asli[1] !== p.longitude) return undefined;
+  return TUJUAN[p.id]?.[jenis];
+}
+
+/** Nama tempat ibadah tujuan untuk agama yang dipilih, dengan syarat yang sama. */
+export function ibadahTujuan(
+  p: { id: string; latitude: number; longitude: number },
+  agama: Agama,
+): string | undefined {
+  const asli = TITIK_ASLI.get(p.id);
+  if (!asli || asli[0] !== p.latitude || asli[1] !== p.longitude) return undefined;
+  return TUJUAN[p.id]?.ibadah?.[agama];
 }
 
 export function semuaId(): string[] {
@@ -207,6 +234,16 @@ export const KECAMATAN = [
   ...Array.from(new Set(BARIS.map((p) => p.kecamatan))).sort((a, b) =>
     a.localeCompare(b, "id"),
   ),
+];
+
+/** Urutan pilihan agama. Label tempat ibadahnya dipakai pada kartu dan halaman rincian. */
+export const AGAMA: { nilai: Agama; label: string; tempat: string }[] = [
+  { nilai: "islam", label: "Islam", tempat: "masjid atau musala" },
+  { nilai: "kristen", label: "Kristen", tempat: "gereja" },
+  { nilai: "katolik", label: "Katolik", tempat: "gereja Katolik" },
+  { nilai: "hindu", label: "Hindu", tempat: "pura" },
+  { nilai: "buddha", label: "Buddha", tempat: "vihara" },
+  { nilai: "konghucu", label: "Konghucu", tempat: "klenteng" },
 ];
 
 export const MODA: { nilai: Moda; label: string; keterangan: string }[] = [

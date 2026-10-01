@@ -3,10 +3,10 @@
 import { useRouter } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
 import Header from "@/components/Header";
-import { keMenit, MODA, semuaBaris } from "@/lib/data";
+import { AGAMA, keMenit, MODA, semuaBaris } from "@/lib/data";
 import { gabungBaris, PERUBAHAN_KOSONG, type Perubahan } from "@/lib/perubahan";
 import { KUNCI_SIMPAN, KUNCI_UJI, SEMUA_KECAMATAN, SIMPANAN_AWAL, type Simpanan } from "@/lib/pilihan";
-import type { Moda, TingkatPenting } from "@/lib/tipe";
+import type { Agama, Moda, TingkatPenting } from "@/lib/tipe";
 import {
   HARGA_SETARA,
   KANDIDAT,
@@ -39,6 +39,7 @@ type Keadaan = {
   mulai: number;
   moda: Moda | null;
   tingkat: Record<string, TingkatPenting> | null;
+  agama: Agama | null;
   limaDilihat: string[];
   sus: (number | null)[];
   percaya: (number | null)[];
@@ -55,6 +56,7 @@ const AWAL: Keadaan = {
   mulai: 0,
   moda: null,
   tingkat: null,
+  agama: null,
   limaDilihat: [],
   sus: SUS.map(() => null),
   percaya: PERCAYA.map(() => null),
@@ -159,6 +161,7 @@ export default function UjiPenerimaan() {
       alasan: k.alasan,
       moda: k.moda,
       tingkat: k.tingkat,
+      agama: k.agama,
       limaDilihat: k.limaDilihat,
       sus: k.sus as number[],
       percaya: k.percaya as number[],
@@ -210,7 +213,7 @@ export default function UjiPenerimaan() {
               } catch {}
               router.push("/cari");
             }}
-            benar={(moda, tingkat, lima) => ubah({ tahap: "nilai", moda, tingkat, limaDilihat: lima })}
+            benar={(moda, tingkat, agama, lima) => ubah({ tahap: "nilai", moda, tingkat, agama, limaDilihat: lima })}
           />
         )}
         {k.tahap === "nilai" && <Nilai k={k} ubah={ubah} kirim={kirim} mengirim={mengirim} galat={galat} />}
@@ -365,8 +368,11 @@ function Kartu({ b, nomor, onKetuk }: { b: Baris; nomor: number | null; onKetuk:
     );
   }
   const waktu = (m: Moda, f: "sekolah" | "pasar" | "faskes" | "ibadah") => {
-    const d = p.waktu[m][f];
-    return typeof d === "number" ? `${keMenit(d)} menit` : "–";
+    // Kartu tidak tahu agama responden, jadi tempat ibadah ditampilkan yang terdekat dari
+    // agama apa pun, sama dengan kartu yang dipakai responden sebelum 1 Oktober 2026.
+    const w = p.waktu[m];
+    const d = f === "ibadah" ? Math.min(...Object.values(w.ibadah ?? {})) : w[f];
+    return Number.isFinite(d) ? `${keMenit(d)} menit` : "–";
   };
   return (
     <button
@@ -505,13 +511,19 @@ function Cek({
   cari: Simpanan | null;
   perubahan: Perubahan;
   kembali: () => void;
-  benar: (moda: Moda, tingkat: Record<string, TingkatPenting>, lima: string[]) => void;
+  benar: (moda: Moda, tingkat: Record<string, TingkatPenting>, agama: Agama | null, lima: string[]) => void;
 }) {
   const s = cari ?? SIMPANAN_AWAL;
+  const agama = s.agama ?? null;
+  // Sama dengan halaman cari: tempat ibadah tidak dihitung selama agama belum dipilih.
   const tingkat = Object.fromEntries(
-    KRITERIA_UJI.map((k) => [k.kunci, (s.tingkat[k.kunci] ?? "abaikan") as TingkatPenting]),
+    KRITERIA_UJI.map((k) => [
+      k.kunci,
+      (k.butuhAgama && !agama ? "abaikan" : (s.tingkat[k.kunci] ?? "abaikan")) as TingkatPenting,
+    ]),
   );
-  const lima = peringkatUntuk(s.moda, tingkat, perubahan).slice(0, 5).map((b) => b.perumahan.nama);
+  const lima = peringkatUntuk(s.moda, tingkat, perubahan, agama).slice(0, 5).map((b) => b.perumahan.nama);
+  const namaAgama = AGAMA.find((a) => a.nilai === agama)?.label;
   const masalah: string[] = [];
   if (s.kecamatan !== SEMUA_KECAMATAN) masalah.push(`Kecamatan masih ${s.kecamatan}. Kembalikan ke Semua Kecamatan.`);
   if (s.tempatKerja) masalah.push("Tempat kerja masih terisi. Hapus dulu tempat kerjanya.");
@@ -532,6 +544,7 @@ function Cek({
             <dt className="text-teks-redup">{k.nama}</dt>
             <dd className={tingkat[k.kunci] === "abaikan" ? "text-teks-redup" : "font-medium"}>
               {LABEL_TINGKAT[tingkat[k.kunci]]}
+              {k.butuhAgama && tingkat[k.kunci] !== "abaikan" && namaAgama && ` (${namaAgama})`}
             </dd>
           </div>
         ))}
@@ -549,7 +562,7 @@ function Cek({
       )}
 
       <div className="mt-5 flex flex-wrap gap-3">
-        <button type="button" disabled={masalah.length > 0} className={tombolUtama} onClick={() => benar(s.moda, tingkat, lima)}>
+        <button type="button" disabled={masalah.length > 0} className={tombolUtama} onClick={() => benar(s.moda, tingkat, tingkat.ibadah === "abaikan" ? null : agama, lima)}>
           Benar, lanjut ke Bagian C
         </button>
         <button type="button" className={tombolKedua} onClick={kembali}>

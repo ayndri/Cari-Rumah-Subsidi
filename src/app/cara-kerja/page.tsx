@@ -24,7 +24,7 @@ const SUMBER = [
   {
     apa: "Titik sekolah, pasar, dan fasilitas kesehatan",
     dari: "OpenStreetMap",
-    catatan: "1.466 sekolah, 180 pasar, 446 fasilitas kesehatan, lewat Overpass API",
+    catatan: "1.466 sekolah, 172 pasar, 446 fasilitas kesehatan, lewat Overpass API; delapan titik yang salah tag sebagai pasar (bengkel, toko pakaian, toko elektronik) dibuang",
   },
   {
     apa: "Waktu tempuh sepeda motor dan mobil",
@@ -229,9 +229,9 @@ export default function CaraKerja() {
                   Kenapa lima besar, bukan satu
                 </h2>
                 <p className="mt-3 leading-relaxed text-teks-redup">
-                  Waktu tempuh yang dipakai sudah memuat pola lalu lintas Senin pagi. Kalau
-                  kemacetan dibuat dua kali lebih parah di sekitar pusat kabupaten, peringkat
-                  pertama bisa berganti, sedangkan lima besarnya jauh lebih bertahan. Karena itu sistem menyajikan lima, dan tidak mengklaim
+                  Nilai tiga perumahan teratas hampir sama. Peringkat pertama juga bisa
+                  berganti kalau waktu tempuh diambil dari layanan peta lain atau tanpa pola
+                  lalu lintas Senin pagi. Karena itu sistem menyajikan lima, dan tidak mengklaim
                   satu perumahan sebagai yang terbaik mutlak.
                 </p>
               </div>
@@ -268,8 +268,10 @@ export default function CaraKerja() {
                     dibuka, jadi angkanya bisa bergeser sedikit.
                   </li>
                   <li>
-                    Waktu ke tempat ibadah masih memakai rute mobil dari OpenRouteService,
-                    karena Google baru dijalankan untuk tiga fasilitas inti.
+                    Waktu ke tempat ibadah dihitung ke tempat ibadah agamamu dengan rute
+                    sepeda motor TomTom, bukan Google. Data OpenStreetMap jauh lebih lengkap
+                    untuk masjid daripada gereja, pura, vihara, dan klenteng, dan gereja yang
+                    tidak mencantumkan denominasi dianggap gereja Kristen.
                   </li>
                   <li>
                     Foto di situs ini rumah subsidi sungguhan, tapi bukan foto perumahan

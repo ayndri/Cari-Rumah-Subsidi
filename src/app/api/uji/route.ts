@@ -24,7 +24,7 @@ export async function POST(request: Request) {
 
   try {
     const pr = await bacaPerubahan();
-    const sistem = hasilSistem(hasil.isi.moda, hasil.isi.tingkat, pr);
+    const sistem = hasilSistem(hasil.isi.moda, hasil.isi.tingkat, pr, hasil.isi.agama);
     if (Object.values(sistem.peringkatPenuh).some((p) => p < 0)) {
       return NextResponse.json(
         { pesan: "Ada perumahan kandidat yang sedang dinonaktifkan admin. Hubungi peneliti." },

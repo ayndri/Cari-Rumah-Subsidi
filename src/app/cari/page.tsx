@@ -6,12 +6,13 @@ import PilihKepentingan from "@/components/PilihKepentingan";
 import CariTempatKerja from "@/components/CariTempatKerja";
 import dynamic from "next/dynamic";
 import HasilRekomendasi, { TabelUrutan } from "@/components/HasilRekomendasi";
-import { KECAMATAN, KRITERIA, MODA, semuaBaris } from "@/lib/data";
+import { AGAMA, KECAMATAN, KRITERIA, MODA, semuaBaris } from "@/lib/data";
 import { bobotDariAHP, bobotDariKepentingan, hitungPeringkat } from "@/lib/perangkingan";
 import { barisKePerumahan, gabungBaris, kriteriaBerlaku, PERUBAHAN_KOSONG, type Perubahan } from "@/lib/perubahan";
 import { KUNCI_SIMPAN, SEMUA_KECAMATAN, TINGKAT_AWAL, type Simpanan } from "@/lib/pilihan";
 import BilahUji from "@/components/BilahUji";
 import type {
+  Agama,
   KunciKriteria,
   Moda,
   StatusData,
@@ -96,6 +97,7 @@ export default function CariRumah() {
 
   const [tempatKerja, setTempatKerja] = useState<TempatKerja | null>(null);
   const [waktuKerja, setWaktuKerja] = useState<WaktuKerja | null>(null);
+  const [agama, setAgama] = useState<Agama | null>(null);
   const [menghitungKerja, setMenghitungKerja] = useState(false);
   const [galatKerja, setGalatKerja] = useState("");
   // Kalau pengguna mengganti lokasi sebelum hitungan lama selesai, jawaban lama dibuang.
@@ -121,6 +123,7 @@ export default function CariRumah() {
         idTerpilih: null,
         tempatKerja: null,
         waktuKerja: null,
+        agama: null,
       };
       try {
         sessionStorage.setItem(KUNCI_SIMPAN, JSON.stringify(pilihanBaru));
@@ -139,6 +142,7 @@ export default function CariRumah() {
       setIdTerpilih(s.idTerpilih);
       setTempatKerja(s.waktuKerja ? s.tempatKerja : null);
       setWaktuKerja(s.tempatKerja ? s.waktuKerja : null);
+      setAgama(AGAMA.some((a) => a.nilai === s.agama) ? (s.agama as Agama) : null);
     }
     // Peragaan untuk penguji: /cari?keadaan=memuat atau ?keadaan=gagal.
     // Tidak ada tombolnya di layar supaya pengunjung umum tidak bingung.
@@ -151,13 +155,13 @@ export default function CariRumah() {
 
   useEffect(() => {
     if (!siapSimpan) return;
-    const isi: Simpanan = { tingkat, moda, kecamatan, idTerpilih, tempatKerja, waktuKerja };
+    const isi: Simpanan = { tingkat, moda, kecamatan, idTerpilih, tempatKerja, waktuKerja, agama };
     try {
       sessionStorage.setItem(KUNCI_SIMPAN, JSON.stringify(isi));
     } catch {
       // Mode privat atau penyimpanan penuh: fitur ini dilewati tanpa mengganggu halaman.
     }
-  }, [siapSimpan, tingkat, moda, kecamatan, idTerpilih, tempatKerja, waktuKerja]);
+  }, [siapSimpan, tingkat, moda, kecamatan, idTerpilih, tempatKerja, waktuKerja, agama]);
 
   /** Waktu tempuh ke tempat kerja untuk moda yang sedang dipilih, kalau sudah ada. */
   const waktuKerjaModa = waktuKerja?.[moda] ?? null;
@@ -172,9 +176,11 @@ export default function CariRumah() {
     () =>
       kriteria.filter(
         (k) =>
-          (tingkat[k.kunci] ?? "abaikan") !== "abaikan" && (!k.butuhTitikAcuan || kerjaSiap),
+          (tingkat[k.kunci] ?? "abaikan") !== "abaikan" &&
+          (!k.butuhTitikAcuan || kerjaSiap) &&
+          (!k.butuhAgama || agama !== null),
       ),
-    [kriteria, tingkat, kerjaSiap],
+    [kriteria, tingkat, kerjaSiap, agama],
   );
 
   /**
@@ -196,8 +202,9 @@ export default function CariRumah() {
 
   /** Waktu tempuh berbeda antarmoda, jadi daftarnya disusun ulang saat moda diganti. */
   const semuaPerumahan = useMemo(
-    () => gabungBaris(semuaBaris(), perubahan).map((b) => barisKePerumahan(b, moda, waktuKerjaModa)),
-    [moda, waktuKerjaModa, perubahan],
+    () =>
+      gabungBaris(semuaBaris(), perubahan).map((b) => barisKePerumahan(b, moda, waktuKerjaModa, agama)),
+    [moda, waktuKerjaModa, perubahan, agama],
   );
 
   // Kecamatan dari data penelitian, ditambah kecamatan perumahan yang ditambahkan admin.
@@ -390,6 +397,12 @@ export default function CariRumah() {
               onUbah={ubahTingkat}
               onSetelUlang={() => setTingkat(TINGKAT_AWAL)}
               titikAcuanSiap={kerjaSiap}
+              agama={agama}
+              onUbahAgama={(a) => {
+                setAgama(a);
+                // Tanpa agama kriteria ini tidak bisa dihitung, jadi dimatikan sekalian.
+                if (!a) setTingkat((lama) => ({ ...lama, ibadah: "abaikan" }));
+              }}
               catatanTitikAcuan={
                 kerjaSiap && tempatKerja
                   ? `Dari ${tempatKerja.nama}`
@@ -441,6 +454,7 @@ export default function CariRumah() {
               onPilih={setIdTerpilih}
               onSetelUlangKecamatan={() => setKecamatan(SEMUA_KECAMATAN)}
               onCobaLagi={() => setStatus("siap")}
+              agama={agama}
             />
           </section>
 

@@ -63,6 +63,21 @@ def lima_besar(moda: str, kec: str | None = None) -> list[str]:
 
 
 SOOKO = sum(1 for r in rows if r["kecamatan"].lower() == "sooko")
+
+
+def _skor_teratas() -> tuple[str, str]:
+    X = np.array([[float(r["luas_bangunan_m2"]), float(r["luas_lahan_m2"])]
+                  + [float(r["waktu_%s_motor_g_s" % j]) for j in ("sekolah", "pasar", "faskes")] for r in rows])
+    s = topsis(X, W, B)["skor"]
+    i = int(np.argmax(s))
+    return rows[i]["nama_perumahan"], ("%.4f" % s[i]).replace(".", ",")
+
+
+NAMA_TERATAS, SKOR_TERATAS = _skor_teratas()
+_titik = json.loads((AKAR / "src" / "data" / "titik-fasilitas.json").read_text(encoding="utf-8"))
+_ibadah = json.loads((AKAR / "src" / "data" / "titik-ibadah.json").read_text(encoding="utf-8"))["titik"]
+TITIK = ["{:,}".format(len(_titik[j])).replace(",", ".") for j in ("sekolah", "pasar", "faskes")]
+TITIK_IBADAH = ["{:,}".format(_ibadah[a]).replace(",", ".") for a in ("islam", "kristen", "katolik", "hindu", "buddha", "konghucu")]
 HARGA_MIN = min(int(float(r["harga"])) for r in rows)
 hasil: list[dict] = []
 
@@ -149,9 +164,9 @@ try:
         pg.goto(BASE + "/admin/fasilitas")
         teks = pg.inner_text("main")
         foto(pg, "u6-admin-fasilitas.png")
-        ok = all(x in teks for x in ("1.466", "180", "446", "276"))
+        ok = all(x in teks for x in TITIK + TITIK_IBADAH)
         catat("U6-b", "Meninjau data (Admin)", "Membuka data fasilitas",
-              "Jumlah titik sama dengan Tabel 4.1", "1.466; 180; 446; 276" if ok else teks[:100], ok)
+              "Jumlah titik sama dengan Tabel 4.1", "; ".join(TITIK + TITIK_IBADAH) if ok else teks[:100], ok)
         pg.goto(BASE + "/admin/kriteria")
         teks = pg.inner_text("main")
         foto(pg, "u6-admin-kriteria.png", penuh=True)
@@ -210,9 +225,9 @@ try:
         pub.wait_for_url("**/perumahan/**", timeout=15000)
         teks = pub.inner_text("main")
         foto(pub, "u5-rincian.png", penuh=True)
-        ok = "Garden Mansion" in teks and "0,8518" in teks
+        ok = NAMA_TERATAS.lower() in teks.lower() and SKOR_TERATAS in teks
         catat("U5-a", "Melihat detail perumahan", "Membuka rincian peringkat pertama",
-              "Rincian Garden Mansion, skor 0,8518", "Judul dan skor tampil" if ok else teks[:100], ok)
+              "Rincian %s, skor %s" % (NAMA_TERATAS.title(), SKOR_TERATAS), "Judul dan skor tampil" if ok else teks[:100], ok)
         r = pub.goto(BASE + "/perumahan/tidak-ada")
         catat("U5-b", "Melihat detail perumahan", "Membuka alamat perumahan yang tidak ada",
               "Halaman tidak ditemukan (404)", "Kode %d" % r.status, r.status == 404)

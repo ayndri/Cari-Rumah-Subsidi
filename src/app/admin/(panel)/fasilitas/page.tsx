@@ -1,9 +1,22 @@
-/** Jumlah titik sama dengan Tabel 4.1 naskah dan `pengujian_metode/cache_titik_fasilitas.json`. */
+import titik from "@/data/titik-fasilitas.json";
+import ibadah from "@/data/titik-ibadah.json";
+import { AGAMA } from "@/lib/data";
+
+/**
+ * Jumlah titik dibaca dari berkas yang sama dengan perhitungan, sehingga selalu sama dengan
+ * Tabel 4.1 naskah. Delapan titik pasar yang salah tag di OpenStreetMap sudah dibuang
+ * (pengujian_metode/titik_pasar_dikecualikan.json).
+ */
+const OSM = "OpenStreetMap lewat Overpass API";
 const FASILITAS = [
-  { jenis: "Sekolah", jumlah: 1466, sumber: "OpenStreetMap lewat Overpass API" },
-  { jenis: "Pasar / perniagaan", jumlah: 180, sumber: "OpenStreetMap lewat Overpass API" },
-  { jenis: "Fasilitas kesehatan", jumlah: 446, sumber: "OpenStreetMap lewat Overpass API" },
-  { jenis: "Sarana peribadatan (kriteria tambahan)", jumlah: 276, sumber: "OpenStreetMap lewat Overpass API" },
+  { jenis: "Sekolah", jumlah: titik.sekolah.length, sumber: OSM },
+  { jenis: "Pasar / perniagaan", jumlah: titik.pasar.length, sumber: `${OSM}, 8 titik salah tag dibuang` },
+  { jenis: "Fasilitas kesehatan", jumlah: titik.faskes.length, sumber: OSM },
+  ...AGAMA.map((a) => ({
+    jenis: `Tempat ibadah ${a.label} (kriteria tambahan)`,
+    jumlah: (ibadah.titik as Record<string, number>)[a.nilai] ?? 0,
+    sumber: OSM,
+  })),
 ];
 const angka = new Intl.NumberFormat("id-ID");
 
@@ -17,7 +30,7 @@ export default function KelolaFasilitas() {
       <div>
         <h1 className="text-lg font-semibold">Data Fasilitas Umum</h1>
         <p className="mt-0.5 text-sm text-teks-redup">
-          {angka.format(total)} titik fasilitas, diambil Juni 2026
+          {angka.format(total)} titik fasilitas, diambil Juni 2026, tag diperiksa ulang 30 September 2026
         </p>
       </div>
 

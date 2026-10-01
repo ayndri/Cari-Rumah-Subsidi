@@ -1,4 +1,5 @@
 import Link from "next/link";
+import titik from "@/data/titik-fasilitas.json";
 import { KRITERIA } from "@/lib/data";
 import { barisAdmin } from "@/lib/dataAdmin";
 import { bacaPerubahan } from "@/lib/penyimpanan";
@@ -11,7 +12,7 @@ const satuDesimal = new Intl.NumberFormat("id-ID", { maximumFractionDigits: 1 })
 const tiga = new Intl.NumberFormat("id-ID", { minimumFractionDigits: 3, maximumFractionDigits: 3 });
 const waktu = new Intl.DateTimeFormat("id-ID", { dateStyle: "medium", timeStyle: "short", timeZone: "Asia/Jakarta" });
 
-const TITIK = { Sekolah: 1466, Perniagaan: 180, "Fasilitas kesehatan": 446 };
+const TITIK = { Sekolah: titik.sekolah.length, Perniagaan: titik.pasar.length, "Fasilitas kesehatan": titik.faskes.length };
 
 function median(v: number[]) {
   const s = [...v].sort((a, b) => a - b);

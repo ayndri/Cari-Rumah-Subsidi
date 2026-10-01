@@ -39,6 +39,9 @@ type BarisWaktu = { perumahan_id: string; moda: Moda; fasilitas: string; detik: 
 function waktuDari(rows: BarisWaktu[]) {
   const per = new Map<string, Record<Moda, WaktuModa>>();
   for (const r of rows) {
+    // Waktu ibadah per agama hanya ada di berkas data penelitian. Perumahan yang lokasinya
+    // dihitung ulang admin tidak punya nilainya, jadi baris ibadah di tabel diabaikan.
+    if (r.fasilitas === "ibadah") continue;
     const w = per.get(r.perumahan_id) ?? {
       motor: { sekolah: 0, pasar: 0, faskes: 0, ibadah: null },
       mobil: { sekolah: 0, pasar: 0, faskes: 0, ibadah: null },
@@ -124,7 +127,7 @@ function sisipWaktu(id: string, waktu: { motor: WaktuModa; mobil: WaktuModa }) {
   return MODA.flatMap((m) =>
     FASILITAS.map((f) => q`
       INSERT INTO waktu_tempuh (perumahan_id, moda, fasilitas, detik, layanan)
-      VALUES (${id}, ${m}, ${f}, ${waktu[m][f]}, ${f === "ibadah" ? "OpenRouteService" : "Google Routes API"})
+      VALUES (${id}, ${m}, ${f}, ${f === "ibadah" ? null : waktu[m][f]}, ${f === "ibadah" ? "TomTom Routing" : "Google Routes API"})
       ON CONFLICT (perumahan_id, moda, fasilitas) DO UPDATE SET detik = EXCLUDED.detik, layanan = EXCLUDED.layanan`),
   );
 }

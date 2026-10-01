@@ -1,4 +1,4 @@
-import type { Kriteria, KunciKriteria, Moda, Perumahan } from "./tipe";
+import type { Agama, Kriteria, KunciKriteria, Moda, Perumahan } from "./tipe";
 import type { PerumahanLengkap } from "./data";
 
 /**
@@ -12,7 +12,9 @@ import type { PerumahanLengkap } from "./data";
  * Berkas ini dipakai di peramban dan di server, jadi tidak boleh menyentuh sistem berkas.
  * Membaca dan menulis berkasnya ada di `penyimpanan.ts`.
  */
-export type WaktuModa = { sekolah: number; pasar: number; faskes: number; ibadah: number | null };
+/** Waktu ke tempat ibadah per agama; null untuk perumahan tambahan admin yang belum dihitung. */
+export type WaktuIbadah = Partial<Record<Agama, number>> | null;
+export type WaktuModa = { sekolah: number; pasar: number; faskes: number; ibadah: WaktuIbadah };
 
 /** Bagian yang boleh diubah admin. Lokasi dan waktu tempuh hanya berubah bersama-sama. */
 export type UbahanPerumahan = {
@@ -109,6 +111,7 @@ export function barisKePerumahan(
   p: PerumahanLengkap,
   moda: Moda,
   waktuKerja?: Record<string, number | null> | null,
+  agama?: Agama | null,
 ): Perumahan {
   return {
     id: p.id,
@@ -126,7 +129,7 @@ export function barisKePerumahan(
       faskes: p.waktu[moda].faskes,
       pusatKab: p.jarakPusatKm,
       halaman: p.rasioLahan,
-      ibadah: p.waktu[moda].ibadah,
+      ibadah: agama ? (p.waktu[moda].ibadah?.[agama] ?? null) : null,
       tempatKerja: waktuKerja?.[p.id] ?? null,
     },
   };

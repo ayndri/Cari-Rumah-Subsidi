@@ -2,13 +2,16 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import Header from "@/components/Header";
 import {
+  AGAMA,
   detailPerumahan,
-  faskesTujuan,
+  fasilitasTujuan,
+  ibadahTujuan,
   keMenit,
   KRITERIA,
   MODA,
   posisiDiAntaraSemua,
   semuaBaris,
+  type FasilitasTujuan,
   type PerumahanLengkap,
 } from "@/lib/data";
 import { bacaPerubahan } from "@/lib/penyimpanan";
@@ -63,9 +66,6 @@ export default async function DetailPerumahan({ params }: { params: Promise<{ id
   const asli = detailPerumahan(id) ?? pr.tambahan.find((t) => t.id === id);
   if (!asli || pr.nonaktif.includes(id)) notFound();
   const p = terapkanKeBaris(asli, pr);
-  // Kalau admin memindahkan titik perumahan, waktunya dihitung ulang dan tujuannya bisa lain.
-  const faskes =
-    p.latitude === asli.latitude && p.longitude === asli.longitude ? faskesTujuan(id) : undefined;
   const aktif = gabungBaris(semuaBaris(), pr);
 
   const kriteriaInti = KRITERIA.filter((k) => k.inti);
@@ -236,13 +236,7 @@ export default async function DetailPerumahan({ params }: { params: Promise<{ id
                       <tr key={t.kunci} className="border-b border-garis">
                         <td className="py-2.5 pr-3">
                           {t.label}
-                          {t.kunci === "faskes" && faskes && (
-                            <span className="mt-0.5 block text-xs text-teks-redup">
-                              {faskes.nama}
-                              {!faskes.nama.toLowerCase().includes(faskes.jenis.toLowerCase()) &&
-                                ` · ${faskes.jenis}`}
-                            </span>
-                          )}
+                          <NamaTujuan tujuan={fasilitasTujuan(p, t.kunci)} />
                         </td>
                         {MODA.map((m) => (
                           <td
@@ -268,6 +262,34 @@ export default async function DetailPerumahan({ params }: { params: Promise<{ id
                   </tbody>
                 </table>
               </div>
+
+              {p.waktu.motor.ibadah && (
+                <>
+                  <h3 className="mt-5 text-sm font-semibold">Tempat ibadah terdekat menurut agama</h3>
+                  <ul className="mt-2 flex flex-col divide-y divide-garis border-y border-garis text-sm">
+                    {AGAMA.map((a) => {
+                      const d = p.waktu.motor.ibadah?.[a.nilai];
+                      if (typeof d !== "number") return null;
+                      return (
+                        <li key={a.nilai} className="flex items-baseline justify-between gap-3 py-2">
+                          <span className="min-w-0">
+                            {a.label}
+                            <span className="block text-xs break-words text-teks-redup">
+                              {ibadahTujuan(p, a.nilai) ?? a.tempat}
+                            </span>
+                          </span>
+                          <span className="shrink-0 font-medium tabular-nums">{keMenit(d)} menit</span>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                  <p className="mt-2 text-xs leading-relaxed text-teks-redup">
+                    Sepeda motor, rute TomTom pada pola lalu lintas Senin pukul 07.00. Data tempat
+                    ibadah dari OpenStreetMap; gereja yang tidak mencantumkan denominasi dianggap
+                    gereja Kristen.
+                  </p>
+                </>
+              )}
 
               <p className="mt-3 text-sm leading-relaxed text-teks-redup">
                 Fasilitas kesehatan yang dihitung adalah yang paling cepat dicapai, apa pun
@@ -328,5 +350,18 @@ export default async function DetailPerumahan({ params }: { params: Promise<{ id
         </p>
       </main>
     </div>
+  );
+}
+
+/** Nama fasilitas tujuan; jenisnya ditambahkan kalau belum tersebut di nama. */
+function NamaTujuan({ tujuan }: { tujuan: FasilitasTujuan | undefined }) {
+  if (!tujuan) return null;
+  const nama = tujuan.nama.toLowerCase();
+  const sebut = tujuan.jenis.split("/").some((j) => nama.includes(j.toLowerCase()));
+  return (
+    <span className="mt-0.5 block text-xs text-teks-redup">
+      {tujuan.nama}
+      {!sebut && ` · ${tujuan.jenis}`}
+    </span>
   );
 }

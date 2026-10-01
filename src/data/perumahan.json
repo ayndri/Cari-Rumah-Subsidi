@@ -15,15 +15,29 @@
   "waktu": {
    "motor": {
     "sekolah": 439,
-    "pasar": 573,
+    "pasar": 711,
     "faskes": 581,
-    "ibadah": 197
+    "ibadah": {
+     "islam": 345,
+     "kristen": 828,
+     "katolik": 2298,
+     "hindu": 1212,
+     "buddha": 825,
+     "konghucu": 825
+    }
    },
    "mobil": {
     "sekolah": 504,
-    "pasar": 649,
+    "pasar": 865,
     "faskes": 676,
-    "ibadah": 197
+    "ibadah": {
+     "islam": 345,
+     "kristen": 828,
+     "katolik": 2298,
+     "hindu": 1212,
+     "buddha": 825,
+     "konghucu": 825
+    }
    }
   }
  },
@@ -45,13 +59,27 @@
     "sekolah": 304,
     "pasar": 464,
     "faskes": 175,
-    "ibadah": 261
+    "ibadah": {
+     "islam": 367,
+     "kristen": 827,
+     "katolik": 2425,
+     "hindu": 1388,
+     "buddha": 894,
+     "konghucu": 894
+    }
    },
    "mobil": {
     "sekolah": 342,
     "pasar": 535,
     "faskes": 187,
-    "ibadah": 261
+    "ibadah": {
+     "islam": 367,
+     "kristen": 827,
+     "katolik": 2425,
+     "hindu": 1388,
+     "buddha": 894,
+     "konghucu": 894
+    }
    }
   }
  },
@@ -71,15 +99,29 @@
   "waktu": {
    "motor": {
     "sekolah": 513,
-    "pasar": 709,
+    "pasar": 850,
     "faskes": 730,
-    "ibadah": 340
+    "ibadah": {
+     "islam": 578,
+     "kristen": 1063,
+     "katolik": 2542,
+     "hindu": 1448,
+     "buddha": 1061,
+     "konghucu": 1061
+    }
    },
    "mobil": {
     "sekolah": 564,
-    "pasar": 788,
+    "pasar": 1009,
     "faskes": 820,
-    "ibadah": 340
+    "ibadah": {
+     "islam": 578,
+     "kristen": 1063,
+     "katolik": 2542,
+     "hindu": 1448,
+     "buddha": 1061,
+     "konghucu": 1061
+    }
    }
   }
  },
@@ -99,15 +141,29 @@
   "waktu": {
    "motor": {
     "sekolah": 191,
-    "pasar": 499,
+    "pasar": 816,
     "faskes": 239,
-    "ibadah": 72
+    "ibadah": {
+     "islam": 99,
+     "kristen": 679,
+     "katolik": 1374,
+     "hindu": 1741,
+     "buddha": 927,
+     "konghucu": 927
+    }
    },
    "mobil": {
     "sekolah": 206,
-    "pasar": 561,
+    "pasar": 902,
     "faskes": 295,
-    "ibadah": 72
+    "ibadah": {
+     "islam": 99,
+     "kristen": 679,
+     "katolik": 1374,
+     "hindu": 1741,
+     "buddha": 927,
+     "konghucu": 927
+    }
    }
   }
  },
@@ -127,15 +183,29 @@
   "waktu": {
    "motor": {
     "sekolah": 274,
-    "pasar": 680,
+    "pasar": 1459,
     "faskes": 182,
-    "ibadah": 296
+    "ibadah": {
+     "islam": 288,
+     "kristen": 1696,
+     "katolik": 2921,
+     "hindu": 2391,
+     "buddha": 1784,
+     "konghucu": 1784
+    }
    },
    "mobil": {
     "sekolah": 304,
-    "pasar": 719,
+    "pasar": 1823,
     "faskes": 193,
-    "ibadah": 296
+    "ibadah": {
+     "islam": 288,
+     "kristen": 1696,
+     "katolik": 2921,
+     "hindu": 2391,
+     "buddha": 1784,
+     "konghucu": 1784
+    }
    }
   }
  },
@@ -157,13 +227,27 @@
     "sekolah": 234,
     "pasar": 590,
     "faskes": 557,
-    "ibadah": 171
+    "ibadah": {
+     "islam": 252,
+     "kristen": 2054,
+     "katolik": 1803,
+     "hindu": 1781,
+     "buddha": 2053,
+     "konghucu": 2053
+    }
    },
    "mobil": {
     "sekolah": 260,
     "pasar": 697,
     "faskes": 646,
-    "ibadah": 171
+    "ibadah": {
+     "islam": 252,
+     "kristen": 2054,
+     "katolik": 1803,
+     "hindu": 1781,
+     "buddha": 2053,
+     "konghucu": 2053
+    }
    }
   }
  },
@@ -185,13 +269,27 @@
     "sekolah": 438,
     "pasar": 963,
     "faskes": 676,
-    "ibadah": 117
+    "ibadah": {
+     "islam": 243,
+     "kristen": 1496,
+     "katolik": 1623,
+     "hindu": 1978,
+     "buddha": 1617,
+     "konghucu": 1617
+    }
    },
    "mobil": {
     "sekolah": 478,
     "pasar": 1074,
     "faskes": 740,
-    "ibadah": 117
+    "ibadah": {
+     "islam": 243,
+     "kristen": 1496,
+     "katolik": 1623,
+     "hindu": 1978,
+     "buddha": 1617,
+     "konghucu": 1617
+    }
    }
   }
  },
@@ -213,13 +311,27 @@
     "sekolah": 176,
     "pasar": 342,
     "faskes": 282,
-    "ibadah": 137
+    "ibadah": {
+     "islam": 283,
+     "kristen": 743,
+     "katolik": 2342,
+     "hindu": 1402,
+     "buddha": 783,
+     "konghucu": 783
+    }
    },
    "mobil": {
     "sekolah": 192,
     "pasar": 386,
     "faskes": 297,
-    "ibadah": 137
+    "ibadah": {
+     "islam": 283,
+     "kristen": 743,
+     "katolik": 2342,
+     "hindu": 1402,
+     "buddha": 783,
+     "konghucu": 783
+    }
    }
   }
  },
@@ -239,15 +351,29 @@
   "waktu": {
    "motor": {
     "sekolah": 957,
-    "pasar": 735,
+    "pasar": 818,
     "faskes": 706,
-    "ibadah": 720
+    "ibadah": {
+     "islam": 1102,
+     "kristen": 1444,
+     "katolik": 2879,
+     "hindu": 2298,
+     "buddha": 1533,
+     "konghucu": 1533
+    }
    },
    "mobil": {
     "sekolah": 1352,
-    "pasar": 735,
+    "pasar": 1164,
     "faskes": 744,
-    "ibadah": 720
+    "ibadah": {
+     "islam": 1102,
+     "kristen": 1444,
+     "katolik": 2879,
+     "hindu": 2298,
+     "buddha": 1533,
+     "konghucu": 1533
+    }
    }
   }
  },
@@ -269,13 +395,27 @@
     "sekolah": 88,
     "pasar": 709,
     "faskes": 379,
-    "ibadah": 216
+    "ibadah": {
+     "islam": 329,
+     "kristen": 1168,
+     "katolik": 1293,
+     "hindu": 1720,
+     "buddha": 1623,
+     "konghucu": 1623
+    }
    },
    "mobil": {
     "sekolah": 97,
     "pasar": 796,
     "faskes": 421,
-    "ibadah": 216
+    "ibadah": {
+     "islam": 329,
+     "kristen": 1168,
+     "katolik": 1293,
+     "hindu": 1720,
+     "buddha": 1623,
+     "konghucu": 1623
+    }
    }
   }
  },
@@ -295,15 +435,29 @@
   "waktu": {
    "motor": {
     "sekolah": 549,
-    "pasar": 345,
+    "pasar": 801,
     "faskes": 525,
-    "ibadah": 292
+    "ibadah": {
+     "islam": 455,
+     "kristen": 716,
+     "katolik": 2061,
+     "hindu": 1964,
+     "buddha": 907,
+     "konghucu": 907
+    }
    },
    "mobil": {
     "sekolah": 609,
-    "pasar": 413,
+    "pasar": 785,
     "faskes": 586,
-    "ibadah": 292
+    "ibadah": {
+     "islam": 455,
+     "kristen": 716,
+     "katolik": 2061,
+     "hindu": 1964,
+     "buddha": 907,
+     "konghucu": 907
+    }
    }
   }
  },
@@ -323,15 +477,29 @@
   "waktu": {
    "motor": {
     "sekolah": 270,
-    "pasar": 656,
+    "pasar": 842,
     "faskes": 595,
-    "ibadah": 264
+    "ibadah": {
+     "islam": 352,
+     "kristen": 1117,
+     "katolik": 2673,
+     "hindu": 1164,
+     "buddha": 1114,
+     "konghucu": 1114
+    }
    },
    "mobil": {
     "sekolah": 289,
-    "pasar": 704,
+    "pasar": 890,
     "faskes": 654,
-    "ibadah": 264
+    "ibadah": {
+     "islam": 352,
+     "kristen": 1117,
+     "katolik": 2673,
+     "hindu": 1164,
+     "buddha": 1114,
+     "konghucu": 1114
+    }
    }
   }
  },
@@ -351,15 +519,29 @@
   "waktu": {
    "motor": {
     "sekolah": 273,
-    "pasar": 823,
+    "pasar": 964,
     "faskes": 929,
-    "ibadah": 317
+    "ibadah": {
+     "islam": 361,
+     "kristen": 1183,
+     "katolik": 2454,
+     "hindu": 1378,
+     "buddha": 1180,
+     "konghucu": 1180
+    }
    },
    "mobil": {
     "sekolah": 279,
-    "pasar": 919,
+    "pasar": 1139,
     "faskes": 964,
-    "ibadah": 317
+    "ibadah": {
+     "islam": 361,
+     "kristen": 1183,
+     "katolik": 2454,
+     "hindu": 1378,
+     "buddha": 1180,
+     "konghucu": 1180
+    }
    }
   }
  },
@@ -379,15 +561,29 @@
   "waktu": {
    "motor": {
     "sekolah": 453,
-    "pasar": 473,
+    "pasar": 865,
     "faskes": 752,
-    "ibadah": 435
+    "ibadah": {
+     "islam": 675,
+     "kristen": 835,
+     "katolik": 1912,
+     "hindu": 1754,
+     "buddha": 1026,
+     "konghucu": 1026
+    }
    },
    "mobil": {
     "sekolah": 486,
-    "pasar": 527,
+    "pasar": 958,
     "faskes": 841,
-    "ibadah": 435
+    "ibadah": {
+     "islam": 675,
+     "kristen": 835,
+     "katolik": 1912,
+     "hindu": 1754,
+     "buddha": 1026,
+     "konghucu": 1026
+    }
    }
   }
  },
@@ -407,15 +603,29 @@
   "waktu": {
    "motor": {
     "sekolah": 416,
-    "pasar": 489,
+    "pasar": 882,
     "faskes": 701,
-    "ibadah": 477
+    "ibadah": {
+     "islam": 733,
+     "kristen": 869,
+     "katolik": 2032,
+     "hindu": 1872,
+     "buddha": 1060,
+     "konghucu": 1060
+    }
    },
    "mobil": {
     "sekolah": 450,
-    "pasar": 534,
+    "pasar": 966,
     "faskes": 767,
-    "ibadah": 477
+    "ibadah": {
+     "islam": 733,
+     "kristen": 869,
+     "katolik": 2032,
+     "hindu": 1872,
+     "buddha": 1060,
+     "konghucu": 1060
+    }
    }
   }
  },
@@ -435,15 +645,29 @@
   "waktu": {
    "motor": {
     "sekolah": 407,
-    "pasar": 452,
+    "pasar": 449,
     "faskes": 444,
-    "ibadah": 220
+    "ibadah": {
+     "islam": 291,
+     "kristen": 844,
+     "katolik": 2363,
+     "hindu": 792,
+     "buddha": 792,
+     "konghucu": 905
+    }
    },
    "mobil": {
     "sekolah": 444,
-    "pasar": 508,
+    "pasar": 505,
     "faskes": 471,
-    "ibadah": 220
+    "ibadah": {
+     "islam": 291,
+     "kristen": 844,
+     "katolik": 2363,
+     "hindu": 792,
+     "buddha": 792,
+     "konghucu": 905
+    }
    }
   }
  },
@@ -465,13 +689,27 @@
     "sekolah": 175,
     "pasar": 391,
     "faskes": 333,
-    "ibadah": 39
+    "ibadah": {
+     "islam": 21,
+     "kristen": 1241,
+     "katolik": 1343,
+     "hindu": 1131,
+     "buddha": 1793,
+     "konghucu": 1793
+    }
    },
    "mobil": {
     "sekolah": 189,
     "pasar": 485,
     "faskes": 357,
-    "ibadah": 39
+    "ibadah": {
+     "islam": 21,
+     "kristen": 1241,
+     "katolik": 1343,
+     "hindu": 1131,
+     "buddha": 1793,
+     "konghucu": 1793
+    }
    }
   }
  },
@@ -491,15 +729,29 @@
   "waktu": {
    "motor": {
     "sekolah": 295,
-    "pasar": 681,
+    "pasar": 867,
     "faskes": 620,
-    "ibadah": 203
+    "ibadah": {
+     "islam": 290,
+     "kristen": 1112,
+     "katolik": 2668,
+     "hindu": 1102,
+     "buddha": 1102,
+     "konghucu": 1109
+    }
    },
    "mobil": {
     "sekolah": 314,
-    "pasar": 730,
+    "pasar": 915,
     "faskes": 680,
-    "ibadah": 203
+    "ibadah": {
+     "islam": 290,
+     "kristen": 1112,
+     "katolik": 2668,
+     "hindu": 1102,
+     "buddha": 1102,
+     "konghucu": 1109
+    }
    }
   }
  },
@@ -519,15 +771,29 @@
   "waktu": {
    "motor": {
     "sekolah": 435,
-    "pasar": 450,
+    "pasar": 447,
     "faskes": 458,
-    "ibadah": 230
+    "ibadah": {
+     "islam": 286,
+     "kristen": 839,
+     "katolik": 2368,
+     "hindu": 797,
+     "buddha": 797,
+     "konghucu": 900
+    }
    },
    "mobil": {
     "sekolah": 459,
-    "pasar": 505,
+    "pasar": 502,
     "faskes": 486,
-    "ibadah": 230
+    "ibadah": {
+     "islam": 286,
+     "kristen": 839,
+     "katolik": 2368,
+     "hindu": 797,
+     "buddha": 797,
+     "konghucu": 900
+    }
    }
   }
  },
@@ -547,15 +813,29 @@
   "waktu": {
    "motor": {
     "sekolah": 295,
-    "pasar": 475,
+    "pasar": 722,
     "faskes": 411,
-    "ibadah": 226
+    "ibadah": {
+     "islam": 297,
+     "kristen": 941,
+     "katolik": 2333,
+     "hindu": 762,
+     "buddha": 762,
+     "konghucu": 1002
+    }
    },
    "mobil": {
     "sekolah": 314,
-    "pasar": 498,
+    "pasar": 797,
     "faskes": 444,
-    "ibadah": 226
+    "ibadah": {
+     "islam": 297,
+     "kristen": 941,
+     "katolik": 2333,
+     "hindu": 762,
+     "buddha": 762,
+     "konghucu": 1002
+    }
    }
   }
  },
@@ -575,15 +855,29 @@
   "waktu": {
    "motor": {
     "sekolah": 359,
-    "pasar": 445,
+    "pasar": 837,
     "faskes": 656,
-    "ibadah": 426
+    "ibadah": {
+     "islam": 603,
+     "kristen": 829,
+     "katolik": 1839,
+     "hindu": 1681,
+     "buddha": 1021,
+     "konghucu": 1021
+    }
    },
    "mobil": {
     "sekolah": 393,
-    "pasar": 494,
+    "pasar": 927,
     "faskes": 729,
-    "ibadah": 426
+    "ibadah": {
+     "islam": 603,
+     "kristen": 829,
+     "katolik": 1839,
+     "hindu": 1681,
+     "buddha": 1021,
+     "konghucu": 1021
+    }
    }
   }
  },
@@ -605,13 +899,27 @@
     "sekolah": 322,
     "pasar": 510,
     "faskes": 478,
-    "ibadah": 194
+    "ibadah": {
+     "islam": 284,
+     "kristen": 1483,
+     "katolik": 1610,
+     "hindu": 1590,
+     "buddha": 2040,
+     "konghucu": 2040
+    }
    },
    "mobil": {
     "sekolah": 350,
     "pasar": 573,
     "faskes": 523,
-    "ibadah": 194
+    "ibadah": {
+     "islam": 284,
+     "kristen": 1483,
+     "katolik": 1610,
+     "hindu": 1590,
+     "buddha": 2040,
+     "konghucu": 2040
+    }
    }
   }
  },
@@ -631,15 +939,29 @@
   "waktu": {
    "motor": {
     "sekolah": 160,
-    "pasar": 540,
+    "pasar": 788,
     "faskes": 477,
-    "ibadah": 159
+    "ibadah": {
+     "islam": 191,
+     "kristen": 1066,
+     "katolik": 2457,
+     "hindu": 886,
+     "buddha": 886,
+     "konghucu": 1126
+    }
    },
    "mobil": {
     "sekolah": 172,
-    "pasar": 573,
+    "pasar": 874,
     "faskes": 523,
-    "ibadah": 159
+    "ibadah": {
+     "islam": 191,
+     "kristen": 1066,
+     "katolik": 2457,
+     "hindu": 886,
+     "buddha": 886,
+     "konghucu": 1126
+    }
    }
   }
  },
@@ -661,13 +983,27 @@
     "sekolah": 273,
     "pasar": 455,
     "faskes": 334,
-    "ibadah": 314
+    "ibadah": {
+     "islam": 319,
+     "kristen": 680,
+     "katolik": 2276,
+     "hindu": 1360,
+     "buddha": 748,
+     "konghucu": 748
+    }
    },
    "mobil": {
     "sekolah": 291,
     "pasar": 535,
     "faskes": 350,
-    "ibadah": 314
+    "ibadah": {
+     "islam": 319,
+     "kristen": 680,
+     "katolik": 2276,
+     "hindu": 1360,
+     "buddha": 748,
+     "konghucu": 748
+    }
    }
   }
  },
@@ -689,13 +1025,27 @@
     "sekolah": 607,
     "pasar": 1092,
     "faskes": 956,
-    "ibadah": 354
+    "ibadah": {
+     "islam": 502,
+     "kristen": 2087,
+     "katolik": 1921,
+     "hindu": 1910,
+     "buddha": 1910,
+     "konghucu": 2086
+    }
    },
    "mobil": {
     "sekolah": 645,
     "pasar": 1221,
     "faskes": 1048,
-    "ibadah": 354
+    "ibadah": {
+     "islam": 502,
+     "kristen": 2087,
+     "katolik": 1921,
+     "hindu": 1910,
+     "buddha": 1910,
+     "konghucu": 2086
+    }
    }
   }
  },
@@ -717,13 +1067,27 @@
     "sekolah": 158,
     "pasar": 901,
     "faskes": 866,
-    "ibadah": 176
+    "ibadah": {
+     "islam": 219,
+     "kristen": 1511,
+     "katolik": 2142,
+     "hindu": 1752,
+     "buddha": 1510,
+     "konghucu": 1510
+    }
    },
    "mobil": {
     "sekolah": 182,
     "pasar": 1002,
     "faskes": 950,
-    "ibadah": 176
+    "ibadah": {
+     "islam": 219,
+     "kristen": 1511,
+     "katolik": 2142,
+     "hindu": 1752,
+     "buddha": 1510,
+     "konghucu": 1510
+    }
    }
   }
  },
@@ -743,15 +1107,29 @@
   "waktu": {
    "motor": {
     "sekolah": 241,
-    "pasar": 193,
+    "pasar": 599,
     "faskes": 316,
-    "ibadah": 85
+    "ibadah": {
+     "islam": 92,
+     "kristen": 500,
+     "katolik": 1662,
+     "hindu": 1743,
+     "buddha": 689,
+     "konghucu": 689
+    }
    },
    "mobil": {
     "sekolah": 275,
-    "pasar": 228,
+    "pasar": 670,
     "faskes": 383,
-    "ibadah": 85
+    "ibadah": {
+     "islam": 92,
+     "kristen": 500,
+     "katolik": 1662,
+     "hindu": 1743,
+     "buddha": 689,
+     "konghucu": 689
+    }
    }
   }
  },
@@ -771,15 +1149,29 @@
   "waktu": {
    "motor": {
     "sekolah": 281,
-    "pasar": 273,
+    "pasar": 679,
     "faskes": 356,
-    "ibadah": 135
+    "ibadah": {
+     "islam": 154,
+     "kristen": 561,
+     "katolik": 1724,
+     "hindu": 1805,
+     "buddha": 750,
+     "konghucu": 750
+    }
    },
    "mobil": {
     "sekolah": 308,
-    "pasar": 320,
+    "pasar": 755,
     "faskes": 416,
-    "ibadah": 135
+    "ibadah": {
+     "islam": 154,
+     "kristen": 561,
+     "katolik": 1724,
+     "hindu": 1805,
+     "buddha": 750,
+     "konghucu": 750
+    }
    }
   }
  },
@@ -799,15 +1191,29 @@
   "waktu": {
    "motor": {
     "sekolah": 302,
-    "pasar": 595,
+    "pasar": 842,
     "faskes": 534,
-    "ibadah": 356
+    "ibadah": {
+     "islam": 420,
+     "kristen": 1241,
+     "katolik": 2633,
+     "hindu": 1060,
+     "buddha": 1060,
+     "konghucu": 1302
+    }
    },
    "mobil": {
     "sekolah": 366,
-    "pasar": 627,
+    "pasar": 926,
     "faskes": 577,
-    "ibadah": 356
+    "ibadah": {
+     "islam": 420,
+     "kristen": 1241,
+     "katolik": 2633,
+     "hindu": 1060,
+     "buddha": 1060,
+     "konghucu": 1302
+    }
    }
   }
  },
@@ -827,15 +1233,29 @@
   "waktu": {
    "motor": {
     "sekolah": 567,
-    "pasar": 685,
+    "pasar": 791,
     "faskes": 683,
-    "ibadah": 515
+    "ibadah": {
+     "islam": 611,
+     "kristen": 972,
+     "katolik": 2417,
+     "hindu": 1802,
+     "buddha": 1041,
+     "konghucu": 1041
+    }
    },
    "mobil": {
     "sekolah": 1329,
-    "pasar": 722,
+    "pasar": 1141,
     "faskes": 758,
-    "ibadah": 515
+    "ibadah": {
+     "islam": 611,
+     "kristen": 972,
+     "katolik": 2417,
+     "hindu": 1802,
+     "buddha": 1041,
+     "konghucu": 1041
+    }
    }
   }
  },
@@ -855,15 +1275,29 @@
   "waktu": {
    "motor": {
     "sekolah": 473,
-    "pasar": 508,
+    "pasar": 573,
     "faskes": 434,
-    "ibadah": 215
+    "ibadah": {
+     "islam": 367,
+     "kristen": 866,
+     "katolik": 2398,
+     "hindu": 827,
+     "buddha": 827,
+     "konghucu": 927
+    }
    },
    "mobil": {
     "sekolah": 502,
-    "pasar": 493,
+    "pasar": 630,
     "faskes": 492,
-    "ibadah": 215
+    "ibadah": {
+     "islam": 367,
+     "kristen": 866,
+     "katolik": 2398,
+     "hindu": 827,
+     "buddha": 827,
+     "konghucu": 927
+    }
    }
   }
  },
@@ -883,15 +1317,29 @@
   "waktu": {
    "motor": {
     "sekolah": 223,
-    "pasar": 336,
+    "pasar": 333,
     "faskes": 557,
-    "ibadah": 133
+    "ibadah": {
+     "islam": 144,
+     "kristen": 696,
+     "katolik": 2484,
+     "hindu": 891,
+     "buddha": 699,
+     "konghucu": 699
+    }
    },
    "mobil": {
     "sekolah": 242,
-    "pasar": 374,
+    "pasar": 371,
     "faskes": 713,
-    "ibadah": 133
+    "ibadah": {
+     "islam": 144,
+     "kristen": 696,
+     "katolik": 2484,
+     "hindu": 891,
+     "buddha": 699,
+     "konghucu": 699
+    }
    }
   }
  },
@@ -911,15 +1359,29 @@
   "waktu": {
    "motor": {
     "sekolah": 263,
-    "pasar": 375,
+    "pasar": 372,
     "faskes": 508,
-    "ibadah": 165
+    "ibadah": {
+     "islam": 219,
+     "kristen": 772,
+     "katolik": 2468,
+     "hindu": 968,
+     "buddha": 775,
+     "konghucu": 775
+    }
    },
    "mobil": {
     "sekolah": 282,
-    "pasar": 444,
+    "pasar": 441,
     "faskes": 542,
-    "ibadah": 165
+    "ibadah": {
+     "islam": 219,
+     "kristen": 772,
+     "katolik": 2468,
+     "hindu": 968,
+     "buddha": 775,
+     "konghucu": 775
+    }
    }
   }
  },
@@ -941,13 +1403,27 @@
     "sekolah": 239,
     "pasar": 451,
     "faskes": 304,
-    "ibadah": 42
+    "ibadah": {
+     "islam": 168,
+     "kristen": 1976,
+     "katolik": 1188,
+     "hindu": 978,
+     "buddha": 2539,
+     "konghucu": 2539
+    }
    },
    "mobil": {
     "sekolah": 258,
     "pasar": 458,
     "faskes": 305,
-    "ibadah": 42
+    "ibadah": {
+     "islam": 168,
+     "kristen": 1976,
+     "katolik": 1188,
+     "hindu": 978,
+     "buddha": 2539,
+     "konghucu": 2539
+    }
    }
   }
  },
@@ -967,15 +1443,29 @@
   "waktu": {
    "motor": {
     "sekolah": 634,
-    "pasar": 1134,
+    "pasar": 1275,
     "faskes": 1144,
-    "ibadah": 450
+    "ibadah": {
+     "islam": 767,
+     "kristen": 1795,
+     "katolik": 2574,
+     "hindu": 2177,
+     "buddha": 1793,
+     "konghucu": 1793
+    }
    },
    "mobil": {
     "sekolah": 648,
-    "pasar": 1305,
+    "pasar": 1526,
     "faskes": 1225,
-    "ibadah": 450
+    "ibadah": {
+     "islam": 767,
+     "kristen": 1795,
+     "katolik": 2574,
+     "hindu": 2177,
+     "buddha": 1793,
+     "konghucu": 1793
+    }
    }
   }
  },
@@ -997,13 +1487,27 @@
     "sekolah": 253,
     "pasar": 396,
     "faskes": 263,
-    "ibadah": 233
+    "ibadah": {
+     "islam": 306,
+     "kristen": 1775,
+     "katolik": 1166,
+     "hindu": 957,
+     "buddha": 2336,
+     "konghucu": 2336
+    }
    },
    "mobil": {
     "sekolah": 288,
     "pasar": 448,
     "faskes": 299,
-    "ibadah": 233
+    "ibadah": {
+     "islam": 306,
+     "kristen": 1775,
+     "katolik": 1166,
+     "hindu": 957,
+     "buddha": 2336,
+     "konghucu": 2336
+    }
    }
   }
  },
@@ -1025,13 +1529,27 @@
     "sekolah": 155,
     "pasar": 413,
     "faskes": 314,
-    "ibadah": 124
+    "ibadah": {
+     "islam": 230,
+     "kristen": 1494,
+     "katolik": 1542,
+     "hindu": 1330,
+     "buddha": 2052,
+     "konghucu": 2052
+    }
    },
    "mobil": {
     "sekolah": 176,
     "pasar": 516,
     "faskes": 345,
-    "ibadah": 124
+    "ibadah": {
+     "islam": 230,
+     "kristen": 1494,
+     "katolik": 1542,
+     "hindu": 1330,
+     "buddha": 2052,
+     "konghucu": 2052
+    }
    }
   }
  },
@@ -1053,13 +1571,27 @@
     "sekolah": 443,
     "pasar": 810,
     "faskes": 776,
-    "ibadah": 83
+    "ibadah": {
+     "islam": 124,
+     "kristen": 1922,
+     "katolik": 1857,
+     "hindu": 1834,
+     "buddha": 1921,
+     "konghucu": 1921
+    }
    },
    "mobil": {
     "sekolah": 549,
     "pasar": 896,
     "faskes": 844,
-    "ibadah": 83
+    "ibadah": {
+     "islam": 124,
+     "kristen": 1922,
+     "katolik": 1857,
+     "hindu": 1834,
+     "buddha": 1921,
+     "konghucu": 1921
+    }
    }
   }
  },
@@ -1079,15 +1611,29 @@
   "waktu": {
    "motor": {
     "sekolah": 296,
-    "pasar": 288,
+    "pasar": 693,
     "faskes": 371,
-    "ibadah": 143
+    "ibadah": {
+     "islam": 164,
+     "kristen": 571,
+     "katolik": 1734,
+     "hindu": 1815,
+     "buddha": 760,
+     "konghucu": 760
+    }
    },
    "mobil": {
     "sekolah": 322,
-    "pasar": 334,
+    "pasar": 767,
     "faskes": 431,
-    "ibadah": 143
+    "ibadah": {
+     "islam": 164,
+     "kristen": 571,
+     "katolik": 1734,
+     "hindu": 1815,
+     "buddha": 760,
+     "konghucu": 760
+    }
    }
   }
  },
@@ -1109,13 +1655,27 @@
     "sekolah": 117,
     "pasar": 858,
     "faskes": 824,
-    "ibadah": 120
+    "ibadah": {
+     "islam": 205,
+     "kristen": 1588,
+     "katolik": 2128,
+     "hindu": 1827,
+     "buddha": 1586,
+     "konghucu": 1586
+    }
    },
    "mobil": {
     "sekolah": 140,
     "pasar": 959,
     "faskes": 907,
-    "ibadah": 120
+    "ibadah": {
+     "islam": 205,
+     "kristen": 1588,
+     "katolik": 2128,
+     "hindu": 1827,
+     "buddha": 1586,
+     "konghucu": 1586
+    }
    }
   }
  },
@@ -1135,15 +1695,29 @@
   "waktu": {
    "motor": {
     "sekolah": 587,
-    "pasar": 749,
+    "pasar": 1253,
     "faskes": 671,
-    "ibadah": 427
+    "ibadah": {
+     "islam": 574,
+     "kristen": 1038,
+     "katolik": 1738,
+     "hindu": 1570,
+     "buddha": 1407,
+     "konghucu": 1407
+    }
    },
    "mobil": {
     "sekolah": 627,
-    "pasar": 813,
+    "pasar": 1362,
     "faskes": 750,
-    "ibadah": 427
+    "ibadah": {
+     "islam": 574,
+     "kristen": 1038,
+     "katolik": 1738,
+     "hindu": 1570,
+     "buddha": 1407,
+     "konghucu": 1407
+    }
    }
   }
  },
@@ -1165,13 +1739,27 @@
     "sekolah": 149,
     "pasar": 240,
     "faskes": 307,
-    "ibadah": 73
+    "ibadah": {
+     "islam": 170,
+     "kristen": 1432,
+     "katolik": 1474,
+     "hindu": 1262,
+     "buddha": 1989,
+     "konghucu": 1989
+    }
    },
    "mobil": {
     "sekolah": 164,
     "pasar": 316,
     "faskes": 333,
-    "ibadah": 73
+    "ibadah": {
+     "islam": 170,
+     "kristen": 1432,
+     "katolik": 1474,
+     "hindu": 1262,
+     "buddha": 1989,
+     "konghucu": 1989
+    }
    }
   }
  },
@@ -1191,15 +1779,29 @@
   "waktu": {
    "motor": {
     "sekolah": 594,
-    "pasar": 859,
+    "pasar": 1372,
     "faskes": 366,
-    "ibadah": 425
+    "ibadah": {
+     "islam": 415,
+     "kristen": 1525,
+     "katolik": 2762,
+     "hindu": 2265,
+     "buddha": 1613,
+     "konghucu": 1613
+    }
    },
    "mobil": {
     "sekolah": 641,
-    "pasar": 907,
+    "pasar": 1722,
     "faskes": 384,
-    "ibadah": 425
+    "ibadah": {
+     "islam": 415,
+     "kristen": 1525,
+     "katolik": 2762,
+     "hindu": 2265,
+     "buddha": 1613,
+     "konghucu": 1613
+    }
    }
   }
  },
@@ -1219,15 +1821,29 @@
   "waktu": {
    "motor": {
     "sekolah": 387,
-    "pasar": 373,
+    "pasar": 625,
     "faskes": 309,
-    "ibadah": 138
+    "ibadah": {
+     "islam": 453,
+     "kristen": 831,
+     "katolik": 2222,
+     "hindu": 652,
+     "buddha": 652,
+     "konghucu": 892
+    }
    },
    "mobil": {
     "sekolah": 413,
-    "pasar": 387,
+    "pasar": 692,
     "faskes": 333,
-    "ibadah": 138
+    "ibadah": {
+     "islam": 453,
+     "kristen": 831,
+     "katolik": 2222,
+     "hindu": 652,
+     "buddha": 652,
+     "konghucu": 892
+    }
    }
   }
  },
@@ -1247,15 +1863,29 @@
   "waktu": {
    "motor": {
     "sekolah": 403,
-    "pasar": 449,
+    "pasar": 446,
     "faskes": 440,
-    "ibadah": 217
+    "ibadah": {
+     "islam": 292,
+     "kristen": 846,
+     "katolik": 2361,
+     "hindu": 790,
+     "buddha": 790,
+     "konghucu": 906
+    }
    },
    "mobil": {
     "sekolah": 440,
-    "pasar": 504,
+    "pasar": 501,
     "faskes": 468,
-    "ibadah": 217
+    "ibadah": {
+     "islam": 292,
+     "kristen": 846,
+     "katolik": 2361,
+     "hindu": 790,
+     "buddha": 790,
+     "konghucu": 906
+    }
    }
   }
  },
@@ -1277,13 +1907,27 @@
     "sekolah": 606,
     "pasar": 1091,
     "faskes": 955,
-    "ibadah": 353
+    "ibadah": {
+     "islam": 500,
+     "kristen": 2085,
+     "katolik": 1919,
+     "hindu": 1908,
+     "buddha": 1908,
+     "konghucu": 2084
+    }
    },
    "mobil": {
     "sekolah": 644,
     "pasar": 1220,
     "faskes": 1047,
-    "ibadah": 353
+    "ibadah": {
+     "islam": 500,
+     "kristen": 2085,
+     "katolik": 1919,
+     "hindu": 1908,
+     "buddha": 1908,
+     "konghucu": 2084
+    }
    }
   }
  },
@@ -1303,15 +1947,29 @@
   "waktu": {
    "motor": {
     "sekolah": 396,
-    "pasar": 448,
+    "pasar": 698,
     "faskes": 384,
-    "ibadah": 247
+    "ibadah": {
+     "islam": 414,
+     "kristen": 881,
+     "katolik": 2273,
+     "hindu": 703,
+     "buddha": 703,
+     "konghucu": 942
+    }
    },
    "mobil": {
     "sekolah": 421,
-    "pasar": 467,
+    "pasar": 766,
     "faskes": 412,
-    "ibadah": 247
+    "ibadah": {
+     "islam": 414,
+     "kristen": 881,
+     "katolik": 2273,
+     "hindu": 703,
+     "buddha": 703,
+     "konghucu": 942
+    }
    }
   }
  },
@@ -1331,15 +1989,29 @@
   "waktu": {
    "motor": {
     "sekolah": 647,
-    "pasar": 906,
+    "pasar": 1047,
     "faskes": 729,
-    "ibadah": 232
+    "ibadah": {
+     "islam": 248,
+     "kristen": 1171,
+     "katolik": 1811,
+     "hindu": 1554,
+     "buddha": 1168,
+     "konghucu": 1168
+    }
    },
    "mobil": {
     "sekolah": 682,
-    "pasar": 997,
+    "pasar": 1217,
     "faskes": 790,
-    "ibadah": 232
+    "ibadah": {
+     "islam": 248,
+     "kristen": 1171,
+     "katolik": 1811,
+     "hindu": 1554,
+     "buddha": 1168,
+     "konghucu": 1168
+    }
    }
   }
  },
@@ -1361,13 +2033,27 @@
     "sekolah": 303,
     "pasar": 843,
     "faskes": 809,
-    "ibadah": 268
+    "ibadah": {
+     "islam": 377,
+     "kristen": 2183,
+     "katolik": 2002,
+     "hindu": 2034,
+     "buddha": 2181,
+     "konghucu": 2181
+    }
    },
    "mobil": {
     "sekolah": 303,
     "pasar": 966,
     "faskes": 914,
-    "ibadah": 268
+    "ibadah": {
+     "islam": 377,
+     "kristen": 2183,
+     "katolik": 2002,
+     "hindu": 2034,
+     "buddha": 2181,
+     "konghucu": 2181
+    }
    }
   }
  },
@@ -1389,13 +2075,27 @@
     "sekolah": 376,
     "pasar": 1014,
     "faskes": 979,
-    "ibadah": 303
+    "ibadah": {
+     "islam": 336,
+     "kristen": 1476,
+     "katolik": 2264,
+     "hindu": 1718,
+     "buddha": 1474,
+     "konghucu": 1474
+    }
    },
    "mobil": {
     "sekolah": 392,
     "pasar": 1118,
     "faskes": 1066,
-    "ibadah": 303
+    "ibadah": {
+     "islam": 336,
+     "kristen": 1476,
+     "katolik": 2264,
+     "hindu": 1718,
+     "buddha": 1474,
+     "konghucu": 1474
+    }
    }
   }
  },
@@ -1415,15 +2115,29 @@
   "waktu": {
    "motor": {
     "sekolah": 241,
-    "pasar": 193,
+    "pasar": 599,
     "faskes": 316,
-    "ibadah": 85
+    "ibadah": {
+     "islam": 92,
+     "kristen": 500,
+     "katolik": 1662,
+     "hindu": 1743,
+     "buddha": 689,
+     "konghucu": 689
+    }
    },
    "mobil": {
     "sekolah": 275,
-    "pasar": 228,
+    "pasar": 670,
     "faskes": 383,
-    "ibadah": 85
+    "ibadah": {
+     "islam": 92,
+     "kristen": 500,
+     "katolik": 1662,
+     "hindu": 1743,
+     "buddha": 689,
+     "konghucu": 689
+    }
    }
   }
  },
@@ -1443,15 +2157,29 @@
   "waktu": {
    "motor": {
     "sekolah": 689,
-    "pasar": 948,
+    "pasar": 1090,
     "faskes": 879,
-    "ibadah": 251
+    "ibadah": {
+     "islam": 429,
+     "kristen": 1368,
+     "katolik": 2162,
+     "hindu": 1751,
+     "buddha": 1366,
+     "konghucu": 1366
+    }
    },
    "mobil": {
     "sekolah": 744,
-    "pasar": 1058,
+    "pasar": 1278,
     "faskes": 974,
-    "ibadah": 251
+    "ibadah": {
+     "islam": 429,
+     "kristen": 1368,
+     "katolik": 2162,
+     "hindu": 1751,
+     "buddha": 1366,
+     "konghucu": 1366
+    }
    }
   }
  },
@@ -1471,15 +2199,29 @@
   "waktu": {
    "motor": {
     "sekolah": 538,
-    "pasar": 803,
+    "pasar": 1315,
     "faskes": 310,
-    "ibadah": 391
+    "ibadah": {
+     "islam": 410,
+     "kristen": 1529,
+     "katolik": 2767,
+     "hindu": 2270,
+     "buddha": 1617,
+     "konghucu": 1617
+    }
    },
    "mobil": {
     "sekolah": 583,
-    "pasar": 849,
+    "pasar": 1664,
     "faskes": 326,
-    "ibadah": 391
+    "ibadah": {
+     "islam": 410,
+     "kristen": 1529,
+     "katolik": 2767,
+     "hindu": 2270,
+     "buddha": 1617,
+     "konghucu": 1617
+    }
    }
   }
  },
@@ -1499,15 +2241,29 @@
   "waktu": {
    "motor": {
     "sekolah": 560,
-    "pasar": 825,
+    "pasar": 1337,
     "faskes": 332,
-    "ibadah": 421
+    "ibadah": {
+     "islam": 410,
+     "kristen": 1530,
+     "katolik": 2767,
+     "hindu": 2270,
+     "buddha": 1618,
+     "konghucu": 1618
+    }
    },
    "mobil": {
     "sekolah": 605,
-    "pasar": 871,
+    "pasar": 1686,
     "faskes": 348,
-    "ibadah": 421
+    "ibadah": {
+     "islam": 410,
+     "kristen": 1530,
+     "katolik": 2767,
+     "hindu": 2270,
+     "buddha": 1618,
+     "konghucu": 1618
+    }
    }
   }
  },
@@ -1527,15 +2283,29 @@
   "waktu": {
    "motor": {
     "sekolah": 591,
-    "pasar": 547,
+    "pasar": 1107,
     "faskes": 439,
-    "ibadah": 509
+    "ibadah": {
+     "islam": 567,
+     "kristen": 1295,
+     "katolik": 2726,
+     "hindu": 2150,
+     "buddha": 1385,
+     "konghucu": 1385
+    }
    },
    "mobil": {
     "sekolah": 609,
-    "pasar": 550,
+    "pasar": 1473,
     "faskes": 477,
-    "ibadah": 509
+    "ibadah": {
+     "islam": 567,
+     "kristen": 1295,
+     "katolik": 2726,
+     "hindu": 2150,
+     "buddha": 1385,
+     "konghucu": 1385
+    }
    }
   }
  },
@@ -1557,13 +2327,27 @@
     "sekolah": 165,
     "pasar": 405,
     "faskes": 216,
-    "ibadah": 101
+    "ibadah": {
+     "islam": 113,
+     "kristen": 529,
+     "katolik": 2121,
+     "hindu": 1559,
+     "buddha": 596,
+     "konghucu": 596
+    }
    },
    "mobil": {
     "sekolah": 171,
     "pasar": 452,
     "faskes": 220,
-    "ibadah": 101
+    "ibadah": {
+     "islam": 113,
+     "kristen": 529,
+     "katolik": 2121,
+     "hindu": 1559,
+     "buddha": 596,
+     "konghucu": 596
+    }
    }
   }
  },
@@ -1583,15 +2367,29 @@
   "waktu": {
    "motor": {
     "sekolah": 408,
-    "pasar": 82,
+    "pasar": 567,
     "faskes": 382,
-    "ibadah": 281
+    "ibadah": {
+     "islam": 196,
+     "kristen": 427,
+     "katolik": 1668,
+     "hindu": 1670,
+     "buddha": 616,
+     "konghucu": 616
+    }
    },
    "mobil": {
     "sekolah": 454,
-    "pasar": 89,
+    "pasar": 629,
     "faskes": 428,
-    "ibadah": 281
+    "ibadah": {
+     "islam": 196,
+     "kristen": 427,
+     "katolik": 1668,
+     "hindu": 1670,
+     "buddha": 616,
+     "konghucu": 616
+    }
    }
   }
  },
@@ -1611,15 +2409,29 @@
   "waktu": {
    "motor": {
     "sekolah": 447,
-    "pasar": 557,
+    "pasar": 692,
     "faskes": 508,
-    "ibadah": 373
+    "ibadah": {
+     "islam": 448,
+     "kristen": 809,
+     "katolik": 2232,
+     "hindu": 1639,
+     "buddha": 877,
+     "konghucu": 877
+    }
    },
    "mobil": {
     "sekolah": 1213,
-    "pasar": 617,
+    "pasar": 1024,
     "faskes": 1221,
-    "ibadah": 373
+    "ibadah": {
+     "islam": 448,
+     "kristen": 809,
+     "katolik": 2232,
+     "hindu": 1639,
+     "buddha": 877,
+     "konghucu": 877
+    }
    }
   }
  },
@@ -1639,15 +2451,29 @@
   "waktu": {
    "motor": {
     "sekolah": 219,
-    "pasar": 487,
+    "pasar": 370,
     "faskes": 331,
-    "ibadah": 218
+    "ibadah": {
+     "islam": 337,
+     "kristen": 730,
+     "katolik": 2098,
+     "hindu": 1278,
+     "buddha": 889,
+     "konghucu": 889
+    }
    },
    "mobil": {
     "sekolah": 231,
-    "pasar": 555,
+    "pasar": 479,
     "faskes": 407,
-    "ibadah": 218
+    "ibadah": {
+     "islam": 337,
+     "kristen": 730,
+     "katolik": 2098,
+     "hindu": 1278,
+     "buddha": 889,
+     "konghucu": 889
+    }
    }
   }
  },
@@ -1667,15 +2493,29 @@
   "waktu": {
    "motor": {
     "sekolah": 551,
-    "pasar": 1051,
+    "pasar": 1193,
     "faskes": 1065,
-    "ibadah": 358
+    "ibadah": {
+     "islam": 895,
+     "kristen": 1659,
+     "katolik": 2490,
+     "hindu": 2042,
+     "buddha": 1657,
+     "konghucu": 1657
+    }
    },
    "mobil": {
     "sekolah": 565,
-    "pasar": 1146,
+    "pasar": 1366,
     "faskes": 1168,
-    "ibadah": 358
+    "ibadah": {
+     "islam": 895,
+     "kristen": 1659,
+     "katolik": 2490,
+     "hindu": 2042,
+     "buddha": 1657,
+     "konghucu": 1657
+    }
    }
   }
  },
@@ -1695,15 +2535,29 @@
   "waktu": {
    "motor": {
     "sekolah": 110,
-    "pasar": 772,
+    "pasar": 1031,
     "faskes": 711,
-    "ibadah": 102
+    "ibadah": {
+     "islam": 115,
+     "kristen": 1310,
+     "katolik": 2614,
+     "hindu": 1129,
+     "buddha": 1129,
+     "konghucu": 1325
+    }
    },
    "mobil": {
     "sekolah": 113,
-    "pasar": 823,
+    "pasar": 1123,
     "faskes": 773,
-    "ibadah": 102
+    "ibadah": {
+     "islam": 115,
+     "kristen": 1310,
+     "katolik": 2614,
+     "hindu": 1129,
+     "buddha": 1129,
+     "konghucu": 1325
+    }
    }
   }
  },
@@ -1725,13 +2579,27 @@
     "sekolah": 213,
     "pasar": 312,
     "faskes": 519,
-    "ibadah": 233
+    "ibadah": {
+     "islam": 270,
+     "kristen": 566,
+     "katolik": 2400,
+     "hindu": 924,
+     "buddha": 606,
+     "konghucu": 606
+    }
    },
    "mobil": {
     "sekolah": 229,
     "pasar": 343,
     "faskes": 575,
-    "ibadah": 233
+    "ibadah": {
+     "islam": 270,
+     "kristen": 566,
+     "katolik": 2400,
+     "hindu": 924,
+     "buddha": 606,
+     "konghucu": 606
+    }
    }
   }
  },
@@ -1753,13 +2621,27 @@
     "sekolah": 311,
     "pasar": 471,
     "faskes": 207,
-    "ibadah": 263
+    "ibadah": {
+     "islam": 345,
+     "kristen": 805,
+     "katolik": 2402,
+     "hindu": 1366,
+     "buddha": 872,
+     "konghucu": 872
+    }
    },
    "mobil": {
     "sekolah": 345,
     "pasar": 538,
     "faskes": 221,
-    "ibadah": 263
+    "ibadah": {
+     "islam": 345,
+     "kristen": 805,
+     "katolik": 2402,
+     "hindu": 1366,
+     "buddha": 872,
+     "konghucu": 872
+    }
    }
   }
  },
@@ -1779,15 +2661,29 @@
   "waktu": {
    "motor": {
     "sekolah": 285,
-    "pasar": 397,
+    "pasar": 395,
     "faskes": 516,
-    "ibadah": 174
+    "ibadah": {
+     "islam": 211,
+     "kristen": 764,
+     "katolik": 2461,
+     "hindu": 975,
+     "buddha": 825,
+     "konghucu": 825
+    }
    },
    "mobil": {
     "sekolah": 375,
-    "pasar": 452,
+    "pasar": 449,
     "faskes": 549,
-    "ibadah": 174
+    "ibadah": {
+     "islam": 211,
+     "kristen": 764,
+     "katolik": 2461,
+     "hindu": 975,
+     "buddha": 825,
+     "konghucu": 825
+    }
    }
   }
  },
@@ -1807,15 +2703,29 @@
   "waktu": {
    "motor": {
     "sekolah": 309,
-    "pasar": 867,
+    "pasar": 1008,
     "faskes": 971,
-    "ibadah": 396
+    "ibadah": {
+     "islam": 487,
+     "kristen": 1305,
+     "katolik": 2479,
+     "hindu": 1504,
+     "buddha": 1303,
+     "konghucu": 1303
+    }
    },
    "mobil": {
     "sekolah": 315,
-    "pasar": 958,
+    "pasar": 1179,
     "faskes": 1087,
-    "ibadah": 396
+    "ibadah": {
+     "islam": 487,
+     "kristen": 1305,
+     "katolik": 2479,
+     "hindu": 1504,
+     "buddha": 1303,
+     "konghucu": 1303
+    }
    }
   }
  },
@@ -1835,15 +2745,29 @@
   "waktu": {
    "motor": {
     "sekolah": 841,
-    "pasar": 797,
+    "pasar": 753,
     "faskes": 797,
-    "ibadah": 607
+    "ibadah": {
+     "islam": 1123,
+     "kristen": 1467,
+     "katolik": 2902,
+     "hindu": 2320,
+     "buddha": 1554,
+     "konghucu": 1554
+    }
    },
    "mobil": {
     "sekolah": 1288,
-    "pasar": 797,
+    "pasar": 1099,
     "faskes": 836,
-    "ibadah": 607
+    "ibadah": {
+     "islam": 1123,
+     "kristen": 1467,
+     "katolik": 2902,
+     "hindu": 2320,
+     "buddha": 1554,
+     "konghucu": 1554
+    }
    }
   }
  },
@@ -1865,13 +2789,27 @@
     "sekolah": 222,
     "pasar": 431,
     "faskes": 283,
-    "ibadah": 194
+    "ibadah": {
+     "islam": 233,
+     "kristen": 593,
+     "katolik": 2187,
+     "hindu": 1302,
+     "buddha": 661,
+     "konghucu": 661
+    }
    },
    "mobil": {
     "sekolah": 231,
     "pasar": 495,
     "faskes": 290,
-    "ibadah": 194
+    "ibadah": {
+     "islam": 233,
+     "kristen": 593,
+     "katolik": 2187,
+     "hindu": 1302,
+     "buddha": 661,
+     "konghucu": 661
+    }
    }
   }
  },
@@ -1893,13 +2831,27 @@
     "sekolah": 257,
     "pasar": 443,
     "faskes": 412,
-    "ibadah": 184
+    "ibadah": {
+     "islam": 335,
+     "kristen": 1560,
+     "katolik": 1602,
+     "hindu": 1562,
+     "buddha": 1558,
+     "konghucu": 1558
+    }
    },
    "mobil": {
     "sekolah": 283,
     "pasar": 506,
     "faskes": 455,
-    "ibadah": 184
+    "ibadah": {
+     "islam": 335,
+     "kristen": 1560,
+     "katolik": 1602,
+     "hindu": 1562,
+     "buddha": 1558,
+     "konghucu": 1558
+    }
    }
   }
  },
@@ -1919,15 +2871,29 @@
   "waktu": {
    "motor": {
     "sekolah": 317,
-    "pasar": 426,
+    "pasar": 423,
     "faskes": 450,
-    "ibadah": 227
+    "ibadah": {
+     "islam": 271,
+     "kristen": 825,
+     "katolik": 2383,
+     "hindu": 813,
+     "buddha": 813,
+     "konghucu": 885
+    }
    },
    "mobil": {
     "sekolah": 403,
-    "pasar": 480,
+    "pasar": 477,
     "faskes": 479,
-    "ibadah": 227
+    "ibadah": {
+     "islam": 271,
+     "kristen": 825,
+     "katolik": 2383,
+     "hindu": 813,
+     "buddha": 813,
+     "konghucu": 885
+    }
    }
   }
  },
@@ -1947,15 +2913,29 @@
   "waktu": {
    "motor": {
     "sekolah": 600,
-    "pasar": 556,
+    "pasar": 1113,
     "faskes": 448,
-    "ibadah": 519
+    "ibadah": {
+     "islam": 629,
+     "kristen": 1325,
+     "katolik": 2756,
+     "hindu": 2179,
+     "buddha": 1414,
+     "konghucu": 1414
+    }
    },
    "mobil": {
     "sekolah": 618,
-    "pasar": 560,
+    "pasar": 1479,
     "faskes": 487,
-    "ibadah": 519
+    "ibadah": {
+     "islam": 629,
+     "kristen": 1325,
+     "katolik": 2756,
+     "hindu": 2179,
+     "buddha": 1414,
+     "konghucu": 1414
+    }
    }
   }
  },
@@ -1975,15 +2955,29 @@
   "waktu": {
    "motor": {
     "sekolah": 577,
-    "pasar": 532,
+    "pasar": 1090,
     "faskes": 424,
-    "ibadah": 492
+    "ibadah": {
+     "islam": 587,
+     "kristen": 1283,
+     "katolik": 2711,
+     "hindu": 2137,
+     "buddha": 1372,
+     "konghucu": 1372
+    }
    },
    "mobil": {
     "sekolah": 595,
-    "pasar": 536,
+    "pasar": 1456,
     "faskes": 463,
-    "ibadah": 492
+    "ibadah": {
+     "islam": 587,
+     "kristen": 1283,
+     "katolik": 2711,
+     "hindu": 2137,
+     "buddha": 1372,
+     "konghucu": 1372
+    }
    }
   }
  },
@@ -2003,15 +2997,29 @@
   "waktu": {
    "motor": {
     "sekolah": 214,
-    "pasar": 497,
+    "pasar": 1407,
     "faskes": 290,
-    "ibadah": 303
+    "ibadah": {
+     "islam": 316,
+     "kristen": 1666,
+     "katolik": 3094,
+     "hindu": 2519,
+     "buddha": 1754,
+     "konghucu": 1754
+    }
    },
    "mobil": {
     "sekolah": 228,
-    "pasar": 497,
+    "pasar": 1762,
     "faskes": 317,
-    "ibadah": 303
+    "ibadah": {
+     "islam": 316,
+     "kristen": 1666,
+     "katolik": 3094,
+     "hindu": 2519,
+     "buddha": 1754,
+     "konghucu": 1754
+    }
    }
   }
  },
@@ -2031,15 +3039,29 @@
   "waktu": {
    "motor": {
     "sekolah": 235,
-    "pasar": 187,
+    "pasar": 594,
     "faskes": 311,
-    "ibadah": 85
+    "ibadah": {
+     "islam": 80,
+     "kristen": 488,
+     "katolik": 1650,
+     "hindu": 1731,
+     "buddha": 677,
+     "konghucu": 677
+    }
    },
    "mobil": {
     "sekolah": 269,
-    "pasar": 232,
+    "pasar": 673,
     "faskes": 377,
-    "ibadah": 85
+    "ibadah": {
+     "islam": 80,
+     "kristen": 488,
+     "katolik": 1650,
+     "hindu": 1731,
+     "buddha": 677,
+     "konghucu": 677
+    }
    }
   }
  },
@@ -2059,15 +3081,29 @@
   "waktu": {
    "motor": {
     "sekolah": 574,
-    "pasar": 570,
+    "pasar": 777,
     "faskes": 567,
-    "ibadah": 516
+    "ibadah": {
+     "islam": 614,
+     "kristen": 952,
+     "katolik": 2376,
+     "hindu": 1806,
+     "buddha": 1044,
+     "konghucu": 1044
+    }
    },
    "mobil": {
     "sekolah": 1319,
-    "pasar": 586,
+    "pasar": 1130,
     "faskes": 620,
-    "ibadah": 516
+    "ibadah": {
+     "islam": 614,
+     "kristen": 952,
+     "katolik": 2376,
+     "hindu": 1806,
+     "buddha": 1044,
+     "konghucu": 1044
+    }
    }
   }
  },
@@ -2089,13 +3125,27 @@
     "sekolah": 319,
     "pasar": 479,
     "faskes": 183,
-    "ibadah": 264
+    "ibadah": {
+     "islam": 367,
+     "kristen": 827,
+     "katolik": 2425,
+     "hindu": 1388,
+     "buddha": 894,
+     "konghucu": 894
+    }
    },
    "mobil": {
     "sekolah": 357,
     "pasar": 550,
     "faskes": 195,
-    "ibadah": 264
+    "ibadah": {
+     "islam": 367,
+     "kristen": 827,
+     "katolik": 2425,
+     "hindu": 1388,
+     "buddha": 894,
+     "konghucu": 894
+    }
    }
   }
  },
@@ -2115,15 +3165,29 @@
   "waktu": {
    "motor": {
     "sekolah": 623,
-    "pasar": 849,
+    "pasar": 964,
     "faskes": 617,
-    "ibadah": 558
+    "ibadah": {
+     "islam": 783,
+     "kristen": 1958,
+     "katolik": 2747,
+     "hindu": 1182,
+     "buddha": 2157,
+     "konghucu": 2157
+    }
    },
    "mobil": {
     "sekolah": 673,
-    "pasar": 920,
+    "pasar": 1025,
     "faskes": 667,
-    "ibadah": 558
+    "ibadah": {
+     "islam": 783,
+     "kristen": 1958,
+     "katolik": 2747,
+     "hindu": 1182,
+     "buddha": 2157,
+     "konghucu": 2157
+    }
    }
   }
  },
@@ -2143,15 +3207,29 @@
   "waktu": {
    "motor": {
     "sekolah": 51,
-    "pasar": 636,
+    "pasar": 895,
     "faskes": 575,
-    "ibadah": 26
+    "ibadah": {
+     "islam": 40,
+     "kristen": 1153,
+     "katolik": 2543,
+     "hindu": 972,
+     "buddha": 972,
+     "konghucu": 1213
+    }
    },
    "mobil": {
     "sekolah": 55,
-    "pasar": 677,
+    "pasar": 976,
     "faskes": 627,
-    "ibadah": 26
+    "ibadah": {
+     "islam": 40,
+     "kristen": 1153,
+     "katolik": 2543,
+     "hindu": 972,
+     "buddha": 972,
+     "konghucu": 1213
+    }
    }
   }
  },
@@ -2171,15 +3249,29 @@
   "waktu": {
    "motor": {
     "sekolah": 392,
-    "pasar": 378,
+    "pasar": 630,
     "faskes": 314,
-    "ibadah": 129
+    "ibadah": {
+     "islam": 459,
+     "kristen": 837,
+     "katolik": 2229,
+     "hindu": 659,
+     "buddha": 659,
+     "konghucu": 898
+    }
    },
    "mobil": {
     "sekolah": 418,
-    "pasar": 393,
+    "pasar": 697,
     "faskes": 338,
-    "ibadah": 129
+    "ibadah": {
+     "islam": 459,
+     "kristen": 837,
+     "katolik": 2229,
+     "hindu": 659,
+     "buddha": 659,
+     "konghucu": 898
+    }
    }
   }
  },
@@ -2199,15 +3291,29 @@
   "waktu": {
    "motor": {
     "sekolah": 379,
-    "pasar": 417,
+    "pasar": 607,
     "faskes": 424,
-    "ibadah": 174
+    "ibadah": {
+     "islam": 197,
+     "kristen": 451,
+     "katolik": 1863,
+     "hindu": 1694,
+     "buddha": 640,
+     "konghucu": 640
+    }
    },
    "mobil": {
     "sekolah": 498,
-    "pasar": 446,
+    "pasar": 673,
     "faskes": 472,
-    "ibadah": 174
+    "ibadah": {
+     "islam": 197,
+     "kristen": 451,
+     "katolik": 1863,
+     "hindu": 1694,
+     "buddha": 640,
+     "konghucu": 640
+    }
    }
   }
  },
@@ -2229,13 +3335,27 @@
     "sekolah": 244,
     "pasar": 412,
     "faskes": 304,
-    "ibadah": 260
+    "ibadah": {
+     "islam": 259,
+     "kristen": 619,
+     "katolik": 2213,
+     "hindu": 1275,
+     "buddha": 687,
+     "konghucu": 687
+    }
    },
    "mobil": {
     "sekolah": 255,
     "pasar": 474,
     "faskes": 314,
-    "ibadah": 260
+    "ibadah": {
+     "islam": 259,
+     "kristen": 619,
+     "katolik": 2213,
+     "hindu": 1275,
+     "buddha": 687,
+     "konghucu": 687
+    }
    }
   }
  },
@@ -2255,15 +3375,29 @@
   "waktu": {
    "motor": {
     "sekolah": 882,
-    "pasar": 660,
+    "pasar": 823,
     "faskes": 630,
-    "ibadah": 570
+    "ibadah": {
+     "islam": 795,
+     "kristen": 1303,
+     "katolik": 2733,
+     "hindu": 2158,
+     "buddha": 1392,
+     "konghucu": 1392
+    }
    },
    "mobil": {
     "sekolah": 1357,
-    "pasar": 660,
+    "pasar": 1169,
     "faskes": 668,
-    "ibadah": 570
+    "ibadah": {
+     "islam": 795,
+     "kristen": 1303,
+     "katolik": 2733,
+     "hindu": 2158,
+     "buddha": 1392,
+     "konghucu": 1392
+    }
    }
   }
  },
@@ -2283,15 +3417,29 @@
   "waktu": {
    "motor": {
     "sekolah": 445,
-    "pasar": 526,
+    "pasar": 871,
     "faskes": 690,
-    "ibadah": 444
+    "ibadah": {
+     "islam": 700,
+     "kristen": 836,
+     "katolik": 1999,
+     "hindu": 1839,
+     "buddha": 1027,
+     "konghucu": 1027
+    }
    },
    "mobil": {
     "sekolah": 480,
-    "pasar": 522,
+    "pasar": 953,
     "faskes": 755,
-    "ibadah": 444
+    "ibadah": {
+     "islam": 700,
+     "kristen": 836,
+     "katolik": 1999,
+     "hindu": 1839,
+     "buddha": 1027,
+     "konghucu": 1027
+    }
    }
   }
  },
@@ -2311,15 +3459,29 @@
   "waktu": {
    "motor": {
     "sekolah": 454,
-    "pasar": 1111,
+    "pasar": 1226,
     "faskes": 537,
-    "ibadah": 208
+    "ibadah": {
+     "islam": 414,
+     "kristen": 1530,
+     "katolik": 2235,
+     "hindu": 701,
+     "buddha": 2216,
+     "konghucu": 2216
+    }
    },
    "mobil": {
     "sekolah": 516,
-    "pasar": 1226,
+    "pasar": 1331,
     "faskes": 607,
-    "ibadah": 208
+    "ibadah": {
+     "islam": 414,
+     "kristen": 1530,
+     "katolik": 2235,
+     "hindu": 701,
+     "buddha": 2216,
+     "konghucu": 2216
+    }
    }
   }
  },
@@ -2339,15 +3501,29 @@
   "waktu": {
    "motor": {
     "sekolah": 562,
-    "pasar": 360,
+    "pasar": 817,
     "faskes": 539,
-    "ibadah": 300
+    "ibadah": {
+     "islam": 336,
+     "kristen": 597,
+     "katolik": 1940,
+     "hindu": 1841,
+     "buddha": 786,
+     "konghucu": 786
+    }
    },
    "mobil": {
     "sekolah": 624,
-    "pasar": 428,
+    "pasar": 800,
     "faskes": 601,
-    "ibadah": 300
+    "ibadah": {
+     "islam": 336,
+     "kristen": 597,
+     "katolik": 1940,
+     "hindu": 1841,
+     "buddha": 786,
+     "konghucu": 786
+    }
    }
   }
  }

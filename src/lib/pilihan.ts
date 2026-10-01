@@ -1,5 +1,5 @@
 import { KECAMATAN, KRITERIA } from "./data";
-import type { Moda, TempatKerja, TingkatPenting, WaktuKerja } from "./tipe";
+import type { Agama, Moda, TempatKerja, TingkatPenting, WaktuKerja } from "./tipe";
 
 /**
  * Pilihan pengguna di halaman cari. Dipakai bersama oleh halaman cari dan halaman uji
@@ -30,6 +30,8 @@ export type Simpanan = {
   idTerpilih: string | null;
   tempatKerja: TempatKerja | null;
   waktuKerja: WaktuKerja | null;
+  /** Untuk kriteria tempat ibadah. Tidak ada di simpanan lama, jadi boleh kosong. */
+  agama?: Agama | null;
 };
 
 export const SIMPANAN_AWAL: Simpanan = {
@@ -39,6 +41,7 @@ export const SIMPANAN_AWAL: Simpanan = {
   idTerpilih: null,
   tempatKerja: null,
   waktuKerja: null,
+  agama: null,
 };
 
 /**

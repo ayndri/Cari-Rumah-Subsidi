@@ -1,0 +1,1850 @@
+{
+ "green-puri-residence": {
+  "sekolah": {
+   "nama": "SMP Negeri 5 Kota Mojokerto",
+   "jenis": "SMP/MTs"
+  },
+  "pasar": {
+   "nama": "Carrefour",
+   "jenis": "Swalayan"
+  },
+  "faskes": {
+   "nama": "Puskesmas Kedundung",
+   "jenis": "Puskesmas"
+  },
+  "ibadah": {
+   "islam": "Masjid Ar-Roudloh",
+   "kristen": "Gereja Allah Baik Pusat",
+   "katolik": "Catholic Church Santa Monika",
+   "hindu": "Pura Majapahit Trowulan",
+   "buddha": "Klenteng Hok Sian Kiong",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "griya-sooko-asri-tahap-3b": {
+  "sekolah": {
+   "nama": "SMK Negeri 1 Kota Mojokerto",
+   "jenis": "SMA/SMK/MA"
+  },
+  "pasar": {
+   "nama": "Pasar Ketidur",
+   "jenis": "Pasar"
+  },
+  "faskes": {
+   "nama": "Puskesmas Blimbing Kesamben",
+   "jenis": "Puskesmas"
+  },
+  "ibadah": {
+   "islam": "Musholla Ar Rahmah",
+   "kristen": "GSJPDI Eben Haezer",
+   "katolik": "Catholic Church Santa Monika",
+   "hindu": "Pura Majapahit Trowulan",
+   "buddha": "Klenteng Hok Sian Kiong",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "harmoni-residence": {
+  "sekolah": {
+   "nama": "SD Negeri Puri",
+   "jenis": "SD/MI"
+  },
+  "pasar": {
+   "nama": "Carrefour",
+   "jenis": "Swalayan"
+  },
+  "faskes": {
+   "nama": "Puskesmas Kedundung",
+   "jenis": "Puskesmas"
+  },
+  "ibadah": {
+   "islam": "Masjid Ar-Roudloh",
+   "kristen": "Gereja Allah Baik Pusat",
+   "katolik": "Catholic Church Santa Monika",
+   "hindu": "Pura Majapahit Trowulan",
+   "buddha": "Klenteng Hok Sian Kiong",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "griya-dahayu-canggu": {
+  "sekolah": {
+   "nama": "Sekolah Dasar Negeri Canggu",
+   "jenis": "Sekolah"
+  },
+  "pasar": {
+   "nama": "Carrefour",
+   "jenis": "Swalayan"
+  },
+  "faskes": {
+   "nama": "RS. Citra Medika",
+   "jenis": "Rumah sakit"
+  },
+  "ibadah": {
+   "islam": "Tanpa nama di peta",
+   "kristen": "GEREJA KRISTEN JAWI WETAN",
+   "katolik": "Catholic Church Santa Monika",
+   "hindu": "Pura Medang Kamulan",
+   "buddha": "Klenteng Hok Sian Kiong",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "mojo-indah-land": {
+  "sekolah": {
+   "nama": "SDN Mojowatesrejo",
+   "jenis": "SD/MI"
+  },
+  "pasar": {
+   "nama": "Pasar Kliwon",
+   "jenis": "Pasar"
+  },
+  "faskes": {
+   "nama": "Puskesmas Kemlagi",
+   "jenis": "Puskesmas"
+  },
+  "ibadah": {
+   "islam": "Tanpa nama di peta",
+   "kristen": "GKI Lawu Mojokerto",
+   "katolik": "Catholic Church Santa Monika",
+   "hindu": "Pura Medang Kamulan",
+   "buddha": "Klenteng Hok Sian Kiong",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "pesanggrahan-safa-marwah": {
+  "sekolah": {
+   "nama": "SDN Sawo 1",
+   "jenis": "SD/MI"
+  },
+  "pasar": {
+   "nama": "Tanpa nama di peta",
+   "jenis": "Swalayan"
+  },
+  "faskes": {
+   "nama": "RSUD Dr. Soekandar",
+   "jenis": "Rumah sakit"
+  },
+  "ibadah": {
+   "islam": "Tanpa nama di peta",
+   "kristen": "Gereja Allah Baik Pusat",
+   "katolik": "Catholic Church Santa Monika",
+   "hindu": "Canti Pasetran",
+   "buddha": "Klenteng Hok Sian Kiong",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "griya-modopuro-perkasa-2": {
+  "sekolah": {
+   "nama": "Tanpa nama di peta",
+   "jenis": "Sekolah"
+  },
+  "pasar": {
+   "nama": "Tanpa nama di peta",
+   "jenis": "Swalayan"
+  },
+  "faskes": {
+   "nama": "RSUD Dr. Soekandar",
+   "jenis": "Rumah sakit"
+  },
+  "ibadah": {
+   "islam": "Tanpa nama di peta",
+   "kristen": "Gereja Bethany Krian",
+   "katolik": "Catholic Church Santa Monika",
+   "hindu": "Canti Pasetran",
+   "buddha": "Klenteng Hok Sian Kiong",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "garden-mansion": {
+  "sekolah": {
+   "nama": "SMK Negeri 1 Kota Mojokerto",
+   "jenis": "SMA/SMK/MA"
+  },
+  "pasar": {
+   "nama": "Pasar Ketidur",
+   "jenis": "Pasar"
+  },
+  "faskes": {
+   "nama": "Puskesmas Pulorejo",
+   "jenis": "Puskesmas"
+  },
+  "ibadah": {
+   "islam": "Musholla Ar Rahmah",
+   "kristen": "GSJPDI Eben Haezer",
+   "katolik": "Catholic Church Santa Monika",
+   "hindu": "Pura Majapahit Trowulan",
+   "buddha": "Klenteng Hok Sian Kiong",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "new-rezan-na-garden": {
+  "sekolah": {
+   "nama": "SMP Negeri 6 Kota Mojokerto",
+   "jenis": "SMP/MTs"
+  },
+  "pasar": {
+   "nama": "Pasar Kliwon",
+   "jenis": "Pasar"
+  },
+  "faskes": {
+   "nama": "Puskesmas Kemlagi",
+   "jenis": "Puskesmas"
+  },
+  "ibadah": {
+   "islam": "Masjid Miftahul Jannah Pulokulon",
+   "kristen": "GKI Lawu Mojokerto",
+   "katolik": "Catholic Church Santa Monika",
+   "hindu": "Pura Majapahit Trowulan",
+   "buddha": "Klenteng Hok Sian Kiong",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "castury-residence": {
+  "sekolah": {
+   "nama": "Tanpa nama di peta",
+   "jenis": "Sekolah"
+  },
+  "pasar": {
+   "nama": "Tanpa nama di peta",
+   "jenis": "Swalayan"
+  },
+  "faskes": {
+   "nama": "RSUD Dr. Soekandar",
+   "jenis": "Rumah sakit"
+  },
+  "ibadah": {
+   "islam": "Tanpa nama di peta",
+   "kristen": "Gereja Bethany Krian",
+   "katolik": "Catholic Church Santa Monika",
+   "hindu": "Canti Pasetran",
+   "buddha": "Klenteng Hok Sian Kiong",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "sabda-alam-regency2": {
+  "sekolah": {
+   "nama": "SDN Purwotengah",
+   "jenis": "SD/MI"
+  },
+  "pasar": {
+   "nama": "Carrefour",
+   "jenis": "Swalayan"
+  },
+  "faskes": {
+   "nama": "Puskesmas Gedongan",
+   "jenis": "Puskesmas"
+  },
+  "ibadah": {
+   "islam": "Tanpa nama di peta",
+   "kristen": "GKI Lawu Mojokerto",
+   "katolik": "Catholic Church Santa Monika",
+   "hindu": "Pura Majapahit Trowulan",
+   "buddha": "Klenteng Hok Sian Kiong",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "grand-zam-zam-regency-medali-tahap-2": {
+  "sekolah": {
+   "nama": "SD Negeri Puri",
+   "jenis": "SD/MI"
+  },
+  "pasar": {
+   "nama": "Carrefour",
+   "jenis": "Swalayan"
+  },
+  "faskes": {
+   "nama": "Rumah Sakit Dian Husada",
+   "jenis": "Rumah sakit"
+  },
+  "ibadah": {
+   "islam": "Tanpa nama di peta",
+   "kristen": "Gereja Allah Baik Pusat",
+   "katolik": "Catholic Church Santa Monika",
+   "hindu": "Pura Majapahit Trowulan",
+   "buddha": "Klenteng Hok Sian Kiong",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "green-star-2-residence": {
+  "sekolah": {
+   "nama": "SMKN 1 Dlanggu",
+   "jenis": "SMA/SMK/MA"
+  },
+  "pasar": {
+   "nama": "Carrefour",
+   "jenis": "Swalayan"
+  },
+  "faskes": {
+   "nama": "Rumah Sakit Dian Husada",
+   "jenis": "Rumah sakit"
+  },
+  "ibadah": {
+   "islam": "Tanpa nama di peta",
+   "kristen": "Gereja Allah Baik Pusat",
+   "katolik": "Catholic Church Santa Monika",
+   "hindu": "Pura Majapahit Trowulan",
+   "buddha": "Klenteng Hok Sian Kiong",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "militer-regency-tahap-2": {
+  "sekolah": {
+   "nama": "Sekolah Dasar Negeri Canggu",
+   "jenis": "Sekolah"
+  },
+  "pasar": {
+   "nama": "Carrefour",
+   "jenis": "Swalayan"
+  },
+  "faskes": {
+   "nama": "Puskesmas Kemlagi",
+   "jenis": "Puskesmas"
+  },
+  "ibadah": {
+   "islam": "Tanpa nama di peta",
+   "kristen": "GKI Lawu Mojokerto",
+   "katolik": "Catholic Church Santa Monika",
+   "hindu": "Pura Medang Kamulan",
+   "buddha": "Klenteng Hok Sian Kiong",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "perumahan-graha-mentari-ngabar-2": {
+  "sekolah": {
+   "nama": "Sekolah Dasar Negeri Canggu",
+   "jenis": "Sekolah"
+  },
+  "pasar": {
+   "nama": "Carrefour",
+   "jenis": "Swalayan"
+  },
+  "faskes": {
+   "nama": "Puskesmas Gedongan",
+   "jenis": "Puskesmas"
+  },
+  "ibadah": {
+   "islam": "Tanpa nama di peta",
+   "kristen": "GKI Lawu Mojokerto",
+   "katolik": "Catholic Church Santa Monika",
+   "hindu": "Pura Medang Kamulan",
+   "buddha": "Klenteng Hok Sian Kiong",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "grand-kencana-mojokerto-tahap-6": {
+  "sekolah": {
+   "nama": "MAN 2 Mojokerto (Sooko)",
+   "jenis": "SMA/SMK/MA"
+  },
+  "pasar": {
+   "nama": "Pasar Ketidur",
+   "jenis": "Pasar"
+  },
+  "faskes": {
+   "nama": "Rumah Sakit Dian Husada",
+   "jenis": "Rumah sakit"
+  },
+  "ibadah": {
+   "islam": "Tanpa nama di peta",
+   "kristen": "GSJPDI Eben Haezer",
+   "katolik": "Gereja Katolik Santa Maria Jombang",
+   "hindu": "Pura Majapahit Trowulan",
+   "buddha": "Pura Majapahit Trowulan",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "anggrek-mas-regency-3": {
+  "sekolah": {
+   "nama": "SDN Tunggalpager",
+   "jenis": "SD/MI"
+  },
+  "pasar": {
+   "nama": "Tanpa nama di peta",
+   "jenis": "Swalayan"
+  },
+  "faskes": {
+   "nama": "RSUD Dr. Soekandar",
+   "jenis": "Rumah sakit"
+  },
+  "ibadah": {
+   "islam": "Masjid Jami' Pungging",
+   "kristen": "Gereja Bethany Krian",
+   "katolik": "Gereja Katolik Santo Paulus",
+   "hindu": "Canti Pasetran",
+   "buddha": "Klenteng Hok Sian Kiong",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "grand-zam-zam-regency-mojokerto": {
+  "sekolah": {
+   "nama": "SD Negeri Puri",
+   "jenis": "SD/MI"
+  },
+  "pasar": {
+   "nama": "Carrefour",
+   "jenis": "Swalayan"
+  },
+  "faskes": {
+   "nama": "Rumah Sakit Dian Husada",
+   "jenis": "Rumah sakit"
+  },
+  "ibadah": {
+   "islam": "Tanpa nama di peta",
+   "kristen": "Gereja Allah Baik Pusat",
+   "katolik": "Catholic Church Santa Monika",
+   "hindu": "Pura Majapahit Trowulan",
+   "buddha": "Pura Majapahit Trowulan",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "grand-kencana-mojokerto-tahap-5": {
+  "sekolah": {
+   "nama": "MAN 2 Mojokerto (Sooko)",
+   "jenis": "SMA/SMK/MA"
+  },
+  "pasar": {
+   "nama": "Pasar Ketidur",
+   "jenis": "Pasar"
+  },
+  "faskes": {
+   "nama": "Rumah Sakit Dian Husada",
+   "jenis": "Rumah sakit"
+  },
+  "ibadah": {
+   "islam": "Tanpa nama di peta",
+   "kristen": "GSJPDI Eben Haezer",
+   "katolik": "Gereja Katolik Santa Maria Jombang",
+   "hindu": "Pura Majapahit Trowulan",
+   "buddha": "Pura Majapahit Trowulan",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "griya-puri-permata": {
+  "sekolah": {
+   "nama": "SD Negeri Puri",
+   "jenis": "SD/MI"
+  },
+  "pasar": {
+   "nama": "Pasar Ketidur",
+   "jenis": "Pasar"
+  },
+  "faskes": {
+   "nama": "Rumah Sakit Dian Husada",
+   "jenis": "Rumah sakit"
+  },
+  "ibadah": {
+   "islam": "Tanpa nama di peta",
+   "kristen": "GSJPDI Eben Haezer",
+   "katolik": "Gereja Katolik Santa Maria Jombang",
+   "hindu": "Pura Majapahit Trowulan",
+   "buddha": "Pura Majapahit Trowulan",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "militer-regency": {
+  "sekolah": {
+   "nama": "Sekolah Dasar Negeri Canggu",
+   "jenis": "Sekolah"
+  },
+  "pasar": {
+   "nama": "Carrefour",
+   "jenis": "Swalayan"
+  },
+  "faskes": {
+   "nama": "Puskesmas Gedongan",
+   "jenis": "Puskesmas"
+  },
+  "ibadah": {
+   "islam": "Tanpa nama di peta",
+   "kristen": "GKI Lawu Mojokerto",
+   "katolik": "Catholic Church Santa Monika",
+   "hindu": "Pura Medang Kamulan",
+   "buddha": "Klenteng Hok Sian Kiong",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "the-valley-residence": {
+  "sekolah": {
+   "nama": "SDN Awang-Awang",
+   "jenis": "SD/MI"
+  },
+  "pasar": {
+   "nama": "Tanpa nama di peta",
+   "jenis": "Swalayan"
+  },
+  "faskes": {
+   "nama": "RSUD Dr. Soekandar",
+   "jenis": "Rumah sakit"
+  },
+  "ibadah": {
+   "islam": "Tanpa nama di peta",
+   "kristen": "Gereja Bethany Krian",
+   "katolik": "Catholic Church Santa Monika",
+   "hindu": "Canti Pasetran",
+   "buddha": "Klenteng Hok Sian Kiong",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "graha-millenia-indah": {
+  "sekolah": {
+   "nama": "SD Negeri Puri",
+   "jenis": "SD/MI"
+  },
+  "pasar": {
+   "nama": "Pasar Ketidur",
+   "jenis": "Pasar"
+  },
+  "faskes": {
+   "nama": "Rumah Sakit Dian Husada",
+   "jenis": "Rumah sakit"
+  },
+  "ibadah": {
+   "islam": "Tanpa nama di peta",
+   "kristen": "GSJPDI Eben Haezer",
+   "katolik": "Gereja Katolik Santa Maria Jombang",
+   "hindu": "Pura Majapahit Trowulan",
+   "buddha": "Pura Majapahit Trowulan",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "griya-tegal-arum": {
+  "sekolah": {
+   "nama": "SMP Negeri 6 Kota Mojokerto",
+   "jenis": "SMP/MTs"
+  },
+  "pasar": {
+   "nama": "Pasar Ketidur",
+   "jenis": "Pasar"
+  },
+  "faskes": {
+   "nama": "Puskesmas Pulorejo",
+   "jenis": "Puskesmas"
+  },
+  "ibadah": {
+   "islam": "Masjid Miftahul Jannah Pulokulon",
+   "kristen": "GSJPDI Eben Haezer",
+   "katolik": "Catholic Church Santa Monika",
+   "hindu": "Pura Majapahit Trowulan",
+   "buddha": "Klenteng Hok Sian Kiong",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "bhatara-village-tahap-2": {
+  "sekolah": {
+   "nama": "SMPN 1 Dlanggu",
+   "jenis": "SMP/MTs"
+  },
+  "pasar": {
+   "nama": "Tanpa nama di peta",
+   "jenis": "Swalayan"
+  },
+  "faskes": {
+   "nama": "Puskesmas Jatirejo",
+   "jenis": "Puskesmas"
+  },
+  "ibadah": {
+   "islam": "masjid Nurul huda",
+   "kristen": "Gereja Allah Baik Pusat",
+   "katolik": "Gereja Katolik Kompleks Griya Samadhi Yohanes, Trawas",
+   "hindu": "Pura Majapahit Trowulan",
+   "buddha": "Pura Majapahit Trowulan",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "grand-elzaya-residence": {
+  "sekolah": {
+   "nama": "SMAN 1 Kutorejo",
+   "jenis": "SMA/SMK/MA"
+  },
+  "pasar": {
+   "nama": "Tanpa nama di peta",
+   "jenis": "Swalayan"
+  },
+  "faskes": {
+   "nama": "RSUD Dr. Soekandar",
+   "jenis": "Rumah sakit"
+  },
+  "ibadah": {
+   "islam": "Tanpa nama di peta",
+   "kristen": "Gereja Allah Baik Pusat",
+   "katolik": "Catholic Church Santa Monika",
+   "hindu": "Pura Majapahit Trowulan",
+   "buddha": "Klenteng Hok Sian Kiong",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "abadi-megah-regency-3-tahap-4": {
+  "sekolah": {
+   "nama": "Sekolah Dasar Negeri Canggu",
+   "jenis": "Sekolah"
+  },
+  "pasar": {
+   "nama": "Carrefour",
+   "jenis": "Swalayan"
+  },
+  "faskes": {
+   "nama": "RS. Citra Medika",
+   "jenis": "Rumah sakit"
+  },
+  "ibadah": {
+   "islam": "Tanpa nama di peta",
+   "kristen": "GKI Lawu Mojokerto",
+   "katolik": "Catholic Church Santa Monika",
+   "hindu": "Pura Majapahit Trowulan",
+   "buddha": "Klenteng Hok Sian Kiong",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "abadi-megah-regency-3-thp-4": {
+  "sekolah": {
+   "nama": "Sekolah Dasar Negeri Canggu",
+   "jenis": "Sekolah"
+  },
+  "pasar": {
+   "nama": "Carrefour",
+   "jenis": "Swalayan"
+  },
+  "faskes": {
+   "nama": "RS. Citra Medika",
+   "jenis": "Rumah sakit"
+  },
+  "ibadah": {
+   "islam": "Tanpa nama di peta",
+   "kristen": "GKI Lawu Mojokerto",
+   "katolik": "Catholic Church Santa Monika",
+   "hindu": "Pura Majapahit Trowulan",
+   "buddha": "Klenteng Hok Sian Kiong",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "bumi-mentari-sooko-tahap-2": {
+  "sekolah": {
+   "nama": "SD Negeri Puri",
+   "jenis": "SD/MI"
+  },
+  "pasar": {
+   "nama": "Pasar Ketidur",
+   "jenis": "Pasar"
+  },
+  "faskes": {
+   "nama": "Rumah Sakit Dian Husada",
+   "jenis": "Rumah sakit"
+  },
+  "ibadah": {
+   "islam": "Tanpa nama di peta",
+   "kristen": "GSJPDI Eben Haezer",
+   "katolik": "Gereja Katolik Santa Maria Jombang",
+   "hindu": "Pura Majapahit Trowulan",
+   "buddha": "Pura Majapahit Trowulan",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "griya-tegal-madu-2": {
+  "sekolah": {
+   "nama": "SMP Negeri 6 Kota Mojokerto",
+   "jenis": "SMP/MTs"
+  },
+  "pasar": {
+   "nama": "Pasar Kliwon",
+   "jenis": "Pasar"
+  },
+  "faskes": {
+   "nama": "Puskesmas Kemlagi",
+   "jenis": "Puskesmas"
+  },
+  "ibadah": {
+   "islam": "Masjid Miftahul Jannah Pulokulon",
+   "kristen": "GSJPDI Eben Haezer",
+   "katolik": "Catholic Church Santa Monika",
+   "hindu": "Pura Majapahit Trowulan",
+   "buddha": "Klenteng Hok Sian Kiong",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "grand-kencana-mojokerto-tahap-4": {
+  "sekolah": {
+   "nama": "MAN 2 Mojokerto (Sooko)",
+   "jenis": "SMA/SMK/MA"
+  },
+  "pasar": {
+   "nama": "Pasar Ketidur",
+   "jenis": "Pasar"
+  },
+  "faskes": {
+   "nama": "Rumah Sakit Dian Husada",
+   "jenis": "Rumah sakit"
+  },
+  "ibadah": {
+   "islam": "Mesjid Besar Darusalam",
+   "kristen": "GSJPDI Eben Haezer",
+   "katolik": "Gereja Katolik Santa Maria Jombang",
+   "hindu": "Pura Majapahit Trowulan",
+   "buddha": "Pura Majapahit Trowulan",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "griya-dahayu": {
+  "sekolah": {
+   "nama": "SDN Blooto",
+   "jenis": "SD/MI"
+  },
+  "pasar": {
+   "nama": "Pasar Ketidur",
+   "jenis": "Pasar"
+  },
+  "faskes": {
+   "nama": "Rumah Sakit Rekso Waluyo",
+   "jenis": "Rumah sakit"
+  },
+  "ibadah": {
+   "islam": "Tanpa nama di peta",
+   "kristen": "GSJPDI Eben Haezer",
+   "katolik": "Gereja Katolik Santa Maria Jombang",
+   "hindu": "Pura Majapahit Trowulan",
+   "buddha": "Klenteng Hok Sian Kiong",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "star-residence-4-sambiroto": {
+  "sekolah": {
+   "nama": "SDN Blooto",
+   "jenis": "SD/MI"
+  },
+  "pasar": {
+   "nama": "Pasar Ketidur",
+   "jenis": "Pasar"
+  },
+  "faskes": {
+   "nama": "Rumah Sakit Dian Husada",
+   "jenis": "Rumah sakit"
+  },
+  "ibadah": {
+   "islam": "Tanpa nama di peta",
+   "kristen": "GSJPDI Eben Haezer",
+   "katolik": "Gereja Katolik Santa Maria Jombang",
+   "hindu": "Pura Majapahit Trowulan",
+   "buddha": "Klenteng Hok Sian Kiong",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "bumi-rejo-permai": {
+  "sekolah": {
+   "nama": "SDN 2 Randuharjo",
+   "jenis": "SD/MI"
+  },
+  "pasar": {
+   "nama": "Tanpa nama di peta",
+   "jenis": "Swalayan"
+  },
+  "faskes": {
+   "nama": "Rumah Praktek Bidan Desa",
+   "jenis": "Bidan"
+  },
+  "ibadah": {
+   "islam": "Tanpa nama di peta",
+   "kristen": "Gereja Bethany Krian",
+   "katolik": "Gereja Katolik Santo Paulus",
+   "hindu": "Canti Pasetran",
+   "buddha": "Klenteng Hok Sian Kiong",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "bumi-mojopahit-asri-2": {
+  "sekolah": {
+   "nama": "SMKN 1 Dlanggu",
+   "jenis": "SMA/SMK/MA"
+  },
+  "pasar": {
+   "nama": "Carrefour",
+   "jenis": "Swalayan"
+  },
+  "faskes": {
+   "nama": "RSUD Dr. Soekandar",
+   "jenis": "Rumah sakit"
+  },
+  "ibadah": {
+   "islam": "Tanpa nama di peta",
+   "kristen": "Gereja Allah Baik Pusat",
+   "katolik": "Catholic Church Santa Monika",
+   "hindu": "Pura Majapahit Trowulan",
+   "buddha": "Klenteng Hok Sian Kiong",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "bale-bolo-nagari": {
+  "sekolah": {
+   "nama": "SDN 2 Randuharjo",
+   "jenis": "SD/MI"
+  },
+  "pasar": {
+   "nama": "Tanpa nama di peta",
+   "jenis": "Swalayan"
+  },
+  "faskes": {
+   "nama": "Rumah Praktek Bidan Desa",
+   "jenis": "Bidan"
+  },
+  "ibadah": {
+   "islam": "MASJID AL-IKHLAS",
+   "kristen": "Gereja Bethany Krian",
+   "katolik": "Gereja Katolik Santo Paulus",
+   "hindu": "Canti Pasetran",
+   "buddha": "Klenteng Hok Sian Kiong",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "mutiara-garden-2": {
+  "sekolah": {
+   "nama": "SDN Tunggalpager",
+   "jenis": "SD/MI"
+  },
+  "pasar": {
+   "nama": "Tanpa nama di peta",
+   "jenis": "Swalayan"
+  },
+  "faskes": {
+   "nama": "RSUD Dr. Soekandar",
+   "jenis": "Rumah sakit"
+  },
+  "ibadah": {
+   "islam": "Masjid Jami' Pungging",
+   "kristen": "Gereja Bethany Krian",
+   "katolik": "Gereja Katolik Santo Paulus",
+   "hindu": "Canti Pasetran",
+   "buddha": "Klenteng Hok Sian Kiong",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "permata-pesanggrahan-3": {
+  "sekolah": {
+   "nama": "SMAN 1 Kutorejo",
+   "jenis": "SMA/SMK/MA"
+  },
+  "pasar": {
+   "nama": "Tanpa nama di peta",
+   "jenis": "Swalayan"
+  },
+  "faskes": {
+   "nama": "RSUD Dr. Soekandar",
+   "jenis": "Rumah sakit"
+  },
+  "ibadah": {
+   "islam": "Tanpa nama di peta",
+   "kristen": "Gereja Allah Baik Pusat",
+   "katolik": "Catholic Church Santa Monika",
+   "hindu": "Canti Pasetran",
+   "buddha": "Klenteng Hok Sian Kiong",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "abadi-megah-regency-3-thp-3": {
+  "sekolah": {
+   "nama": "Sekolah Dasar Negeri Canggu",
+   "jenis": "Sekolah"
+  },
+  "pasar": {
+   "nama": "Carrefour",
+   "jenis": "Swalayan"
+  },
+  "faskes": {
+   "nama": "RS. Citra Medika",
+   "jenis": "Rumah sakit"
+  },
+  "ibadah": {
+   "islam": "Tanpa nama di peta",
+   "kristen": "GKI Lawu Mojokerto",
+   "katolik": "Catholic Church Santa Monika",
+   "hindu": "Pura Majapahit Trowulan",
+   "buddha": "Klenteng Hok Sian Kiong",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "graha-kutorejo": {
+  "sekolah": {
+   "nama": "SMAN 1 Kutorejo",
+   "jenis": "SMA/SMK/MA"
+  },
+  "pasar": {
+   "nama": "Tanpa nama di peta",
+   "jenis": "Swalayan"
+  },
+  "faskes": {
+   "nama": "RSUD Dr. Soekandar",
+   "jenis": "Rumah sakit"
+  },
+  "ibadah": {
+   "islam": "Tanpa nama di peta",
+   "kristen": "Gereja Allah Baik Pusat",
+   "katolik": "Catholic Church Santa Monika",
+   "hindu": "Pura Majapahit Trowulan",
+   "buddha": "Klenteng Hok Sian Kiong",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "bendung-regency-cluster-puri-kertajaya": {
+  "sekolah": {
+   "nama": "Sekolah Dasar Negeri Canggu",
+   "jenis": "Sekolah"
+  },
+  "pasar": {
+   "nama": "Carrefour",
+   "jenis": "Swalayan"
+  },
+  "faskes": {
+   "nama": "Puskesmas Kemlagi",
+   "jenis": "Puskesmas"
+  },
+  "ibadah": {
+   "islam": "Tanpa nama di peta",
+   "kristen": "GEREJA KRISTEN JAWI WETAN",
+   "katolik": "Catholic Church Santa Monika",
+   "hindu": "Pura Medang Kamulan",
+   "buddha": "Klenteng Hok Sian Kiong",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "anggrek-mas-regency-2": {
+  "sekolah": {
+   "nama": "SDN Tunggalpager",
+   "jenis": "SD/MI"
+  },
+  "pasar": {
+   "nama": "Tanpa nama di peta",
+   "jenis": "Swalayan"
+  },
+  "faskes": {
+   "nama": "RSUD Dr. Soekandar",
+   "jenis": "Rumah sakit"
+  },
+  "ibadah": {
+   "islam": "Masjid Jami' Pungging",
+   "kristen": "Gereja Bethany Krian",
+   "katolik": "Gereja Katolik Santo Paulus",
+   "hindu": "Canti Pasetran",
+   "buddha": "Klenteng Hok Sian Kiong",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "tanjungan-indah-3": {
+  "sekolah": {
+   "nama": "SDN Mojowatesrejo",
+   "jenis": "SD/MI"
+  },
+  "pasar": {
+   "nama": "Pasar Kliwon",
+   "jenis": "Pasar"
+  },
+  "faskes": {
+   "nama": "Puskesmas Kemlagi",
+   "jenis": "Puskesmas"
+  },
+  "ibadah": {
+   "islam": "Tanpa nama di peta",
+   "kristen": "GKI Lawu Mojokerto",
+   "katolik": "Catholic Church Santa Monika",
+   "hindu": "Pura Medang Kamulan",
+   "buddha": "Klenteng Hok Sian Kiong",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "puspamaya-residence": {
+  "sekolah": {
+   "nama": "MAN 2 Mojokerto (Sooko)",
+   "jenis": "SMA/SMK/MA"
+  },
+  "pasar": {
+   "nama": "Pasar Ketidur",
+   "jenis": "Pasar"
+  },
+  "faskes": {
+   "nama": "Rumah Sakit Dian Husada",
+   "jenis": "Rumah sakit"
+  },
+  "ibadah": {
+   "islam": "Tanpa nama di peta",
+   "kristen": "GSJPDI Eben Haezer",
+   "katolik": "Gereja Katolik Santa Maria Jombang",
+   "hindu": "Pura Majapahit Trowulan",
+   "buddha": "Pura Majapahit Trowulan",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "grand-kencana-mojokerto-tahap-3": {
+  "sekolah": {
+   "nama": "MAN 2 Mojokerto (Sooko)",
+   "jenis": "SMA/SMK/MA"
+  },
+  "pasar": {
+   "nama": "Pasar Ketidur",
+   "jenis": "Pasar"
+  },
+  "faskes": {
+   "nama": "Rumah Sakit Dian Husada",
+   "jenis": "Rumah sakit"
+  },
+  "ibadah": {
+   "islam": "Tanpa nama di peta",
+   "kristen": "GSJPDI Eben Haezer",
+   "katolik": "Gereja Katolik Santa Maria Jombang",
+   "hindu": "Pura Majapahit Trowulan",
+   "buddha": "Pura Majapahit Trowulan",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "bhatara-village": {
+  "sekolah": {
+   "nama": "SMPN 1 Dlanggu",
+   "jenis": "SMP/MTs"
+  },
+  "pasar": {
+   "nama": "Tanpa nama di peta",
+   "jenis": "Swalayan"
+  },
+  "faskes": {
+   "nama": "Puskesmas Jatirejo",
+   "jenis": "Puskesmas"
+  },
+  "ibadah": {
+   "islam": "masjid Nurul huda",
+   "kristen": "Gereja Allah Baik Pusat",
+   "katolik": "Gereja Katolik Kompleks Griya Samadhi Yohanes, Trawas",
+   "hindu": "Pura Majapahit Trowulan",
+   "buddha": "Pura Majapahit Trowulan",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "bumi-mentari-sooko": {
+  "sekolah": {
+   "nama": "SD Negeri Puri",
+   "jenis": "SD/MI"
+  },
+  "pasar": {
+   "nama": "Pasar Ketidur",
+   "jenis": "Pasar"
+  },
+  "faskes": {
+   "nama": "Rumah Sakit Dian Husada",
+   "jenis": "Rumah sakit"
+  },
+  "ibadah": {
+   "islam": "Tanpa nama di peta",
+   "kristen": "GSJPDI Eben Haezer",
+   "katolik": "Gereja Katolik Santa Maria Jombang",
+   "hindu": "Pura Majapahit Trowulan",
+   "buddha": "Pura Majapahit Trowulan",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "grand-bangsal-residence": {
+  "sekolah": {
+   "nama": "SDN",
+   "jenis": "SD/MI"
+  },
+  "pasar": {
+   "nama": "Carrefour",
+   "jenis": "Swalayan"
+  },
+  "faskes": {
+   "nama": "RSUD Dr. Soekandar",
+   "jenis": "Rumah sakit"
+  },
+  "ibadah": {
+   "islam": "Tanpa nama di peta",
+   "kristen": "Gereja Allah Baik Pusat",
+   "katolik": "Catholic Church Santa Monika",
+   "hindu": "Pura Majapahit Trowulan",
+   "buddha": "Klenteng Hok Sian Kiong",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "sativa-green-hill": {
+  "sekolah": {
+   "nama": "SDN Kertosari",
+   "jenis": "SD/MI"
+  },
+  "pasar": {
+   "nama": "Tanpa nama di peta",
+   "jenis": "Swalayan"
+  },
+  "faskes": {
+   "nama": "RSUD Dr. Soekandar",
+   "jenis": "Rumah sakit"
+  },
+  "ibadah": {
+   "islam": "Tanpa nama di peta",
+   "kristen": "Gereja Allah Baik Pusat",
+   "katolik": "Gereja Katolik Kompleks Griya Samadhi Yohanes, Trawas",
+   "hindu": "Canti Pasetran",
+   "buddha": "Klenteng Hok Sian Kiong",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "amares-residence": {
+  "sekolah": {
+   "nama": "SMPN 1 Dlanggu",
+   "jenis": "SMP/MTs"
+  },
+  "pasar": {
+   "nama": "Tanpa nama di peta",
+   "jenis": "Swalayan"
+  },
+  "faskes": {
+   "nama": "RSUD Dr. Soekandar",
+   "jenis": "Rumah sakit"
+  },
+  "ibadah": {
+   "islam": "Tanpa nama di peta",
+   "kristen": "Gereja Allah Baik Pusat",
+   "katolik": "Catholic Church Santa Monika",
+   "hindu": "Pura Majapahit Trowulan",
+   "buddha": "Klenteng Hok Sian Kiong",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "abadi-megah-regency-3-tahap-2": {
+  "sekolah": {
+   "nama": "Sekolah Dasar Negeri Canggu",
+   "jenis": "Sekolah"
+  },
+  "pasar": {
+   "nama": "Carrefour",
+   "jenis": "Swalayan"
+  },
+  "faskes": {
+   "nama": "RS. Citra Medika",
+   "jenis": "Rumah sakit"
+  },
+  "ibadah": {
+   "islam": "Tanpa nama di peta",
+   "kristen": "GKI Lawu Mojokerto",
+   "katolik": "Catholic Church Santa Monika",
+   "hindu": "Pura Majapahit Trowulan",
+   "buddha": "Klenteng Hok Sian Kiong",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "graha-bhinneka-fortuna-2": {
+  "sekolah": {
+   "nama": "SDN",
+   "jenis": "SD/MI"
+  },
+  "pasar": {
+   "nama": "Carrefour",
+   "jenis": "Swalayan"
+  },
+  "faskes": {
+   "nama": "RSUD Dr. Soekandar",
+   "jenis": "Rumah sakit"
+  },
+  "ibadah": {
+   "islam": "Tanpa nama di peta",
+   "kristen": "Gereja Allah Baik Pusat",
+   "katolik": "Catholic Church Santa Monika",
+   "hindu": "Pura Majapahit Trowulan",
+   "buddha": "Klenteng Hok Sian Kiong",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "tanjungan-indah": {
+  "sekolah": {
+   "nama": "SDN Mojowatesrejo",
+   "jenis": "SD/MI"
+  },
+  "pasar": {
+   "nama": "Pasar Kliwon",
+   "jenis": "Pasar"
+  },
+  "faskes": {
+   "nama": "Puskesmas Kemlagi",
+   "jenis": "Puskesmas"
+  },
+  "ibadah": {
+   "islam": "Tanpa nama di peta",
+   "kristen": "GKI Lawu Mojokerto",
+   "katolik": "Catholic Church Santa Monika",
+   "hindu": "Pura Medang Kamulan",
+   "buddha": "Klenteng Hok Sian Kiong",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "tanjungan-indah-2": {
+  "sekolah": {
+   "nama": "SDN Mojowatesrejo",
+   "jenis": "SD/MI"
+  },
+  "pasar": {
+   "nama": "Pasar Kliwon",
+   "jenis": "Pasar"
+  },
+  "faskes": {
+   "nama": "Puskesmas Kemlagi",
+   "jenis": "Puskesmas"
+  },
+  "ibadah": {
+   "islam": "Tanpa nama di peta",
+   "kristen": "GKI Lawu Mojokerto",
+   "katolik": "Catholic Church Santa Monika",
+   "hindu": "Pura Medang Kamulan",
+   "buddha": "Klenteng Hok Sian Kiong",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "japanan-indah-3": {
+  "sekolah": {
+   "nama": "SMP Negeri 1 Kemlagi",
+   "jenis": "SMP/MTs"
+  },
+  "pasar": {
+   "nama": "Pasar Kliwon",
+   "jenis": "Pasar"
+  },
+  "faskes": {
+   "nama": "Puskesmas Kemlagi",
+   "jenis": "Puskesmas"
+  },
+  "ibadah": {
+   "islam": "Tanpa nama di peta",
+   "kristen": "GKI Lawu Mojokerto",
+   "katolik": "Catholic Church Santa Monika",
+   "hindu": "Pura Majapahit Trowulan",
+   "buddha": "Klenteng Hok Sian Kiong",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "graha-bhinneka-central": {
+  "sekolah": {
+   "nama": "SMP Negeri 6 Kota Mojokerto",
+   "jenis": "SMP/MTs"
+  },
+  "pasar": {
+   "nama": "Pasar Kliwon",
+   "jenis": "Pasar"
+  },
+  "faskes": {
+   "nama": "Puskesmas Pulorejo",
+   "jenis": "Puskesmas"
+  },
+  "ibadah": {
+   "islam": "Masjid Miftahul Jannah Pulokulon",
+   "kristen": "GSJPDI Eben Haezer",
+   "katolik": "Catholic Church Santa Monika",
+   "hindu": "Pura Majapahit Trowulan",
+   "buddha": "Klenteng Hok Sian Kiong",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "grand-bhinneka-regency": {
+  "sekolah": {
+   "nama": "SDN Purwotengah",
+   "jenis": "SD/MI"
+  },
+  "pasar": {
+   "nama": "Carrefour",
+   "jenis": "Swalayan"
+  },
+  "faskes": {
+   "nama": "Puskesmas Gedongan",
+   "jenis": "Puskesmas"
+  },
+  "ibadah": {
+   "islam": "Tanpa nama di peta",
+   "kristen": "GKI Lawu Mojokerto",
+   "katolik": "Catholic Church Santa Monika",
+   "hindu": "Pura Majapahit Trowulan",
+   "buddha": "Klenteng Hok Sian Kiong",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "mojokerto-regency": {
+  "sekolah": {
+   "nama": "SMP Negeri 6 Kota Mojokerto",
+   "jenis": "SMP/MTs"
+  },
+  "pasar": {
+   "nama": "Pasar Kliwon",
+   "jenis": "Pasar"
+  },
+  "faskes": {
+   "nama": "Puskesmas Pulorejo",
+   "jenis": "Puskesmas"
+  },
+  "ibadah": {
+   "islam": "Masjid Miftahul Jannah Pulokulon",
+   "kristen": "GSJPDI Eben Haezer",
+   "katolik": "Catholic Church Santa Monika",
+   "hindu": "Pura Majapahit Trowulan",
+   "buddha": "Klenteng Hok Sian Kiong",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "green-jayanegara-residence": {
+  "sekolah": {
+   "nama": "TPQ NURUS SALAM",
+   "jenis": "Sekolah"
+  },
+  "pasar": {
+   "nama": "Pasar Tradisional Kota Mojokerto",
+   "jenis": "Pasar"
+  },
+  "faskes": {
+   "nama": "Puskesmas Kedundung",
+   "jenis": "Puskesmas"
+  },
+  "ibadah": {
+   "islam": "Langgar Wakaf",
+   "kristen": "GBI Balongrawe",
+   "katolik": "Catholic Church Santa Monika",
+   "hindu": "Pura Majapahit Trowulan",
+   "buddha": "Klenteng Hok Sian Kiong",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "bumi-mojopahit-asri": {
+  "sekolah": {
+   "nama": "SMKN 1 Dlanggu",
+   "jenis": "SMA/SMK/MA"
+  },
+  "pasar": {
+   "nama": "Carrefour",
+   "jenis": "Swalayan"
+  },
+  "faskes": {
+   "nama": "RSUD Dr. Soekandar",
+   "jenis": "Rumah sakit"
+  },
+  "ibadah": {
+   "islam": "Tanpa nama di peta",
+   "kristen": "Gereja Allah Baik Pusat",
+   "katolik": "Catholic Church Santa Monika",
+   "hindu": "Pura Majapahit Trowulan",
+   "buddha": "Klenteng Hok Sian Kiong",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "grand-emerald-puri-tahap-2": {
+  "sekolah": {
+   "nama": "SD Negeri Puri",
+   "jenis": "SD/MI"
+  },
+  "pasar": {
+   "nama": "Pasar Ketidur",
+   "jenis": "Pasar"
+  },
+  "faskes": {
+   "nama": "Rumah Sakit Dian Husada",
+   "jenis": "Rumah sakit"
+  },
+  "ibadah": {
+   "islam": "Tanpa nama di peta",
+   "kristen": "GSJPDI Eben Haezer",
+   "katolik": "Catholic Church Santa Monika",
+   "hindu": "Pura Majapahit Trowulan",
+   "buddha": "Pura Majapahit Trowulan",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "griya-permata-karang-kedawang": {
+  "sekolah": {
+   "nama": "SDN Blooto",
+   "jenis": "SD/MI"
+  },
+  "pasar": {
+   "nama": "Pasar Ketidur",
+   "jenis": "Pasar"
+  },
+  "faskes": {
+   "nama": "Rumah Sakit Rekso Waluyo",
+   "jenis": "Rumah sakit"
+  },
+  "ibadah": {
+   "islam": "Masjid al Mubarok",
+   "kristen": "GSJPDI Eben Haezer",
+   "katolik": "Catholic Church Santa Monika",
+   "hindu": "Pura Majapahit Trowulan",
+   "buddha": "Klenteng Hok Sian Kiong",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "harmony-alam-sooko": {
+  "sekolah": {
+   "nama": "SMK Negeri 1 Kota Mojokerto",
+   "jenis": "SMA/SMK/MA"
+  },
+  "pasar": {
+   "nama": "Pasar Ketidur",
+   "jenis": "Pasar"
+  },
+  "faskes": {
+   "nama": "Puskesmas Blimbing Kesamben",
+   "jenis": "Puskesmas"
+  },
+  "ibadah": {
+   "islam": "Musholla Ar Rahmah",
+   "kristen": "GSJPDI Eben Haezer",
+   "katolik": "Catholic Church Santa Monika",
+   "hindu": "Pura Majapahit Trowulan",
+   "buddha": "Klenteng Hok Sian Kiong",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "star-residence-3-sambiroto": {
+  "sekolah": {
+   "nama": "SDN Blooto",
+   "jenis": "SD/MI"
+  },
+  "pasar": {
+   "nama": "Pasar Ketidur",
+   "jenis": "Pasar"
+  },
+  "faskes": {
+   "nama": "Rumah Sakit Dian Husada",
+   "jenis": "Rumah sakit"
+  },
+  "ibadah": {
+   "islam": "Tanpa nama di peta",
+   "kristen": "GSJPDI Eben Haezer",
+   "katolik": "Gereja Katolik Santa Maria Jombang",
+   "hindu": "Pura Majapahit Trowulan",
+   "buddha": "Klenteng Hok Sian Kiong",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "perumahan-de-puri-kanigraha": {
+  "sekolah": {
+   "nama": "SMKN 1 Dlanggu",
+   "jenis": "SMA/SMK/MA"
+  },
+  "pasar": {
+   "nama": "Carrefour",
+   "jenis": "Swalayan"
+  },
+  "faskes": {
+   "nama": "Rumah Sakit Dian Husada",
+   "jenis": "Rumah sakit"
+  },
+  "ibadah": {
+   "islam": "Tanpa nama di peta",
+   "kristen": "Gereja Allah Baik Pusat",
+   "katolik": "Catholic Church Santa Monika",
+   "hindu": "Pura Majapahit Trowulan",
+   "buddha": "Klenteng Hok Sian Kiong",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "mojo-hills": {
+  "sekolah": {
+   "nama": "SMP Negeri 6 Kota Mojokerto",
+   "jenis": "SMP/MTs"
+  },
+  "pasar": {
+   "nama": "Pasar Kliwon",
+   "jenis": "Pasar"
+  },
+  "faskes": {
+   "nama": "Puskesmas Kemlagi",
+   "jenis": "Puskesmas"
+  },
+  "ibadah": {
+   "islam": "Masjid Miftahul Jannah Pulokulon",
+   "kristen": "GKI Lawu Mojokerto",
+   "katolik": "Catholic Church Santa Monika",
+   "hindu": "Pura Majapahit Trowulan",
+   "buddha": "Klenteng Hok Sian Kiong",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "griya-tegal-asri": {
+  "sekolah": {
+   "nama": "SMP Negeri 6 Kota Mojokerto",
+   "jenis": "SMP/MTs"
+  },
+  "pasar": {
+   "nama": "Pasar Ketidur",
+   "jenis": "Pasar"
+  },
+  "faskes": {
+   "nama": "Puskesmas Pulorejo",
+   "jenis": "Puskesmas"
+  },
+  "ibadah": {
+   "islam": "Masjid Miftahul Jannah Pulokulon",
+   "kristen": "GSJPDI Eben Haezer",
+   "katolik": "Catholic Church Santa Monika",
+   "hindu": "Pura Majapahit Trowulan",
+   "buddha": "Klenteng Hok Sian Kiong",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "perumahan-sumberejo-asri": {
+  "sekolah": {
+   "nama": "SDN Awang-Awang",
+   "jenis": "SD/MI"
+  },
+  "pasar": {
+   "nama": "Tanpa nama di peta",
+   "jenis": "Swalayan"
+  },
+  "faskes": {
+   "nama": "RSUD Dr. Soekandar",
+   "jenis": "Rumah sakit"
+  },
+  "ibadah": {
+   "islam": "Tanpa nama di peta",
+   "kristen": "Gereja Allah Baik Pusat",
+   "katolik": "Catholic Church Santa Monika",
+   "hindu": "Canti Pasetran",
+   "buddha": "Klenteng Hok Sian Kiong",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "grand-kencana-mojokerto": {
+  "sekolah": {
+   "nama": "SDN Blooto",
+   "jenis": "SD/MI"
+  },
+  "pasar": {
+   "nama": "Pasar Ketidur",
+   "jenis": "Pasar"
+  },
+  "faskes": {
+   "nama": "Rumah Sakit Dian Husada",
+   "jenis": "Rumah sakit"
+  },
+  "ibadah": {
+   "islam": "Tanpa nama di peta",
+   "kristen": "GSJPDI Eben Haezer",
+   "katolik": "Gereja Katolik Santa Maria Jombang",
+   "hindu": "Pura Majapahit Trowulan",
+   "buddha": "Pura Majapahit Trowulan",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "perum-japanan-indah-2": {
+  "sekolah": {
+   "nama": "SMP Negeri 1 Kemlagi",
+   "jenis": "SMP/MTs"
+  },
+  "pasar": {
+   "nama": "Pasar Kliwon",
+   "jenis": "Pasar"
+  },
+  "faskes": {
+   "nama": "Puskesmas Kemlagi",
+   "jenis": "Puskesmas"
+  },
+  "ibadah": {
+   "islam": "Tanpa nama di peta",
+   "kristen": "GKI Lawu Mojokerto",
+   "katolik": "Catholic Church Santa Monika",
+   "hindu": "Pura Majapahit Trowulan",
+   "buddha": "Klenteng Hok Sian Kiong",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "perum-japanan-indah-1": {
+  "sekolah": {
+   "nama": "SMP Negeri 1 Kemlagi",
+   "jenis": "SMP/MTs"
+  },
+  "pasar": {
+   "nama": "Pasar Kliwon",
+   "jenis": "Pasar"
+  },
+  "faskes": {
+   "nama": "Puskesmas Kemlagi",
+   "jenis": "Puskesmas"
+  },
+  "ibadah": {
+   "islam": "Tanpa nama di peta",
+   "kristen": "GKI Lawu Mojokerto",
+   "katolik": "Catholic Church Santa Monika",
+   "hindu": "Pura Majapahit Trowulan",
+   "buddha": "Klenteng Hok Sian Kiong",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "perum-mojogebang-indah": {
+  "sekolah": {
+   "nama": "SMP Negeri 1 Kemlagi",
+   "jenis": "SMP/MTs"
+  },
+  "pasar": {
+   "nama": "Pasar Kliwon",
+   "jenis": "Pasar"
+  },
+  "faskes": {
+   "nama": "Puskesmas Kemlagi",
+   "jenis": "Puskesmas"
+  },
+  "ibadah": {
+   "islam": "Tanpa nama di peta",
+   "kristen": "GKI Lawu Mojokerto",
+   "katolik": "Catholic Church Santa Monika",
+   "hindu": "Pura Majapahit Trowulan",
+   "buddha": "Klenteng Hok Sian Kiong",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "abadi-megah-regency-3": {
+  "sekolah": {
+   "nama": "Sekolah Dasar Negeri Canggu",
+   "jenis": "Sekolah"
+  },
+  "pasar": {
+   "nama": "Carrefour",
+   "jenis": "Swalayan"
+  },
+  "faskes": {
+   "nama": "RS. Citra Medika",
+   "jenis": "Rumah sakit"
+  },
+  "ibadah": {
+   "islam": "Tanpa nama di peta",
+   "kristen": "GKI Lawu Mojokerto",
+   "katolik": "Catholic Church Santa Monika",
+   "hindu": "Pura Majapahit Trowulan",
+   "buddha": "Klenteng Hok Sian Kiong",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "djawakarya-residence": {
+  "sekolah": {
+   "nama": "SMP Negeri 6 Kota Mojokerto",
+   "jenis": "SMP/MTs"
+  },
+  "pasar": {
+   "nama": "Pasar Kliwon",
+   "jenis": "Pasar"
+  },
+  "faskes": {
+   "nama": "Puskesmas Kemlagi",
+   "jenis": "Puskesmas"
+  },
+  "ibadah": {
+   "islam": "Masjid Miftahul Jannah Pulokulon",
+   "kristen": "GKI Lawu Mojokerto",
+   "katolik": "Catholic Church Santa Monika",
+   "hindu": "Pura Majapahit Trowulan",
+   "buddha": "Klenteng Hok Sian Kiong",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "griya-sooko-asri": {
+  "sekolah": {
+   "nama": "SMK Negeri 1 Kota Mojokerto",
+   "jenis": "SMA/SMK/MA"
+  },
+  "pasar": {
+   "nama": "Pasar Ketidur",
+   "jenis": "Pasar"
+  },
+  "faskes": {
+   "nama": "Puskesmas Blimbing Kesamben",
+   "jenis": "Puskesmas"
+  },
+  "ibadah": {
+   "islam": "Musholla Ar Rahmah",
+   "kristen": "GSJPDI Eben Haezer",
+   "katolik": "Catholic Church Santa Monika",
+   "hindu": "Pura Majapahit Trowulan",
+   "buddha": "Klenteng Hok Sian Kiong",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "perum-pucuk-indah": {
+  "sekolah": {
+   "nama": "SMPN 2 Balongpanggang",
+   "jenis": "SMP/MTs"
+  },
+  "pasar": {
+   "nama": "Pasar Balongpanggang",
+   "jenis": "Pasar"
+  },
+  "faskes": {
+   "nama": "PUSKESMAS Dapet",
+   "jenis": "Puskesmas"
+  },
+  "ibadah": {
+   "islam": "Tanpa nama di peta",
+   "kristen": "GKI Lawu Mojokerto",
+   "katolik": "Catholic Church Santa Monika",
+   "hindu": "Pura Medang Kamulan",
+   "buddha": "Klenteng Hok Sian Kiong",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "grand-emerald-puri": {
+  "sekolah": {
+   "nama": "SD Negeri Puri",
+   "jenis": "SD/MI"
+  },
+  "pasar": {
+   "nama": "Pasar Ketidur",
+   "jenis": "Pasar"
+  },
+  "faskes": {
+   "nama": "Rumah Sakit Dian Husada",
+   "jenis": "Rumah sakit"
+  },
+  "ibadah": {
+   "islam": "Tanpa nama di peta",
+   "kristen": "GSJPDI Eben Haezer",
+   "katolik": "Gereja Katolik Santa Maria Jombang",
+   "hindu": "Pura Majapahit Trowulan",
+   "buddha": "Pura Majapahit Trowulan",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "green-star-residence-brangkal": {
+  "sekolah": {
+   "nama": "MAN 2 Mojokerto (Sooko)",
+   "jenis": "SMA/SMK/MA"
+  },
+  "pasar": {
+   "nama": "Pasar Ketidur",
+   "jenis": "Pasar"
+  },
+  "faskes": {
+   "nama": "Rumah Sakit Dian Husada",
+   "jenis": "Rumah sakit"
+  },
+  "ibadah": {
+   "islam": "Tanpa nama di peta",
+   "kristen": "GSJPDI Eben Haezer",
+   "katolik": "Gereja Katolik Santa Maria Jombang",
+   "hindu": "Pura Majapahit Trowulan",
+   "buddha": "Pura Majapahit Trowulan",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "griya-tegal-indah": {
+  "sekolah": {
+   "nama": "SDN Purwotengah",
+   "jenis": "SD/MI"
+  },
+  "pasar": {
+   "nama": "Carrefour",
+   "jenis": "Swalayan"
+  },
+  "faskes": {
+   "nama": "Puskesmas Gedongan",
+   "jenis": "Puskesmas"
+  },
+  "ibadah": {
+   "islam": "Tanpa nama di peta",
+   "kristen": "GKI Lawu Mojokerto",
+   "katolik": "Catholic Church Santa Monika",
+   "hindu": "Pura Majapahit Trowulan",
+   "buddha": "Klenteng Hok Sian Kiong",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "griya-permata-insani-mojokerto": {
+  "sekolah": {
+   "nama": "SMP Negeri 6 Kota Mojokerto",
+   "jenis": "SMP/MTs"
+  },
+  "pasar": {
+   "nama": "Pasar Ketidur",
+   "jenis": "Pasar"
+  },
+  "faskes": {
+   "nama": "Puskesmas Pulorejo",
+   "jenis": "Puskesmas"
+  },
+  "ibadah": {
+   "islam": "Masjid Miftahul Jannah Pulokulon",
+   "kristen": "GSJPDI Eben Haezer",
+   "katolik": "Catholic Church Santa Monika",
+   "hindu": "Pura Majapahit Trowulan",
+   "buddha": "Klenteng Hok Sian Kiong",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "banjarsari-indah": {
+  "sekolah": {
+   "nama": "SMP Negeri 6 Kota Mojokerto",
+   "jenis": "SMP/MTs"
+  },
+  "pasar": {
+   "nama": "Pasar Kliwon",
+   "jenis": "Pasar"
+  },
+  "faskes": {
+   "nama": "Puskesmas Kemlagi",
+   "jenis": "Puskesmas"
+  },
+  "ibadah": {
+   "islam": "Mushola Wali Songo",
+   "kristen": "GKI Lawu Mojokerto",
+   "katolik": "Catholic Church Santa Monika",
+   "hindu": "Pura Majapahit Trowulan",
+   "buddha": "Klenteng Hok Sian Kiong",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "perumahan-mentari-ngabar": {
+  "sekolah": {
+   "nama": "Sekolah Dasar Negeri Canggu",
+   "jenis": "Sekolah"
+  },
+  "pasar": {
+   "nama": "Carrefour",
+   "jenis": "Swalayan"
+  },
+  "faskes": {
+   "nama": "Puskesmas Gedongan",
+   "jenis": "Puskesmas"
+  },
+  "ibadah": {
+   "islam": "Tanpa nama di peta",
+   "kristen": "GKI Lawu Mojokerto",
+   "katolik": "Catholic Church Santa Monika",
+   "hindu": "Pura Medang Kamulan",
+   "buddha": "Klenteng Hok Sian Kiong",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "griya-madureso-asri": {
+  "sekolah": {
+   "nama": "SMAN 1 KEDAMEAN",
+   "jenis": "SMA/SMK/MA"
+  },
+  "pasar": {
+   "nama": "Pasar Balongpanggang",
+   "jenis": "Pasar"
+  },
+  "faskes": {
+   "nama": "RSUD GRESIK SEHATI",
+   "jenis": "Rumah sakit"
+  },
+  "ibadah": {
+   "islam": "Tanpa nama di peta",
+   "kristen": "GEREJA KRISTEN JAWI WETAN",
+   "katolik": "Catholic Church Santa Monika",
+   "hindu": "Pura Medang Kamulan",
+   "buddha": "Klenteng Hok Sian Kiong",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ },
+ "sabda-alam-regency": {
+  "sekolah": {
+   "nama": "SDN Purwotengah",
+   "jenis": "SD/MI"
+  },
+  "pasar": {
+   "nama": "Carrefour",
+   "jenis": "Swalayan"
+  },
+  "faskes": {
+   "nama": "Puskesmas Gedongan",
+   "jenis": "Puskesmas"
+  },
+  "ibadah": {
+   "islam": "Tanpa nama di peta",
+   "kristen": "GKI Lawu Mojokerto",
+   "katolik": "Catholic Church Santa Monika",
+   "hindu": "Pura Majapahit Trowulan",
+   "buddha": "Klenteng Hok Sian Kiong",
+   "konghucu": "Klenteng Hok Sian Kiong"
+  }
+ }
+}

@@ -121,7 +121,8 @@ const baris = [];
 for (const p of perumahan) {
   for (const moda of ["motor", "mobil"]) {
     for (const f of ["sekolah", "pasar", "faskes", "ibadah"]) {
-      baris.push([p.id, moda, f, p.waktu[moda][f], f === "ibadah" ? "OpenRouteService" : "Google Routes API"]);
+      // Ibadah per agama tetap di perumahan.json; kolom detik hanya untuk satu angka.
+      baris.push([p.id, moda, f, f === "ibadah" ? null : p.waktu[moda][f], f === "ibadah" ? "TomTom Routing" : "Google Routes API"]);
     }
   }
 }

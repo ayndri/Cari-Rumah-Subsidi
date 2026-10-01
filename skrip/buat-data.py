@@ -14,7 +14,10 @@ Asal tiap angka waktu tempuh:
   motor  sekolah, pasar, faskes  Google Routes API travelMode TWO_WHEELER, TRAFFIC_AWARE,
                                  berangkat Senin 07.00 WIB. Sama dengan Tabel 4.7 naskah.
   mobil  sekolah, pasar, faskes  Google Routes API travelMode DRIVE, pengaturan sama.
-  motor, mobil  ibadah           OpenRouteService profil mobil. Kriteria tambahan saja.
+  motor, mobil  ibadah           TomTom Routing sepeda motor, Senin 07.00, per agama
+                                 (enrich_ibadah_agama.py). Mobil memakai nilai yang sama
+                                 karena TomTom memberi waktu identik untuk kedua moda.
+                                 Kriteria tambahan saja.
 
 Fasilitas tujuan tiap rute adalah fasilitas tercepat menurut TomTom (8 kandidat terdekat).
 Moda sepeda tidak ada: Google Routes API tidak menyediakan rute sepeda untuk wilayah ini.
@@ -46,14 +49,17 @@ TUJUAN = AKAR / "src" / "data" / "perumahan.json"
 # menghitung waktu tempuh perumahan yang ditambahkan.
 SUMBER_TITIK = AKAR.parent / "pengujian_metode" / "cache_titik_fasilitas.json"
 TUJUAN_TITIK = AKAR / "src" / "data" / "titik-fasilitas.json"
+SUMBER_IBADAH = AKAR.parent / "dataset_ibadah_agama.csv"
+META_IBADAH = AKAR.parent / "metadata_ibadah_agama.json"
+TUJUAN_IBADAH = AKAR / "src" / "data" / "titik-ibadah.json"
+AGAMA = ("islam", "kristen", "katolik", "hindu", "buddha", "konghucu")
 
-FASILITAS = ("sekolah", "pasar", "faskes", "ibadah")
 INTI = ("sekolah", "pasar", "faskes")
 
-# Kolom CSV untuk tiap moda dan fasilitas.
+# Kolom CSV untuk tiap moda dan fasilitas inti.
 KOLOM = {
-    "motor": {**{f: f"waktu_{f}_motor_g_s" for f in INTI}, "ibadah": "waktu_ibadah_mobil_s"},
-    "mobil": {**{f: f"waktu_{f}_mobil_g_s" for f in INTI}, "ibadah": "waktu_ibadah_mobil_s"},
+    "motor": {f: f"waktu_{f}_motor_g_s" for f in INTI},
+    "mobil": {f: f"waktu_{f}_mobil_g_s" for f in INTI},
 }
 
 
@@ -105,12 +111,16 @@ def jalankan() -> None:
 
     with SUMBER.open(encoding="utf-8-sig", newline="") as f:
         baris = list(csv.DictReader(f))
+    with SUMBER_IBADAH.open(encoding="utf-8-sig", newline="") as f:
+        ibadah = list(csv.DictReader(f))
+    if [r["nama_perumahan"] for r in ibadah] != [r["nama_perumahan"] for r in baris]:
+        raise SystemExit("dataset_ibadah_agama.csv tidak sejajar dengan dataset utama")
 
     hasil = []
     dilewati = []
     dipakai_id: set[str] = set()
 
-    for r in baris:
+    for r, ri in zip(baris, ibadah):
         nama = (r.get("nama_perumahan") or "").strip()
         wajib = {
             "luasBangunan": angka(r.get("luas_bangunan_m2")),
@@ -119,11 +129,15 @@ def jalankan() -> None:
             "longitude": angka(r.get("longitude")),
         }
         waktu = {m: {f: detik(r.get(k)) for f, k in kolom.items()} for m, kolom in KOLOM.items()}
+        per_agama = {a: detik(ri.get(f"waktu_ibadah_{a}_s")) for a in AGAMA}
 
         kurang = (
             [k for k, v in wajib.items() if v is None]
-            + [f"{m}.{f}" for m in KOLOM for f in FASILITAS if waktu[m][f] is None]
+            + [f"{m}.{f}" for m in KOLOM for f in INTI if waktu[m][f] is None]
+            + [f"ibadah.{a}" for a, v in per_agama.items() if v is None]
         )
+        for m in KOLOM:
+            waktu[m]["ibadah"] = dict(per_agama)
         if not nama or kurang:
             dilewati.append(f"{nama or '(tanpa nama)'}: {', '.join(kurang) or 'nama kosong'}")
             continue
@@ -163,6 +177,9 @@ def jalankan() -> None:
         json.dumps({f: [[round(t[0], 6), round(t[1], 6)] for t in titik[f]] for f in INTI}),
         encoding="utf-8",
     )
+
+    meta = json.loads(META_IBADAH.read_text(encoding="utf-8"))
+    TUJUAN_IBADAH.write_text(json.dumps({"titik": meta["titik_per_agama"]}, ensure_ascii=False), encoding="utf-8")
 
     kecamatan = sorted({p["kecamatan"] for p in hasil})
     print(f"Sumber   : {SUMBER.name}, {len(baris)} baris")

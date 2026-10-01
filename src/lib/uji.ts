@@ -1,8 +1,8 @@
 import kandidatMentah from "@/data/kandidat-uji.json";
-import { KRITERIA, semuaBaris } from "./data";
+import { AGAMA, KRITERIA, semuaBaris } from "./data";
 import { bobotDariAHP, bobotDariKepentingan, hitungPeringkat } from "./perangkingan";
 import { barisKePerumahan, gabungBaris, kriteriaBerlaku, type Perubahan } from "./perubahan";
-import type { BarisPeringkat, Moda, TingkatPenting } from "./tipe";
+import type { Agama, BarisPeringkat, Moda, TingkatPenting } from "./tipe";
 
 /**
  * Uji penerimaan (UAT) di halaman /uji. Rancangannya ada di Subbab 4.5.3 dan Lampiran 3 naskah,
@@ -71,6 +71,8 @@ export type KirimanUji = {
   alasan: string;
   moda: Moda;
   tingkat: Record<string, TingkatPenting>;
+  /** Agama untuk kriteria tempat ibadah; null kalau kriteria itu tidak dipakai. */
+  agama: Agama | null;
   /** Lima teratas yang tampil di layar responden, untuk dicocokkan dengan hitungan server. */
   limaDilihat: string[];
   sus: number[];
@@ -95,18 +97,29 @@ export type JawabanUji = KirimanUji & HasilSistem & { id: number; waktu: string 
  * tanpa tempat kerja. Aturan bobotnya sama dengan halaman cari: bobot AHP selama tidak ada
  * yang ditandai paling penting, bobot ROC berjenjang begitu ada.
  */
-export function peringkatUntuk(moda: Moda, tingkat: Record<string, TingkatPenting>, pr: Perubahan): BarisPeringkat[] {
+export function peringkatUntuk(
+  moda: Moda,
+  tingkat: Record<string, TingkatPenting>,
+  pr: Perubahan,
+  agama: Agama | null = null,
+): BarisPeringkat[] {
   const aktif = kriteriaBerlaku(KRITERIA, pr).filter(
-    (k) => (tingkat[k.kunci] ?? "abaikan") !== "abaikan" && !k.butuhTitikAcuan,
+    (k) =>
+      (tingkat[k.kunci] ?? "abaikan") !== "abaikan" && !k.butuhTitikAcuan && (!k.butuhAgama || agama !== null),
   );
   const adaPaling = aktif.some((k) => tingkat[k.kunci] === "paling");
   const bobot = adaPaling ? bobotDariKepentingan(aktif, tingkat) : bobotDariAHP(aktif);
-  const semua = gabungBaris(semuaBaris(), pr).map((b) => barisKePerumahan(b, moda, null));
+  const semua = gabungBaris(semuaBaris(), pr).map((b) => barisKePerumahan(b, moda, null, agama));
   return hitungPeringkat(semua, aktif, bobot);
 }
 
-export function hasilSistem(moda: Moda, tingkat: Record<string, TingkatPenting>, pr: Perubahan): HasilSistem {
-  const pr_ = peringkatUntuk(moda, tingkat, pr);
+export function hasilSistem(
+  moda: Moda,
+  tingkat: Record<string, TingkatPenting>,
+  pr: Perubahan,
+  agama: Agama | null = null,
+): HasilSistem {
+  const pr_ = peringkatUntuk(moda, tingkat, pr, agama);
   const posisi = new Map(pr_.map((b) => [b.perumahan.id, b.peringkat]));
   const peringkatPenuh = Object.fromEntries(KANDIDAT.map((k) => [k.kode, posisi.get(k.id) ?? -1]));
   const urut = [...KANDIDAT].sort(
@@ -174,6 +187,8 @@ export function periksaKiriman(v: unknown): { salah: string } | { isi: KirimanUj
     if (n !== "abaikan" && n !== "penting" && n !== "paling") return { salah: "Tingkat kepentingan tidak dikenal." };
     tingkat[k.kunci] = n;
   }
+  const agama = AGAMA.find((a) => a.nilai === x.agama)?.nilai ?? null;
+  if (tingkat.ibadah !== "abaikan" && !agama) return { salah: "Agama untuk tempat ibadah belum dipilih." };
   const menyala = Object.values(tingkat).filter((n) => n !== "abaikan").length;
   if (menyala < 2 || menyala > 7) return { salah: "Jumlah hal yang dinilai harus antara 2 dan 7." };
 
@@ -190,6 +205,7 @@ export function periksaKiriman(v: unknown): { salah: string } | { isi: KirimanUj
       alasan: teks(x.alasan, 1000),
       moda: x.moda,
       tingkat,
+      agama: tingkat.ibadah === "abaikan" ? null : agama,
       limaDilihat: lima,
       sus: x.sus as number[],
       percaya: x.percaya as number[],
@@ -225,6 +241,7 @@ export function keCSV(semua: JawabanUji[]): string {
     "Apa yang paling menentukan urutan Anda tadi?",
     "Moda yang dipilih",
     ...KRITERIA_UJI.map((k) => `Seberapa penting setiap hal menurut pengaturan terakhir Anda di website [${k.nama}]`),
+    "Agama untuk tempat ibadah",
     "Nama perumahan di urutan pertama rekomendasi website",
     'Apakah kecamatan tetap "Semua kecamatan" dan tempat kerja tidak diisi?',
     ...SUS.map((s, i) => `SUS ${i + 1}. ${s}`),
@@ -240,6 +257,7 @@ export function keCSV(semua: JawabanUji[]): string {
     j.alasan,
     j.moda === "motor" ? "Sepeda motor" : "Mobil",
     ...KRITERIA_UJI.map((k) => LABEL_TINGKAT[j.tingkat[k.kunci] ?? "abaikan"]),
+    j.agama ?? "",
     j.limaTeratas[0]?.nama ?? "",
     "Ya",
     ...j.sus, ...j.percaya,

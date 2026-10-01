@@ -2,8 +2,8 @@
 
 import Link from "next/link";
 import { susunAlasan } from "@/lib/alasan";
-import { keMenit } from "@/lib/data";
-import type { BarisPeringkat, Kriteria, KunciKriteria, StatusData } from "@/lib/tipe";
+import { fasilitasTujuan, ibadahTujuan, keMenit } from "@/lib/data";
+import type { Agama, BarisPeringkat, Kriteria, KunciKriteria, StatusData } from "@/lib/tipe";
 
 /**
  * Daftar hasil.
@@ -12,9 +12,9 @@ import type { BarisPeringkat, Kriteria, KunciKriteria, StatusData } from "@/lib/
  * satu-satunya hal yang paling ingin dibaca pengguna di halaman ini.
  *
  * Sistem tidak mengklaim satu perumahan sebagai yang terbaik mutlak. Pengujian
- * ketahanan (Subbab 4.4) menunjukkan peringkat pertama bisa berpindah saat
- * kemacetan disimulasikan makin parah, sedangkan lima besarnya jauh lebih bertahan.
- * Karena itu yang disajikan lima besar.
+ * ketahanan (Subbab 4.5.2) menunjukkan peringkat pertama berpindah ketika pola lalu
+ * lintas diabaikan atau layanan perutean diganti, dan tiga teratas nilainya hampir
+ * seri. Karena itu yang disajikan lima besar.
  *
  * Angka tanpa pembanding tidak menjawab apa-apa ("9 menit itu cepat atau
  * lambat?"), jadi tiap angka diberi garis kecil yang menunjukkan posisinya di
@@ -34,12 +34,22 @@ const UKURAN: Ukuran[] = [
   { kunci: "sekolah", label: "Ke sekolah", benefit: false, tampil: (v) => `${keMenit(v)} mnt` },
   { kunci: "pasar", label: "Ke pasar", benefit: false, tampil: (v) => `${keMenit(v)} mnt` },
   { kunci: "faskes", label: "Ke faskes", benefit: false, tampil: (v) => `${keMenit(v)} mnt` },
+  { kunci: "ibadah", label: "Ke tempat ibadah", benefit: false, tampil: (v) => `${keMenit(v)} mnt` },
   { kunci: "tempatKerja", label: "Ke tempat kerja", benefit: false, tampil: (v) => `${keMenit(v)} mnt` },
 ];
 
+/** Tempat ibadah dan tempat kerja hanya tampil kalau kriterianya sedang dipakai. */
 function ukuranDipakai(kriteriaAktif: Kriteria[]): Ukuran[] {
-  const kerja = kriteriaAktif.some((k) => k.kunci === "tempatKerja");
-  return UKURAN.filter((u) => u.kunci !== "tempatKerja" || kerja);
+  const aktif = new Set(kriteriaAktif.map((k) => k.kunci));
+  return UKURAN.filter((u) => (u.kunci !== "tempatKerja" && u.kunci !== "ibadah") || aktif.has(u.kunci));
+}
+
+/** Nama fasilitas tujuan di bawah angka waktu tempuh, kalau tercatat. */
+function namaTujuan(baris: BarisPeringkat, kunci: KunciKriteria, agama: Agama | null): string | undefined {
+  const p = baris.perumahan;
+  if (kunci === "sekolah" || kunci === "pasar" || kunci === "faskes") return fasilitasTujuan(p, kunci)?.nama;
+  if (kunci === "ibadah" && agama) return ibadahTujuan(p, agama);
+  return undefined;
 }
 
 const rupiah = (n: number) =>
@@ -59,10 +69,12 @@ function Angka({
   ukuran,
   nilai,
   semua,
+  tujuan,
 }: {
   ukuran: Ukuran;
   nilai: number | null;
   semua: number[];
+  tujuan?: string;
 }) {
   if (typeof nilai !== "number") {
     return (
@@ -86,6 +98,11 @@ function Angka({
         <span className="block h-full rounded-full bg-daun" style={{ width: `${Math.max(6, persen)}%` }} />
         <span className="sr-only">Lebih baik dari {persen}% perumahan di daftar</span>
       </dd>
+      {tujuan && (
+        <dd className="mt-1 line-clamp-2 text-xs leading-snug break-words text-teks-redup" title={tujuan}>
+          {tujuan}
+        </dd>
+      )}
     </div>
   );
 }
@@ -94,11 +111,13 @@ function DeretAngka({
   baris,
   ukuran,
   kolom,
+  agama,
   besar = false,
 }: {
   baris: BarisPeringkat;
   ukuran: Ukuran[];
   kolom: Record<string, number[]>;
+  agama: Agama | null;
   besar?: boolean;
 }) {
   return (
@@ -109,7 +128,13 @@ function DeretAngka({
       ].join(" ")}
     >
       {ukuran.map((u) => (
-        <Angka key={u.kunci} ukuran={u} nilai={baris.perumahan.nilai[u.kunci]} semua={kolom[u.kunci]} />
+        <Angka
+          key={u.kunci}
+          ukuran={u}
+          nilai={baris.perumahan.nilai[u.kunci]}
+          semua={kolom[u.kunci]}
+          tujuan={namaTujuan(baris, u.kunci, agama)}
+        />
       ))}
     </dl>
   );
@@ -164,7 +189,9 @@ export default function HasilRekomendasi({
   onPilih,
   onSetelUlangKecamatan,
   onCobaLagi,
+  agama = null,
 }: {
+  agama?: Agama | null;
   status: StatusData;
   peringkat: BarisPeringkat[];
   kriteriaAktif: Kriteria[];
@@ -243,6 +270,7 @@ export default function HasilRekomendasi({
         kriteriaAktif={kriteriaAktif}
         ukuran={ukuran}
         kolom={kolom}
+        agama={agama}
         onPilih={onPilih}
       />
 
@@ -255,6 +283,7 @@ export default function HasilRekomendasi({
               kriteriaAktif={kriteriaAktif}
               ukuran={ukuran}
               kolom={kolom}
+              agama={agama}
               dipilih={b.perumahan.id === idTerpilih}
               onPilih={onPilih}
             />
@@ -288,6 +317,7 @@ function KartuTeratas({
   kriteriaAktif,
   ukuran,
   kolom,
+  agama,
   onPilih,
 }: {
   baris: BarisPeringkat;
@@ -296,6 +326,7 @@ function KartuTeratas({
   kriteriaAktif: Kriteria[];
   ukuran: Ukuran[];
   kolom: Record<string, number[]>;
+  agama: Agama | null;
   onPilih: (id: string) => void;
 }) {
   const alasan = susunAlasan(baris, semua, kriteriaAktif);
@@ -330,7 +361,7 @@ function KartuTeratas({
 
       <CatatanBedaTipis satu={baris} dua={kedua} ukuran={ukuran} />
 
-      <DeretAngka baris={baris} ukuran={ukuran} kolom={kolom} besar />
+      <DeretAngka baris={baris} ukuran={ukuran} kolom={kolom} agama={agama} besar />
 
       <div className="mt-4 flex flex-wrap items-center justify-between gap-x-4 gap-y-2">
         <Link
@@ -354,6 +385,7 @@ function KartuBiasa({
   kriteriaAktif,
   ukuran,
   kolom,
+  agama,
   dipilih,
   onPilih,
 }: {
@@ -362,6 +394,7 @@ function KartuBiasa({
   kriteriaAktif: Kriteria[];
   ukuran: Ukuran[];
   kolom: Record<string, number[]>;
+  agama: Agama | null;
   dipilih: boolean;
   onPilih: (id: string) => void;
 }) {
@@ -398,7 +431,7 @@ function KartuBiasa({
           </p>
           {alasan && <p className="mt-1.5 text-sm leading-relaxed">{alasan}</p>}
 
-          <DeretAngka baris={baris} ukuran={ukuran} kolom={kolom} />
+          <DeretAngka baris={baris} ukuran={ukuran} kolom={kolom} agama={agama} />
 
           <Link
             href={`/perumahan/${p.id}`}
