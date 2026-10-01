@@ -51,7 +51,7 @@ function frasaUnggul(kunci: KunciKriteria, detikAtauNilai: number, paling: boole
     case "pasar":
       return `${nilai} menit ke pasar`;
     case "faskes":
-      return `${nilai} menit ke puskesmas`;
+      return `${nilai} menit ke fasilitas kesehatan`;
     case "pusatKab":
       return `${nilai} km ke pusat kabupaten`;
     case "halaman":
@@ -75,7 +75,7 @@ function frasaLemah(kunci: KunciKriteria, detikAtauNilai: number): string {
     case "pasar":
       return `pasar agak jauh, ${nilai} menit`;
     case "faskes":
-      return `puskesmas agak jauh, ${nilai} menit`;
+      return `fasilitas kesehatan agak jauh, ${nilai} menit`;
     case "pusatKab":
       return `agak jauh dari pusat kabupaten, ${nilai} km`;
     case "halaman":

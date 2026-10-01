@@ -405,7 +405,7 @@ function Kartu({ b, nomor, onKetuk }: { b: Baris; nomor: number | null; onKetuk:
         <span className="text-teks-redup">Waktu tempuh ke</span>
         <span className="text-teks-redup">Motor</span>
         <span className="text-teks-redup">Mobil</span>
-        {([["sekolah", "Sekolah"], ["pasar", "Pasar / pertokoan"], ["faskes", "Puskesmas / klinik"], ["ibadah", "Tempat ibadah"]] as const).map(
+        {([["sekolah", "Sekolah"], ["pasar", "Pasar / pertokoan"], ["faskes", "Fasilitas kesehatan"], ["ibadah", "Tempat ibadah"]] as const).map(
           ([f, nama]) => (
             <span key={f} className="contents">
               <span>{nama}</span>

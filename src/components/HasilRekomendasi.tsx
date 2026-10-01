@@ -33,7 +33,7 @@ const UKURAN: Ukuran[] = [
   { kunci: "luasLahan", label: "Tanah", benefit: true, tampil: (v) => `${v} m²` },
   { kunci: "sekolah", label: "Ke sekolah", benefit: false, tampil: (v) => `${keMenit(v)} mnt` },
   { kunci: "pasar", label: "Ke pasar", benefit: false, tampil: (v) => `${keMenit(v)} mnt` },
-  { kunci: "faskes", label: "Ke puskesmas", benefit: false, tampil: (v) => `${keMenit(v)} mnt` },
+  { kunci: "faskes", label: "Ke faskes", benefit: false, tampil: (v) => `${keMenit(v)} mnt` },
   { kunci: "tempatKerja", label: "Ke tempat kerja", benefit: false, tampil: (v) => `${keMenit(v)} mnt` },
 ];
 

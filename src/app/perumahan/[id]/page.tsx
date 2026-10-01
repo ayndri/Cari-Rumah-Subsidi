@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import Header from "@/components/Header";
 import {
   detailPerumahan,
+  faskesTujuan,
   keMenit,
   KRITERIA,
   MODA,
@@ -24,7 +25,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   if (!p) return {};
   return {
     title: `${p.nama}, Kec. ${p.kecamatan}`,
-    description: `Rincian ${p.nama} di Desa ${p.desa}, Kecamatan ${p.kecamatan}: luas rumah ${p.luasBangunan} m², luas tanah ${p.luasLahan} m², beserta waktu tempuh ke sekolah, pasar, dan puskesmas terdekat.`,
+    description: `Rincian ${p.nama} di Desa ${p.desa}, Kecamatan ${p.kecamatan}: luas rumah ${p.luasBangunan} m², luas tanah ${p.luasLahan} m², beserta waktu tempuh ke sekolah, pasar, dan fasilitas kesehatan terdekat.`,
   };
 }
 
@@ -46,14 +47,14 @@ const PEMBANDING: {
   { label: "Luas tanah", satuan: "m²", benefit: true, ambil: (p) => p.luasLahan },
   { label: "Waktu ke sekolah", satuan: "menit", benefit: false, ambil: (p) => p.waktu.motor.sekolah / 60 },
   { label: "Waktu ke pasar", satuan: "menit", benefit: false, ambil: (p) => p.waktu.motor.pasar / 60 },
-  { label: "Waktu ke puskesmas", satuan: "menit", benefit: false, ambil: (p) => p.waktu.motor.faskes / 60 },
+  { label: "Waktu ke fasilitas kesehatan", satuan: "menit", benefit: false, ambil: (p) => p.waktu.motor.faskes / 60 },
   { label: "Jarak ke pusat kabupaten", satuan: "km", benefit: false, ambil: (p) => p.jarakPusatKm },
 ];
 
 const TUJUAN = [
   { label: "Sekolah terdekat", kunci: "sekolah" as const },
   { label: "Pasar atau pertokoan", kunci: "pasar" as const },
-  { label: "Puskesmas atau klinik", kunci: "faskes" as const },
+  { label: "Fasilitas kesehatan", kunci: "faskes" as const },
 ];
 
 export default async function DetailPerumahan({ params }: { params: Promise<{ id: string }> }) {
@@ -62,6 +63,9 @@ export default async function DetailPerumahan({ params }: { params: Promise<{ id
   const asli = detailPerumahan(id) ?? pr.tambahan.find((t) => t.id === id);
   if (!asli || pr.nonaktif.includes(id)) notFound();
   const p = terapkanKeBaris(asli, pr);
+  // Kalau admin memindahkan titik perumahan, waktunya dihitung ulang dan tujuannya bisa lain.
+  const faskes =
+    p.latitude === asli.latitude && p.longitude === asli.longitude ? faskesTujuan(id) : undefined;
   const aktif = gabungBaris(semuaBaris(), pr);
 
   const kriteriaInti = KRITERIA.filter((k) => k.inti);
@@ -230,7 +234,16 @@ export default async function DetailPerumahan({ params }: { params: Promise<{ id
                   <tbody>
                     {TUJUAN.map((t) => (
                       <tr key={t.kunci} className="border-b border-garis">
-                        <td className="py-2.5 pr-3">{t.label}</td>
+                        <td className="py-2.5 pr-3">
+                          {t.label}
+                          {t.kunci === "faskes" && faskes && (
+                            <span className="mt-0.5 block text-xs text-teks-redup">
+                              {faskes.nama}
+                              {!faskes.nama.toLowerCase().includes(faskes.jenis.toLowerCase()) &&
+                                ` · ${faskes.jenis}`}
+                            </span>
+                          )}
+                        </td>
                         {MODA.map((m) => (
                           <td
                             key={m.nilai}
@@ -255,6 +268,12 @@ export default async function DetailPerumahan({ params }: { params: Promise<{ id
                   </tbody>
                 </table>
               </div>
+
+              <p className="mt-3 text-sm leading-relaxed text-teks-redup">
+                Fasilitas kesehatan yang dihitung adalah yang paling cepat dicapai, apa pun
+                jenisnya: bisa puskesmas, klinik, atau rumah sakit. Jenisnya belum dibedakan
+                dalam perangkingan.
+              </p>
 
               <p className="mt-3 text-sm leading-relaxed text-teks-redup">
                 Waktu sepeda motor dan mobil dihitung dengan Google, yang punya profil

@@ -1,4 +1,5 @@
 import mentah from "@/data/perumahan.json";
+import faskesMentah from "@/data/faskes-tujuan.json";
 import type { Kriteria, Moda, Perumahan } from "./tipe";
 import { barisKePerumahan } from "./perubahan";
 
@@ -85,12 +86,12 @@ export const KRITERIA: Kriteria[] = [
   },
   {
     kunci: "faskes",
-    nama: "Dekat puskesmas",
+    nama: "Dekat fasilitas kesehatan",
     satuan: "menit",
     benefit: false,
     bobotDasar: 0.27,
     inti: true,
-    keterangan: "Cepat sampai ke puskesmas atau klinik",
+    keterangan: "Cepat sampai ke puskesmas, klinik, atau RS",
   },
   {
     kunci: "pusatKab",
@@ -161,6 +162,19 @@ export function detailPerumahan(id: string): PerumahanLengkap | undefined {
 /** Seluruh baris lengkap, untuk halaman yang menerapkan perubahan admin di server. */
 export function semuaBaris(): PerumahanLengkap[] {
   return BARIS;
+}
+
+export type FaskesTujuan = { nama: string; jenis: string };
+
+const FASKES_TUJUAN = faskesMentah as Record<string, FaskesTujuan>;
+
+/**
+ * Fasilitas kesehatan yang dipakai sebagai tujuan rute: yang tercepat dicapai dari
+ * delapan kandidat terdekat, apa pun jenisnya. Dihasilkan `skrip/buat-faskes-tujuan.py`.
+ * Perumahan tambahan dari panel admin tidak punya catatan ini.
+ */
+export function faskesTujuan(id: string): FaskesTujuan | undefined {
+  return FASKES_TUJUAN[id];
 }
 
 export function semuaId(): string[] {

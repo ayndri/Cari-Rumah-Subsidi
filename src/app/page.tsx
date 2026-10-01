@@ -201,7 +201,7 @@ export default async function Beranda() {
                             </dd>
                           </div>
                           <div>
-                            <dt className="text-teks-redup">Ke puskesmas</dt>
+                            <dt className="text-teks-redup">Ke faskes</dt>
                             <dd className="font-semibold tabular-nums">
                               {keMenit(p.nilai.faskes as number)} menit
                             </dd>

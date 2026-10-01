@@ -38,14 +38,14 @@ SANDI = re.search(r"^ADMIN_PASSWORD=(\S+)", env, re.M).group(1)
 KANDIDAT = json.loads((AKAR / "src" / "data" / "kandidat-uji.json").read_text(encoding="utf-8"))
 ID = {k["kode"]: k["id"] for k in KANDIDAT}
 KUNCI = {"Rumahnya luas": "luasBangunan", "Tanahnya luas": "luasLahan", "Dekat sekolah": "sekolah",
-         "Dekat pasar": "pasar", "Dekat puskesmas": "faskes", "Dekat pusat kabupaten": "pusatKab",
+         "Dekat pasar": "pasar", "Dekat fasilitas kesehatan": "faskes", "Dekat pusat kabupaten": "pusatKab",
          "Halamannya lega": "halaman", "Dekat tempat ibadah": "ibadah"}
 LABEL = {"abaikan": "Tidak penting", "penting": "Penting", "paling": "Paling penting"}
 
 RESPONDEN = [
     {"nama": "UJI-OTOMATIS-1", "moda": "Sepeda motor", "ubah": {}},
     {"nama": "UJI-OTOMATIS-2", "moda": "Mobil",
-     "ubah": {"Dekat puskesmas": "paling", "Dekat pasar": "abaikan", "Dekat tempat ibadah": "penting"}},
+     "ubah": {"Dekat fasilitas kesehatan": "paling", "Dekat pasar": "abaikan", "Dekat tempat ibadah": "penting"}},
     {"nama": "UJI-OTOMATIS-3", "moda": "Sepeda motor",
      "ubah": {"Tanahnya luas": "paling", "Rumahnya luas": "paling", "Halamannya lega": "penting",
               "Dekat pusat kabupaten": "penting"}},
