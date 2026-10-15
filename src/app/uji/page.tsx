@@ -301,11 +301,29 @@ function Pilih({
   );
 }
 
+/** Tombol lanjut yang mati harus menyebut apa yang kurang, bukan sekadar abu-abu. */
+function Kurang({ judul, isi }: { judul: string; isi: string[] }) {
+  if (isi.length === 0) return null;
+  return (
+    <p role="status" className="mt-2 rounded-[var(--radius-kecil)] border border-amber/40 bg-amber-latar px-3 py-2 text-sm">
+      <b>{judul}</b> {isi.join(", ")}.
+    </p>
+  );
+}
+
 function Pembuka({ k, ubah }: { k: Keadaan; ubah: (b: Partial<Keadaan>) => void }) {
   const i = k.identitas;
   const set = (b: Partial<Identitas>) => ubah({ identitas: { ...i, ...b } });
-  const lengkap =
-    k.setuju && i.nama.trim() && i.pekerjaan.trim() && i.usia && i.punyaRumah && i.rencana && i.pernahKuesioner;
+  const kurang = [
+    !i.nama.trim() && "nama",
+    !i.usia && "usia",
+    !i.pekerjaan.trim() && "pekerjaan",
+    !i.punyaRumah && "sudah punya rumah atau belum",
+    !i.rencana && "rencana membeli rumah",
+    !i.pernahKuesioner && "pernah mengisi kuesioner atau belum",
+    !k.setuju && "centang kotak kesediaan di bawah",
+  ].filter((x): x is string => Boolean(x));
+  const lengkap = kurang.length === 0;
 
   return (
     <section className={kotak}>
@@ -351,6 +369,7 @@ function Pembuka({ k, ubah }: { k: Keadaan; ubah: (b: Partial<Keadaan>) => void 
         onClick={() => ubah({ tahap: "urutkan", mulai: Date.now() })}>
         Mulai Bagian A
       </button>
+      <Kurang judul="Belum bisa lanjut. Yang belum diisi:" isi={kurang} />
     </section>
   );
 }
@@ -374,7 +393,10 @@ function Kartu({ b, nomor, onKetuk }: { b: Baris; nomor: number | null; onKetuk:
     const d = f === "ibadah" ? Math.min(...Object.values(w.ibadah ?? {})) : w[f];
     return Number.isFinite(d) ? `${keMenit(d)} menit` : "–";
   };
+  const desa = p.desa.toLowerCase().replace(/\b\w/g, (h) => h.toUpperCase());
+  const peta = `https://www.google.com/maps/search/?api=1&query=${p.latitude},${p.longitude}`;
   return (
+    <div className="flex flex-col">
     <button
       type="button"
       onClick={onKetuk}
@@ -382,6 +404,7 @@ function Kartu({ b, nomor, onKetuk }: { b: Baris; nomor: number | null; onKetuk:
       aria-label={`Perumahan ${b.kode}, ${p.nama}${nomor ? `, urutan ${nomor}` : ""}`}
       className={[
         "relative w-full rounded-[var(--radius-kartu)] border bg-permukaan p-4 text-left transition",
+        "rounded-b-none border-b-0",
         nomor ? "border-hutan ring-2 ring-hutan" : "border-garis hover:border-garis-kuat",
       ].join(" ")}
     >
@@ -393,8 +416,9 @@ function Kartu({ b, nomor, onKetuk }: { b: Baris; nomor: number | null; onKetuk:
       )}
       <span className="block pr-20 font-semibold">{p.nama}</span>
       <span className="block text-xs text-teks-redup">
-        Desa {p.desa.toLowerCase().replace(/\b\w/g, (h) => h.toUpperCase())}, Kec. {p.kecamatan}
+        Desa {desa}, Kecamatan {p.kecamatan}, Kabupaten Mojokerto
       </span>
+      <span className="block text-xs text-teks-redup">Pengembang: {p.developer}</span>
       <span className="mt-3 grid grid-cols-2 gap-x-4 gap-y-1.5 text-sm">
         <span><span className="block text-xs text-teks-redup">Luas rumah</span><b>{p.luasBangunan} m²</b></span>
         <span><span className="block text-xs text-teks-redup">Luas tanah</span><b>{p.luasLahan} m²</b></span>
@@ -422,6 +446,19 @@ function Kartu({ b, nomor, onKetuk }: { b: Baris; nomor: number | null; onKetuk:
         )}
       </span>
     </button>
+    <a
+      href={peta}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={[
+        "flex min-h-11 items-center justify-between gap-3 rounded-b-[var(--radius-kartu)] border border-t-0 bg-permukaan-2 px-4 text-xs sm:min-h-9",
+        nomor ? "border-hutan" : "border-garis",
+      ].join(" ")}
+    >
+      <span className="text-teks-redup">Titik lokasi {p.latitude.toFixed(5)}, {p.longitude.toFixed(5)}</span>
+      <span className="font-semibold text-hutan underline">Lihat di Google Maps ↗</span>
+    </a>
+    </div>
   );
 }
 
@@ -440,6 +477,7 @@ function Urutkan({
   };
   const nama = (kode: string) => baris.find((b) => b.kode === kode)?.p?.nama ?? kode;
   const semuaAda = baris.every((b) => b.p);
+  const belum = baris.filter((b) => !u.includes(b.kode)).map((b) => b.kode);
 
   return (
     <section>
@@ -489,9 +527,11 @@ function Urutkan({
         <button type="button" disabled={u.length !== baris.length || !semuaAda} onClick={lanjut} className={`${tombolUtama} mt-4`}>
           Urutan sudah pas, buka website (Bagian B)
         </button>
+        <Kurang judul="Belum bisa lanjut. Perumahan yang belum diberi nomor:" isi={belum} />
         <p className="mt-2 text-xs text-teks-redup">
           Setelah ini urutan tidak bisa diubah lagi. Di website, pilih kendaraan dan atur seberapa penting tiap hal
-          sesukamu, lalu tekan tombol kuning <b>Sudah, lanjut ke Bagian C</b> di bagian atas.
+          sesukamu. Pilihanmu tersimpan otomatis. Kalau sudah, tekan tombol kuning <b>Selesai</b> di
+          bagian atas.
         </p>
       </div>
     </section>
@@ -533,7 +573,9 @@ function Cek({
     <section className={kotak}>
       <h1 className="judul text-2xl font-semibold">Bagian B. Ini pengaturan terakhirmu?</h1>
       <p className="mt-2 text-sm text-teks-redup">
-        Pengaturan ini dibaca langsung dari halaman pencarian yang barusan kamu pakai.
+        Pengaturan ini dibaca langsung dari halaman pencarian yang barusan kamu pakai. Kalau sudah sesuai, tekan
+        <b className="text-teks"> Benar, lanjut ke Bagian C</b>. Kalau mau mengubah, tekan <b className="text-teks">Kembali
+        ke pencarian</b>.
       </p>
 
       <dl className="mt-4 grid grid-cols-[auto_1fr] gap-x-6 gap-y-1 text-sm">
@@ -606,7 +648,10 @@ function Nilai({
   k, ubah, kirim, mengirim, galat,
 }: { k: Keadaan; ubah: (b: Partial<Keadaan>) => void; kirim: () => void; mengirim: boolean; galat: string }) {
   const lengkap = k.sus.every((x) => x !== null) && k.percaya.every((x) => x !== null);
-  const kurang = k.sus.filter((x) => x === null).length + k.percaya.filter((x) => x === null).length;
+  const kurang = [
+    ...k.sus.flatMap((x, i) => (x === null ? [`${i + 1}`] : [])),
+    ...k.percaya.flatMap((x, i) => (x === null ? [`R${i + 1}`] : [])),
+  ];
   return (
     <section className={kotak}>
       <h1 className="judul text-2xl font-semibold">Bagian C. Penilaian website</h1>
@@ -639,7 +684,7 @@ function Nilai({
       <button type="button" disabled={!lengkap || mengirim} onClick={kirim} className={`${tombolUtama} mt-4`}>
         {mengirim ? "Mengirim…" : "Kirim jawaban"}
       </button>
-      {!lengkap && <p className="mt-2 text-xs text-teks-redup">Masih ada {kurang} pernyataan yang belum dijawab.</p>}
+      <Kurang judul="Belum bisa dikirim. Pernyataan yang belum dijawab, nomor:" isi={kurang} />
     </section>
   );
 }

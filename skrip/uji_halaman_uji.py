@@ -89,7 +89,7 @@ def urutkan(pg, urutan):
 
 
 def atur_cari(pg, r):
-    pg.wait_for_selector("text=Uji coba, Bagian B.")
+    pg.wait_for_selector("text=Pilihanmu tersimpan otomatis, tidak perlu menekan simpan")
     pg.click(f"button:has-text('{r['moda']}')")
     if any(k in r["ubah"] for k in ("Dekat pusat kabupaten", "Halamannya lega", "Dekat tempat ibadah")):
         pg.click("summary:has-text('Tambah hal lain')")
@@ -136,7 +136,7 @@ with sync_playwright() as pw:
         dilihat = lima_peta(pg)
         if n == 1:
             pg.screenshot(path=str(GAMBAR / "uji-bagian-b-cari.png"))
-        pg.click("a:has-text('Sudah, lanjut ke Bagian C')")
+        pg.click("a[href='/uji']:has-text('Selesai')")
         pg.wait_for_selector("text=Ini pengaturan terakhirmu?")
         cek = pg.locator("ol.list-decimal li").all_inner_texts()
         catat(f"{r['nama']} lima teratas /cari = /uji", cek == dilihat, f"{dilihat}")
@@ -156,7 +156,7 @@ with sync_playwright() as pw:
     isi_identitas(pg, "UJI-OTOMATIS-SALAH")
     urutkan(pg, list(ID))
     pg.select_option("#kecamatan", "Sooko")
-    pg.click("a:has-text('Sudah, lanjut ke Bagian C')")
+    pg.click("a[href='/uji']:has-text('Selesai')")
     pg.wait_for_selector("text=Ini pengaturan terakhirmu?")
     pg.screenshot(path=str(GAMBAR / "uji-bagian-b-salah-hp.png"), full_page=True)
     tombol = pg.locator("button:has-text('Benar, lanjut ke Bagian C')")
@@ -164,7 +164,7 @@ with sync_playwright() as pw:
     pg.click("button:has-text('Kembali ke pencarian')")
     pg.wait_for_url("**/cari")
     pg.select_option("#kecamatan", "Semua Kecamatan")
-    pg.click("a:has-text('Sudah, lanjut ke Bagian C')")
+    pg.click("a[href='/uji']:has-text('Selesai')")
     pg.wait_for_selector("text=Ini pengaturan terakhirmu?")
     catat("Setelah dibetulkan boleh lanjut", pg.locator("button:has-text('Benar, lanjut ke Bagian C')").is_enabled())
     pg.click("button:has-text('Benar, lanjut ke Bagian C')")
